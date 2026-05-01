@@ -109,7 +109,7 @@ description: Full curriculum vitae of Bill Anderson, data governance consultant 
   <div class="cv-section__label">Publications</div>
   <ul style="list-style: none; padding: 0;">
     <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--rule);">
-      <a href="/assets/pdfs/Digital-Compacts-Global-ideals-regional-realities.pdf"><em>Digital compacts: global ideals, regional realities</em></a>    </li>
+      <a href="/assets/pdfs/digital-compacts-global-ideals-regional-realities.pdf"><em>Digital compacts: global ideals, regional realities</em></a>    </li>
     <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--rule);">
       <a href="/assets/pdfs/data-side-of-lnob.pdf"><em>The data side of leaving no one behind</em></a>
     </li>
