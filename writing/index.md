@@ -15,9 +15,7 @@ description: Articles and analysis by Bill Anderson on data governance, digital 
 <ul class="article-list" style="margin-top: 0;">
   {% for post in site.posts %}
   <li class="article-list__item">
-    <div class="article-list__meta">
-      {{ post.date | date: "%-d %B %Y" }}
-    </div>
+    <div class="article-list__meta">{{ post.date | date: "%-d %B %Y" }}</div>
     <div class="article-list__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
     {% if post.subtitle %}
       <p class="article-list__excerpt">{{ post.subtitle }}</p>
@@ -25,9 +23,7 @@ description: Articles and analysis by Bill Anderson on data governance, digital 
       <p class="article-list__excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
     {% endif %}
     {% if post.tags and post.tags.size > 0 %}
-    <div class="article-list__tags">
-      {% for tag in post.tags %}<span class="article-list__tag">{{ tag }}</span>{% endfor %}
-    </div>
+    <div class="article-list__tags">{{ post.tags | join: ", " }}</div>
     {% endif %}
   </li>
   {% endfor %}
