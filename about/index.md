@@ -26,8 +26,7 @@ description: Bill Anderson — data governance consultant, data landscaping spec
   </div>
   <div>
     <!-- Profile image placeholder — replace src with actual photo -->
-    <div style="width: 180px; height: 180px; background: var(--paper-warm); border: 1px solid var(--rule); border-radius: 2px; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 0.65rem; color: var(--ink-faint); text-align: center; padding: 1rem;">Photo</div>
-  </div>
+    <img src="/assets/uploads/bill-anderson.jpg" alt="Bill Anderson" style="width: 180px; border-radius: 2px;">
 </div>
 
 <section class="cv-section">
