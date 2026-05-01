@@ -109,16 +109,15 @@ description: Full curriculum vitae of Bill Anderson, data governance consultant 
   <div class="cv-section__label">Publications</div>
   <ul style="list-style: none; padding: 0;">
     <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--rule);">
-      <a href="/assets/pdfs/Digital_Compacts_Global_ideals_regional_realities.pdf"><em>Digital compacts: global ideals, regional realities</em></a> <span style="font-family: var(--mono); font-size: 0.7rem; color: var(--ink-faint);">2024</span>
+      <a href="/assets/pdfs/Digital-Compacts-Global-ideals-regional-realities.pdf"><em>Digital compacts: global ideals, regional realities</em></a>    </li>
+    <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--rule);">
+      <a href="/assets/pdfs/data-side-of-lnob.pdf"><em>The data side of leaving no one behind</em></a>
     </li>
     <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--rule);">
-      <a href="/assets/pdfs/The_data_side_of_leaving_no_one_behind.pdf"><em>The data side of leaving no one behind</em></a>
-    </li>
-    <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--rule);">
-      <a href="/assets/pdfs/Data_disharmony_How_can_donors_better_act_on_their_commitments.pdf"><em>Data disharmony: how can donors better act on their commitments?</em></a>
+      <a href="/assets/pdfs/data-disharmony.pdf"><em>Data disharmony: how can donors better act on their commitments?</em></a>
     </li>
     <li style="padding: 0.75rem 0;">
-      <a href="/assets/pdfs/Is_the_SDG_monitoring_framework_broken_discussion_paper.pdf"><em>Is the SDG monitoring framework broken?</em></a>
+      <a href="/assets/pdfs/Is-the-SDG-monitoring-framework-broken.pdf"><em>Is the SDG monitoring framework broken?</em></a>
     </li>
   </ul>
 </section>
