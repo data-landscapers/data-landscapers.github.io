@@ -24,6 +24,11 @@ description: Articles and analysis by Bill Anderson on data governance, digital 
     {% elsif post.excerpt %}
       <p class="article-list__excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
     {% endif %}
+    {% if post.tags and post.tags.size > 0 %}
+    <div class="article-list__tags">
+      {% for tag in post.tags %}<span class="article-list__tag">{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
   </li>
   {% endfor %}
 </ul>
