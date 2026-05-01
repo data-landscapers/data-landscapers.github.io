@@ -30,7 +30,7 @@ description: Full curriculum vitae of Bill Anderson, data governance consultant 
     </div>
     <div class="cv-job__desc">
       <ul>
-        <li><strong>Africa, 2025 – ongoing:</strong> Principal investigator on the Africa Digital Public Infrastructure Study for the African Development Bank, covering all 54 African countries.</li>
+        <li><strong>Africa, 2025 – ongoing:</strong> Sub-contracted by Research ICT Africa as Mapping Lead on the <a href="https://researchictafrica.net/project/the-africa-digital-public-infrastructure-study/">Africa Digital Public Infrastructure Study</a> for the African Development Bank, covering all 54 African countries.</li>
         <li><strong>West Africa, Jun – Aug 2025:</strong> Sub-contracted to work on a study for MRC Unit The Gambia at LSHTM reviewing the feasibility of establishing a Pan African Data Sharing Platform.</li>
         <li><strong>Africa, Apr – May 2025:</strong> Developed a <a href="https://www.linkedin.com/pulse/exercise-using-large-language-model-build-database-public-anderson-kjeze/">trial methodology</a> using large language models to build a comprehensive database of public information systems in Africa.</li>
        <li><strong>Nepal, Nov 2024 – Feb 2025:</strong> Sub-contracted by YoungInnovations Pvt Ltd for an assessment of the Provincial Planning Data Ecosystem. Advised on data landscaping methodologies and data maturity model development.</li>
