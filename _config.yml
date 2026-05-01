@@ -1,0 +1,55 @@
+title: Data Landscapers
+tagline: Mapping Africa's data landscape
+description: Data governance, digital sovereignty and open source intelligence for Africa's digital transformation
+url: "https://data-landscapers.com"
+baseurl: ""
+
+author:
+  name: Bill Anderson
+  email: bill@data-landscapers.com
+  bio: Data governance consultant. Mapping Africa's digital infrastructure. Former IATI technical lead. Veteran of the South African liberation struggle.
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title/
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:name/
+  wip:
+    output: true
+    permalink: /wip/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "article"
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "portfolio-item"
+  - scope:
+      path: ""
+      type: "wip"
+    values:
+      layout: "wip-item"

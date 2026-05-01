@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article>
+  <div class="container">
+    <header class="article-header">
+      {% if page.category %}
+      <div class="article-header__kicker">{{ page.category }}</div>
+      {% endif %}
+      <h1 class="article-header__title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <p class="article-header__subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+      <div class="article-header__byline">
+        Bill Anderson &nbsp;·&nbsp; {{ page.date | date: "%-d %B %Y" }}
+        {% if page.tags %}
+          &nbsp;·&nbsp;
+          {% for tag in page.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        {% endif %}
+      </div>
+    </header>
+
+    <div class="article-body">
+      {{ content }}
+    </div>
+
+    <footer style="padding: 2.5rem 0; border-top: 1px solid var(--rule); margin-top: 3rem;">
+      <a href="{{ '/writing/' | relative_url }}" style="font-size: 0.82rem; color: var(--ink-faint); font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.07em;">← All writing</a>
+    </footer>
+  </div>
+</article>
+
+{% if page.has_data_table %}
+<script src="{{ '/assets/js/datatable.js' | relative_url }}"></script>
+{% endif %}

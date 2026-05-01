@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: data-landscapers/data-landscapers.github.io
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "posts"
+    label: "Articles"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Has data table", name: "has_data_table", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "wip"
+    label: "Work in progress"
+    folder: "_wip"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Status", name: "status", widget: "select", options: ["Active", "Planned", "Complete"] }
+      - { label: "Client", name: "client", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
