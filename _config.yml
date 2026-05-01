@@ -7,12 +7,12 @@ baseurl: ""
 author:
   name: Bill Anderson
   email: bill@data-landscapers.com
-  bio: Data governance consultant. Mapping Africa's digital infrastructure. Former IATI technical lead. Veteran of the South African liberation struggle.
+  bio: Data governance consultant. Mapping Africa's digital infrastructure. Former IATI technical lead.
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 
 kramdown:
   input: GFM
