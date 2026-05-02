@@ -1,3 +1,4 @@
+/* datatable.js v4 */
 (function () {
   'use strict';
 
@@ -104,13 +105,14 @@
     if (n.includes('url') || n.includes('source_url') || n === 'source')
       return 'width:400px;min-width:400px;white-space:normal;word-break:break-all;overflow-wrap:anywhere;';
     if (n.includes('comment') || n.includes('description') || n.includes('note') || n.includes('detail'))
-      return 'min-width:240px;max-width:500px;white-space:normal;word-break:normal;overflow-wrap:anywhere;';
+      return 'min-width:400px;white-space:normal;word-break:normal;overflow-wrap:anywhere;';
     return '';
   }
 
   /* ── Build one table ─────────────────────────────────────────────────── */
   function buildTable(container) {
     const src        = container.dataset.src;
+    const fullSrc    = container.dataset.fullSrc || null;
     const metaSrc    = container.dataset.metadataSrc || null;
     const colList    = (container.dataset.cols    || '').split(',').map(s => s.trim()).filter(Boolean);
     const filterList = (container.dataset.filters || '').split(',').map(s => s.trim()).filter(Boolean);
@@ -243,6 +245,14 @@
           const dlBtn = makeDownloadBtn('Download CSV');
           dlBtn.addEventListener('click', () => triggerDownload(src, filename));
           toolbar.appendChild(dlBtn);
+
+          /* Download full dataset button — only present when data-full-src is set */
+          if (fullSrc) {
+            const fullFilename = fullSrc.split('/').pop() || 'full-data.csv';
+            const fullBtn = makeDownloadBtn('Download full dataset');
+            fullBtn.addEventListener('click', () => triggerDownload(fullSrc, fullFilename));
+            toolbar.appendChild(fullBtn);
+          }
 
           /* Download Metadata button — only present when data-metadata-src is set */
           if (metaSrc) {
