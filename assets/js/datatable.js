@@ -1,4 +1,4 @@
-/* datatable.js v4 */
+/* datatable.js v5 */
 (function () {
   'use strict';
 
@@ -105,7 +105,7 @@
     if (n.includes('url') || n.includes('source_url') || n === 'source')
       return 'width:400px;min-width:400px;white-space:normal;word-break:break-all;overflow-wrap:anywhere;';
     if (n.includes('comment') || n.includes('description') || n.includes('note') || n.includes('detail'))
-      return 'min-width:400px;white-space:normal;word-break:normal;overflow-wrap:anywhere;';
+      return 'width:1000px;min-width:1000px;white-space:normal;word-break:normal;overflow-wrap:anywhere;';
     return '';
   }
 
