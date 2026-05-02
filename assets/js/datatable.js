@@ -58,7 +58,8 @@
   function selectStyle() {
     return `font-family:'JetBrains Mono',monospace;font-size:0.8em;
       padding:4px 8px;border:1px solid #ccc;border-radius:3px;
-      background:#fff;color:#333;cursor:pointer;`;
+      background:#fff;color:#333;cursor:pointer;
+      max-width:200px;min-width:0;`;
   }
 
   /* ── Build one table ─────────────────────────────────────────────────── */
@@ -172,7 +173,7 @@
             const label  = headers[ci];
             const sel    = document.createElement('select');
             sel.style.cssText = selectStyle();
-            sel.innerHTML = `<option value="">All ${escHtml(label).toLowerCase()}s</option>` +
+            sel.innerHTML = `<option value="">All ${escHtml(label)}</option>` +
               values.map(v => `<option${filterState[ci] === v ? ' selected' : ''}>${escHtml(v)}</option>`).join('');
             sel.addEventListener('change', () => { filterState[ci] = sel.value; render(); });
             toolbar.appendChild(sel);
