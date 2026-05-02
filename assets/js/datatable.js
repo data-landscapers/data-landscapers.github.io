@@ -267,7 +267,7 @@
           /* ── Table ── */
           const tbl = document.createElement('table');
           tbl.style.cssText = `
-            width:100%;border-collapse:collapse;font-size:0.88em;
+            border-collapse:collapse;font-size:0.88em;
             font-family:'Source Serif 4',serif;`;
 
           /* Head */
