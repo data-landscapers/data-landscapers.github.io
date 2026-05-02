@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Africa's data centre landscape: who owns the infrastructure?"
-subtitle: "A continent-wide survey of ownership, sovereignty and foreign dependency across data centres in all 54 African countries"
+subtitle: "A continent-wide mapping of ownership, sovereignty and foreign dependency across data centres in all 54 African countries"
 date: 2026-04-15
 category: Data infrastructure
 tags: [data centres, sovereignty, infrastructure]
@@ -9,9 +9,8 @@ description: Mapping ownership, sovereignty and foreign dependency across Africa
 has_data_table: true
 ---
 
-Africa's data infrastructure is growing rapidly — but who owns it? This article presents data from our continental survey of data centres across all 54 African countries, with particular attention to questions of ownership structure, sovereign control, and foreign dependency.
+Africa's data infrastructure is growing rapidly — but who owns it? This dataset collates publicly available information on data centres across all 54 African countries.
 
-The data table below draws on the Africa DPI study. It covers {{ site.data.data-centres | size | default: "379" }} facilities and is filterable by country and sovereignty category.
 
 ## Key findings
 
@@ -19,18 +18,21 @@ Foreign ownership is the dominant pattern. Across the continent, the majority of
 
 The sovereignty picture is more complex than ownership alone. A facility can be domestically registered but cloud-act exposed through its parent company's jurisdiction. Several government data centres use Huawei infrastructure, creating a different kind of dependency. The table below includes a sovereignty categorisation that attempts to capture this complexity.
 
+## Methodology
+
+Data was collected using Perplexity Computer with a standardised prompt methodology, then validated against primary sources. The sovereignty categorisation is our own and does not correspond to any official classification. See the [methodology documentation](https://data-landscapers.github.io/africa-dpi/manual/site/methodology/) for full details.
+
 ## The data
 
 The table can be filtered by country and sovereignty category, and sorted by any column. Click column headers to sort. Use the search box to find specific operators or facilities.
 
 <div class="dl-datatable"
   data-src="/assets/data/data-centres.csv"
-  data-cols="facility_id,facility_name,country_name,city,operational_status,facility_type,operator_name,ownership_type,sovereignty_category,cloud_act_exposure,chinese_involvement,it_capacity_mw"
+  data-cols="Facility Id, Facility Name, Country, Country Name, City, Operational Status, Year Operational, Facility Type, Services Offered, Govt Data Hosted, Operator Name, Ownership Type, Ownership Structure Type, Ownership Chain, Major Shareholders, Government Ownership Pct, Foreign Ownership Pct, Controlling Entities, Control Mechanisms, Recent Investments, Dfi Involvement, Investment Usd, Expansion Plans, Key Tenants, Hyperscaler Relationships, Microsoft, Aws, Google, Cloud Act Exposure, Chinese Entities, Foreign Dependency Score, Open Source Stack, Parent Hq Country, Ultimate Parent Hq Country, Chinese Involvement, Parent Company, Ultimate Parent Company, Sovereignty Category, Data Residency Guarantee, Local Dp Compliance, Total Floor Space Sqm, Rack Capacity, It Capacity Mw, Submarine Cable Access, Ixp Presence, Carrier Neutrality, Gpu Ai Capability, Server Vendors, Cloud Platform, Security Certifications, Gps Coordinates, Comments, Source Urls"
+  data-filters="country_name, facility_type"
   data-title="Africa data centre survey">
 </div>
 
-## Notes on methodology
 
-Data was collected using Perplexity Computer with a standardised prompt methodology, then validated against primary sources. The sovereignty categorisation is our own and does not correspond to any official classification. See the [methodology documentation](https://data-landscapers.github.io/africa-dpi/manual/site/methodology/) for full details.
 
 *This dataset is updated as new information becomes available. If you have corrections or additions, please [get in touch](/contact/).*
