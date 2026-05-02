@@ -91,29 +91,18 @@
       .replace(/^_|_$/g, '');
   }
 
-  /* Find a CSV column by name with tolerant matching.
-     1. Exact norm-match  (e.g. "Country Name" matches "country_name")
-     2. Contains-fallback (e.g. "Id" matches "facility_id" — use carefully) */
+  /* Find a CSV column by name. Normalises both sides before comparing,
+     so "Country Name", "country_name", "country-name" all match. */
   function findCol(headers, colName) {
     const nc = norm(colName);
-    let idx = headers.findIndex(h => norm(h) === nc);
-    if (idx === -1) {
-      // Only use contains-match if the search term is reasonably specific (4+ chars)
-      if (nc.length >= 4) {
-        idx = headers.findIndex(h => {
-          const nh = norm(h);
-          return nh === nc || nh.includes(nc) || nc.includes(nh);
-        });
-      }
-    }
-    return idx;
+    return headers.findIndex(h => norm(h) === nc);
   }
 
   /* ── Column width hints ──────────────────────────────────────────────── */
   function colWidthStyle(headerName) {
     const n = norm(headerName);
     if (n.includes('url') || n.includes('source_url') || n === 'source')
-      return 'width:240px;min-width:180px;max-width:300px;white-space:normal;word-break:break-all;';
+      return 'min-width:220px;white-space:normal;word-break:break-all;';
     if (n.includes('comment') || n.includes('description') || n.includes('note') || n.includes('detail'))
       return 'min-width:240px;white-space:normal;word-break:normal;';
     return '';
