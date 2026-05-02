@@ -1,4 +1,4 @@
-/* datatable.js v7 */
+/* datatable.js v8 */
 (function () {
   'use strict';
 
@@ -344,8 +344,12 @@
             scrollBot.scrollLeft  = scrollTop.scrollLeft;
           });
 
-          // Run after layout
-          setTimeout(syncWidths, 50);
+          // Run after layout — also push headerWrap below toolbar
+          setTimeout(() => {
+            syncWidths();
+            const toolbarH = toolbar.offsetHeight;
+            headerWrap.style.top = toolbarH + 'px';
+          }, 50);
         }
 
         render();
