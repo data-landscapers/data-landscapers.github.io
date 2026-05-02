@@ -1,4 +1,4 @@
-/* datatable.js v6 */
+/* datatable.js v7 */
 (function () {
   'use strict';
 
@@ -283,7 +283,6 @@
 
           /* Head */
           const thead = tbl.createTHead();
-          thead.style.cssText = 'position:sticky;top:0;z-index:10;';
           const hrow  = thead.insertRow();
           visibleHeaders.forEach((h, vi) => {
             const th = document.createElement('th');
@@ -292,8 +291,9 @@
               padding:7px 10px;text-align:left;white-space:nowrap;cursor:pointer;
               font-family:'JetBrains Mono',monospace;font-size:0.8em;font-weight:700;
               background:#e8e4dc;border-bottom:2px solid #c84b2f;color:#333;
-              user-select:none;${colWidthStyle(h)}
-              ${isFirstCol ? 'position:sticky;left:0;z-index:15;box-shadow:2px 0 4px rgba(0,0,0,0.08);' : ''}`;
+              user-select:none;position:sticky;top:0;z-index:${isFirstCol ? 16 : 11};
+              ${isFirstCol ? 'left:0;box-shadow:2px 0 4px rgba(0,0,0,0.08);' : ''}
+              ${colWidthStyle(h)}`;
             const arrow = sortCol === vi ? (sortAsc ? ' \u25b2' : ' \u25bc') : ' \u2195';
             th.textContent = h + arrow;
             th.addEventListener('click', () => {
@@ -344,9 +344,9 @@
           container.appendChild(wrap);
           setTimeout(() => {
             syncWidths();
-            // Set thead sticky top to sit just below the toolbar
+            // Set each th's sticky top to sit just below the toolbar
             const toolbarH = toolbar.offsetHeight;
-            thead.style.top = toolbarH + 'px';
+            hrow.querySelectorAll('th').forEach(th => { th.style.top = toolbarH + 'px'; });
           }, 50);
         }
 
