@@ -107,6 +107,16 @@
         /* sovereignty_category index (for badge rendering) */
         const sovColIdx = headers.findIndex(h => norm(h) === 'sovereignty_category');
 
+        /* Column width hints based on header name */
+        function colWidthStyle(headerName) {
+          const n = norm(headerName);
+          if (n.includes('url') || n.includes('link') || n.includes('source'))
+            return 'width:160px;min-width:120px;max-width:200px;white-space:normal;word-break:break-all;';
+          if (n.includes('comment') || n.includes('description') || n.includes('note') || n.includes('detail'))
+            return 'min-width:240px;white-space:normal;word-break:normal;';
+          return '';
+        }
+
         /* Per-filter state: map of headerIndex → selected value string */
         const filterState = {};
         filterColIndices.forEach(i => { filterState[i] = ''; });
@@ -244,7 +254,7 @@
               padding:7px 10px;text-align:left;white-space:nowrap;cursor:pointer;
               font-family:'JetBrains Mono',monospace;font-size:0.8em;font-weight:700;
               background:#e8e4dc;border-bottom:2px solid #c84b2f;color:#333;
-              user-select:none;`;
+              user-select:none;${colWidthStyle(h)}`;
             const arrow = sortCol === vi ? (sortAsc ? ' \u25b2' : ' \u25bc') : ' \u2195';
             th.textContent = h + arrow;
             th.addEventListener('click', () => {
@@ -265,7 +275,7 @@
 
             colIndices.forEach(ci => {
               const td = tr.insertCell();
-              td.style.cssText = 'padding:6px 10px;border-bottom:1px solid #e0ddd6;vertical-align:top;';
+              td.style.cssText = `padding:6px 10px;border-bottom:1px solid #e0ddd6;vertical-align:top;${colWidthStyle(headers[ci])}`;
               const val = row[ci] || '';
               if (ci === sovColIdx) td.innerHTML = sovereigntyBadge(val);
               else td.textContent = val;
