@@ -102,9 +102,9 @@
   function colWidthStyle(headerName) {
     const n = norm(headerName);
     if (n.includes('url') || n.includes('source_url') || n === 'source')
-      return 'width:400px;min-width:300px;white-space:normal;word-break:break-all;overflow-wrap:anywhere;';
+      return 'width:400px;min-width:400px;white-space:normal;word-break:break-all;overflow-wrap:anywhere;';
     if (n.includes('comment') || n.includes('description') || n.includes('note') || n.includes('detail'))
-      return 'min-width:240px;white-space:normal;word-break:normal;';
+      return 'min-width:240px;max-width:500px;white-space:normal;word-break:normal;overflow-wrap:anywhere;';
     return '';
   }
 
