@@ -1,4 +1,4 @@
-/* datatable.js v5 */
+/* datatable.js v6 */
 (function () {
   'use strict';
 
@@ -197,7 +197,8 @@
           toolbar.style.cssText = `
             display:flex;flex-wrap:wrap;align-items:center;gap:8px;
             margin-bottom:10px;padding:10px 12px;
-            background:#f0ede6;border:1px solid #ddd;border-radius:4px;`;
+            background:#f0ede6;border:1px solid #ddd;border-radius:4px;
+            position:sticky;top:0;z-index:20;`;
 
           /* Title */
           if (title) {
@@ -282,14 +283,17 @@
 
           /* Head */
           const thead = tbl.createTHead();
+          thead.style.cssText = 'position:sticky;top:0;z-index:10;';
           const hrow  = thead.insertRow();
           visibleHeaders.forEach((h, vi) => {
             const th = document.createElement('th');
+            const isFirstCol = vi === 0;
             th.style.cssText = `
               padding:7px 10px;text-align:left;white-space:nowrap;cursor:pointer;
               font-family:'JetBrains Mono',monospace;font-size:0.8em;font-weight:700;
               background:#e8e4dc;border-bottom:2px solid #c84b2f;color:#333;
-              user-select:none;${colWidthStyle(h)}`;
+              user-select:none;${colWidthStyle(h)}
+              ${isFirstCol ? 'position:sticky;left:0;z-index:15;box-shadow:2px 0 4px rgba(0,0,0,0.08);' : ''}`;
             const arrow = sortCol === vi ? (sortAsc ? ' \u25b2' : ' \u25bc') : ' \u2195';
             th.textContent = h + arrow;
             th.addEventListener('click', () => {
@@ -305,12 +309,21 @@
           data.forEach((row, ri) => {
             const tr = tbody.insertRow();
             tr.style.background = ri % 2 === 0 ? '#faf9f6' : '#f2f0eb';
-            tr.addEventListener('mouseover', () => { tr.style.background = '#fdf0ec'; });
-            tr.addEventListener('mouseout',  () => { tr.style.background = ri % 2 === 0 ? '#faf9f6' : '#f2f0eb'; });
+            tr.addEventListener('mouseover', () => {
+              tr.style.background = '#fdf0ec';
+              tr.querySelector('td')?.style.setProperty('background', '#fdf0ec');
+            });
+            tr.addEventListener('mouseout', () => {
+              const bg = ri % 2 === 0 ? '#faf9f6' : '#f2f0eb';
+              tr.style.background = bg;
+              tr.querySelector('td')?.style.setProperty('background', bg);
+            });
 
-            colIndices.forEach(ci => {
+            const rowBg = ri % 2 === 0 ? '#faf9f6' : '#f2f0eb';
+            colIndices.forEach((ci, vi) => {
               const td = tr.insertCell();
-              td.style.cssText = `padding:6px 10px;border-bottom:1px solid #e0ddd6;vertical-align:top;${colWidthStyle(headers[ci])}`;
+              const isFirstCol = vi === 0;
+              td.style.cssText = `padding:6px 10px;border-bottom:1px solid #e0ddd6;vertical-align:top;${colWidthStyle(headers[ci])}${isFirstCol ? `position:sticky;left:0;z-index:5;background:${rowBg};box-shadow:2px 0 4px rgba(0,0,0,0.08);` : ''}`;
               const val = row[ci] || '';
               if (ci === sovColIdx) td.innerHTML = sovereigntyBadge(val);
               else td.textContent = val;
@@ -329,7 +342,12 @@
           wrap.appendChild(scrollTop);
           wrap.appendChild(scrollBot);
           container.appendChild(wrap);
-          setTimeout(syncWidths, 50);
+          setTimeout(() => {
+            syncWidths();
+            // Set thead sticky top to sit just below the toolbar
+            const toolbarH = toolbar.offsetHeight;
+            thead.style.top = toolbarH + 'px';
+          }, 50);
         }
 
         render();
