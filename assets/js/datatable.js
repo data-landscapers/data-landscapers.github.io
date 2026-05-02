@@ -1,243 +1,307 @@
-/**
- * DataLandscapers — datatable.js
- * Loads a CSV and renders a sortable, filterable table with dual scrollbars.
- * Usage: <div class="dl-datatable" data-src="/assets/data/file.csv" data-cols="col1,col2" data-title="Title"></div>
- */
 (function () {
   'use strict';
 
+  /* ── Sovereignty badge colours ───────────────────────────────────────── */
+  const SOVEREIGNTY_COLOURS = {
+    'fully african':                        { bg: '#d4edda', text: '#155724', border: '#c3e6cb' },
+    'african with hyperscaler involvement': { bg: '#cce5ff', text: '#004085', border: '#b8daff' },
+    'non-us/cn foreign':                    { bg: '#fff3cd', text: '#856404', border: '#ffeeba' },
+    'us/cn control':                        { bg: '#f8d7da', text: '#721c24', border: '#f5c6cb' },
+  };
+
+  function sovereigntyBadge(value) {
+    if (!value) return value;
+    const key = value.trim().toLowerCase();
+    const style = SOVEREIGNTY_COLOURS[key];
+    if (!style) return escHtml(value);
+    return `<span style="
+      display:inline-block;padding:2px 8px;border-radius:3px;font-size:0.82em;
+      background:${style.bg};color:${style.text};border:1px solid ${style.border};
+      font-family:'JetBrains Mono',monospace;white-space:nowrap;">${escHtml(value)}</span>`;
+  }
+
+  function escHtml(str) {
+    return String(str ?? '')
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  /* ── CSV parser (handles quoted fields) ─────────────────────────────── */
   function parseCSV(text) {
-    const rows = [];
-    let row = [], field = '', inQuotes = false;
-    if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
-    for (let i = 0; i < text.length; i++) {
-      const ch = text[i], next = text[i + 1];
-      if (inQuotes) {
-        if (ch === '"' && next === '"') { field += '"'; i++; }
-        else if (ch === '"') { inQuotes = false; }
-        else { field += ch; }
-      } else {
-        if (ch === '"') { inQuotes = true; }
-        else if (ch === ',') { row.push(field.trim()); field = ''; }
-        else if (ch === '\n' || (ch === '\r' && next === '\n')) {
-          if (ch === '\r') i++;
-          row.push(field.trim()); field = '';
-          if (row.some(c => c !== '')) rows.push(row);
-          row = [];
-        } else { field += ch; }
+    const lines = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+    const parse = line => {
+      const out = []; let cur = '', inQ = false;
+      for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (ch === '"') {
+          if (inQ && line[i+1] === '"') { cur += '"'; i++; }
+          else inQ = !inQ;
+        } else if (ch === ',' && !inQ) { out.push(cur.trim()); cur = ''; }
+        else cur += ch;
       }
-    }
-    if (field || row.length) { row.push(field.trim()); if (row.some(c => c !== '')) rows.push(row); }
-    return rows;
+      out.push(cur.trim()); return out;
+    };
+    const headers = parse(lines[0]);
+    return { headers, rows: lines.slice(1).filter(l => l.trim()).map(parse) };
   }
 
-  function buildTable(container, rows, selectedCols, title) {
-    if (rows.length < 2) { container.textContent = 'No data.'; return; }
+  /* ── Download helper ─────────────────────────────────────────────────── */
+  function downloadCSV(src, filename) {
+    const a = document.createElement('a');
+    a.href = src;
+    a.download = filename || src.split('/').pop() || 'data.csv';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
 
-    const headers = rows[0];
-    const colIndices = selectedCols
-      ? selectedCols.map(c => headers.findIndex(h => h.toLowerCase().trim() === c.toLowerCase().trim())).filter(i => i >= 0)
-      : headers.map((_, i) => i);
+  function selectStyle() {
+    return `font-family:'JetBrains Mono',monospace;font-size:0.8em;
+      padding:4px 8px;border:1px solid #ccc;border-radius:3px;
+      background:#fff;color:#333;cursor:pointer;`;
+  }
 
-    const displayHeaders = colIndices.map(i => headers[i]);
-    const dataRows = rows.slice(1).map(r => colIndices.map(i => r[i] || ''));
+  /* ── Build one table ─────────────────────────────────────────────────── */
+  function buildTable(container) {
+    const src        = container.dataset.src;
+    const colList    = (container.dataset.cols     || '').split(',').map(s => s.trim()).filter(Boolean);
+    const filterList = (container.dataset.filters  || '').split(',').map(s => s.trim()).filter(Boolean);
+    const title      = container.dataset.title || '';
 
-    let sortCol = -1, sortDir = 1;
-    let filterText = '';
-    let filterColValue = '';
-    let filterSovValue = '';
+    if (!src) { container.textContent = 'Error: data-src not set.'; return; }
 
-    function getUniqueValues(colIdx) {
-      const vals = new Set();
-      dataRows.forEach(r => { if (r[colIdx]) vals.add(r[colIdx]); });
-      return Array.from(vals).sort();
-    }
+    container.innerHTML = '<p style="font-family:\'JetBrains Mono\',monospace;font-size:0.85em;color:#888;">Loading data\u2026</p>';
 
-    container.innerHTML = '';
-    const wrap = document.createElement('div');
-    wrap.className = 'data-table-wrap';
+    fetch(src)
+      .then(r => { if (!r.ok) throw new Error(r.statusText); return r.text(); })
+      .then(text => {
+        const { headers, rows } = parseCSV(text);
 
-    // Controls
-    const controls = document.createElement('div');
-    controls.className = 'data-table-controls';
+        /* Normalise a header name for loose matching */
+        const norm = s => s.toLowerCase().replace(/[\s\-]/g, '_');
 
-    if (title) {
-      const titleEl = document.createElement('span');
-      titleEl.style.cssText = 'font-family:var(--mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--ink-light);font-weight:500;';
-      titleEl.textContent = title;
-      controls.appendChild(titleEl);
-    }
+        /* Resolve visible column indices */
+        const colIndices = colList.length
+          ? colList.map(c => headers.findIndex(h => norm(h) === norm(c))).filter(i => i !== -1)
+          : headers.map((_, i) => i);
 
-    const searchInput = document.createElement('input');
-    searchInput.type = 'search';
-    searchInput.placeholder = 'Search…';
-    searchInput.setAttribute('aria-label', 'Search table');
-    controls.appendChild(searchInput);
+        const visibleHeaders = colIndices.map(i => headers[i]);
 
-    const countryColIdx = displayHeaders.findIndex(h => h.toLowerCase().includes('country_name'));
-    if (countryColIdx >= 0) {
-      const label = document.createElement('label');
-      label.textContent = 'Country ';
-      const sel = document.createElement('select');
-      const allOpt = document.createElement('option');
-      allOpt.value = ''; allOpt.textContent = 'All countries';
-      sel.appendChild(allOpt);
-      getUniqueValues(countryColIdx).forEach(v => {
-        const o = document.createElement('option'); o.value = o.textContent = v; sel.appendChild(o);
-      });
-      sel.addEventListener('change', () => { filterColValue = sel.value; render(); });
-      label.appendChild(sel); controls.appendChild(label);
-    }
+        /* Resolve filter column indices.
+           If data-filters is set, use exactly those columns.
+           Otherwise fall back to auto-detecting country_name and sovereignty_category. */
+        let filterColIndices;
+        if (filterList.length) {
+          filterColIndices = filterList
+            .map(c => headers.findIndex(h => norm(h) === norm(c)))
+            .filter(i => i !== -1);
+        } else {
+          /* Auto-detect fallback */
+          const AUTO = ['country_name', 'sovereignty_category'];
+          filterColIndices = AUTO
+            .map(a => headers.findIndex(h => norm(h) === a))
+            .filter(i => i !== -1);
+        }
 
-    const sovColIdx = displayHeaders.findIndex(h => h.toLowerCase().includes('sovereignty'));
-    if (sovColIdx >= 0) {
-      const label2 = document.createElement('label');
-      label2.textContent = 'Sovereignty ';
-      const sel2 = document.createElement('select');
-      const allOpt2 = document.createElement('option');
-      allOpt2.value = ''; allOpt2.textContent = 'All'; sel2.appendChild(allOpt2);
-      getUniqueValues(sovColIdx).forEach(v => {
-        const o = document.createElement('option'); o.value = o.textContent = v; sel2.appendChild(o);
-      });
-      sel2.addEventListener('change', () => { filterSovValue = sel2.value; render(); });
-      label2.appendChild(sel2); controls.appendChild(label2);
-    }
+        /* sovereignty_category index (for badge rendering) */
+        const sovColIdx = headers.findIndex(h => norm(h) === 'sovereignty_category');
 
-    const count = document.createElement('span');
-    count.className = 'data-table-count';
-    controls.appendChild(count);
-    wrap.appendChild(controls);
+        /* Per-filter state: map of headerIndex → selected value string */
+        const filterState = {};
+        filterColIndices.forEach(i => { filterState[i] = ''; });
 
-    // Top scroll mirror
-    const scrollTop = document.createElement('div');
-    scrollTop.className = 'data-table-scroll-top';
-    const scrollTopInner = document.createElement('div');
-    scrollTopInner.className = 'data-table-scroll-top-inner';
-    scrollTop.appendChild(scrollTopInner);
-    wrap.appendChild(scrollTop);
+        /* Unique sorted values per filter column */
+        const uniq = idx => [...new Set(rows.map(r => r[idx]).filter(Boolean))].sort();
 
-    // Main scroll area
-    const scrollDiv = document.createElement('div');
-    scrollDiv.className = 'data-table-scroll';
+        /* State */
+        let sortCol = -1, sortAsc = true, searchText = '';
 
-    const table = document.createElement('table');
-    table.className = 'data-table';
+        /* ── Render ──────────────────────────────────────────────────── */
+        function filtered() {
+          return rows.filter(row => {
+            for (const [idx, val] of Object.entries(filterState)) {
+              if (val && row[idx] !== val) return false;
+            }
+            if (searchText) {
+              const q = searchText.toLowerCase();
+              return colIndices.some(i => (row[i] || '').toLowerCase().includes(q));
+            }
+            return true;
+          });
+        }
 
-    const thead = document.createElement('thead');
-    const headRow = document.createElement('tr');
-    displayHeaders.forEach((h, i) => {
-      const th = document.createElement('th');
-      th.textContent = h.replace(/_/g, ' ');
-      th.setAttribute('scope', 'col');
-      th.addEventListener('click', () => {
-        if (sortCol === i) sortDir *= -1; else { sortCol = i; sortDir = 1; }
-        document.querySelectorAll('.data-table thead th').forEach(el => el.className = '');
-        th.className = sortDir === 1 ? 'sort-asc' : 'sort-desc';
-        render();
-      });
-      headRow.appendChild(th);
-    });
-    thead.appendChild(headRow);
-    table.appendChild(thead);
+        function sorted(data) {
+          if (sortCol < 0) return data;
+          return [...data].sort((a, b) => {
+            const av = a[colIndices[sortCol]] || '';
+            const bv = b[colIndices[sortCol]] || '';
+            const n = parseFloat(av), m = parseFloat(bv);
+            const cmp = (!isNaN(n) && !isNaN(m)) ? n - m : av.localeCompare(bv);
+            return sortAsc ? cmp : -cmp;
+          });
+        }
 
-    const tbody = document.createElement('tbody');
-    table.appendChild(tbody);
-    scrollDiv.appendChild(table);
-    wrap.appendChild(scrollDiv);
-    container.appendChild(wrap);
+        function render() {
+          const data     = sorted(filtered());
+          const filename = src.split('/').pop() || 'data.csv';
 
-    // Sync scrollbars
-    scrollTop.addEventListener('scroll', () => { scrollDiv.scrollLeft = scrollTop.scrollLeft; });
-    scrollDiv.addEventListener('scroll', () => { scrollTop.scrollLeft = scrollDiv.scrollLeft; });
+          container.innerHTML = '';
+          const wrap = document.createElement('div');
 
-    // Set top scroller width to match table after render
-    function syncTopScroller() {
-      scrollTopInner.style.width = table.offsetWidth + 'px';
-    }
+          /* ── Toolbar ── */
+          const toolbar = document.createElement('div');
+          toolbar.style.cssText = `
+            display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+            margin-bottom:10px;padding:10px 12px;
+            background:#f0ede6;border:1px solid #ddd;border-radius:4px;`;
 
-    const sovIdx = displayHeaders.findIndex(h => h.toLowerCase().includes('sovereignty'));
-    const statusIdx = displayHeaders.findIndex(h => h.toLowerCase().includes('operational_status'));
-
-    function sovBadge(val) {
-      if (!val) return '';
-      const v = val.toLowerCase();
-      let cls = 'grey';
-      if (v.includes('fully african')) cls = 'green';
-      else if (v.includes('african with')) cls = 'blue';
-      else if (v.includes('us/cn')) cls = 'red';
-      else if (v.includes('non-us')) cls = 'amber';
-      return `<span class="badge badge--${cls}">${val}</span>`;
-    }
-
-    function statusBadge(val) {
-      if (!val) return val;
-      const v = val.toLowerCase();
-      let cls = 'grey';
-      if (v === 'operational') cls = 'green';
-      else if (v.includes('construct') || v.includes('active')) cls = 'amber';
-      else if (v === 'planned') cls = 'blue';
-      else if (v === 'decommissioned') cls = 'red';
-      return `<span class="badge badge--${cls}">${val}</span>`;
-    }
-
-    searchInput.addEventListener('input', () => { filterText = searchInput.value.toLowerCase(); render(); });
-
-    function render() {
-      let visible = dataRows.filter(r => {
-        const rowText = r.join(' ').toLowerCase();
-        if (filterText && !rowText.includes(filterText)) return false;
-        if (filterColValue && countryColIdx >= 0 && r[countryColIdx] !== filterColValue) return false;
-        if (filterSovValue && sovColIdx >= 0 && r[sovColIdx] !== filterSovValue) return false;
-        return true;
-      });
-
-      if (sortCol >= 0) {
-        visible.sort((a, b) => {
-          const av = a[sortCol] || '', bv = b[sortCol] || '';
-          const an = parseFloat(av), bn = parseFloat(bv);
-          if (!isNaN(an) && !isNaN(bn)) return sortDir * (an - bn);
-          return sortDir * av.localeCompare(bv);
-        });
-      }
-
-      count.textContent = `${visible.length} of ${dataRows.length} rows`;
-      tbody.innerHTML = '';
-
-      visible.forEach(r => {
-        const tr = document.createElement('tr');
-        r.forEach((cell, i) => {
-          const td = document.createElement('td');
-          if (i === sovIdx) { td.innerHTML = sovBadge(cell); }
-          else if (i === statusIdx) { td.innerHTML = statusBadge(cell); }
-          else {
-            td.textContent = cell;
-            if (i === 0) td.className = 'mono';
+          /* Title */
+          if (title) {
+            const t = document.createElement('span');
+            t.style.cssText = `font-family:'JetBrains Mono',monospace;font-size:0.8em;
+              font-weight:700;color:#555;text-transform:uppercase;letter-spacing:0.04em;
+              margin-right:4px;`;
+            t.textContent = title.trim();
+            toolbar.appendChild(t);
           }
-          tr.appendChild(td);
-        });
-        tbody.appendChild(tr);
+
+          /* Filter dropdowns — one per filterColIndices entry */
+          filterColIndices.forEach(ci => {
+            const values = uniq(ci);
+            if (!values.length) return;
+            const label  = headers[ci];
+            const sel    = document.createElement('select');
+            sel.style.cssText = selectStyle();
+            sel.innerHTML = `<option value="">All ${escHtml(label).toLowerCase()}s</option>` +
+              values.map(v => `<option${filterState[ci] === v ? ' selected' : ''}>${escHtml(v)}</option>`).join('');
+            sel.addEventListener('change', () => { filterState[ci] = sel.value; render(); });
+            toolbar.appendChild(sel);
+          });
+
+          /* Search box */
+          const search = document.createElement('input');
+          search.type = 'text'; search.placeholder = 'Search\u2026';
+          search.value = searchText;
+          search.style.cssText = selectStyle() + 'min-width:140px;';
+          search.addEventListener('input', () => { searchText = search.value; render(); });
+          toolbar.appendChild(search);
+
+          /* Spacer */
+          const spacer = document.createElement('div');
+          spacer.style.cssText = 'flex:1;min-width:8px;';
+          toolbar.appendChild(spacer);
+
+          /* Row count */
+          const count = document.createElement('span');
+          count.style.cssText = `font-family:'JetBrains Mono',monospace;font-size:0.78em;color:#777;white-space:nowrap;`;
+          count.textContent = `${data.length.toLocaleString()} row${data.length !== 1 ? 's' : ''}`;
+          toolbar.appendChild(count);
+
+          /* ── Download CSV button ── */
+          const dlBtn = document.createElement('button');
+          dlBtn.type = 'button';
+          dlBtn.style.cssText = `
+            font-family:'JetBrains Mono',monospace;font-size:0.78em;
+            padding:4px 10px;border:1px solid #c84b2f;border-radius:3px;
+            background:#fff;color:#c84b2f;cursor:pointer;
+            display:inline-flex;align-items:center;gap:5px;white-space:nowrap;
+            line-height:1.4;`;
+          dlBtn.innerHTML = `<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 1v7" stroke="#c84b2f" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3.5 6L6 8.5L8.5 6" stroke="#c84b2f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1 10.5h10" stroke="#c84b2f" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>Download CSV`;
+          dlBtn.addEventListener('click', () => downloadCSV(src, filename));
+          dlBtn.addEventListener('mouseover', () => { dlBtn.style.background = '#fdf0ec'; });
+          dlBtn.addEventListener('mouseout',  () => { dlBtn.style.background = '#fff'; });
+          toolbar.appendChild(dlBtn);
+
+          wrap.appendChild(toolbar);
+
+          /* ── Dual scrollbar wrapper ── */
+          const scrollTop = document.createElement('div');
+          scrollTop.style.cssText = 'overflow-x:auto;margin-bottom:0;height:12px;';
+          const scrollTopInner = document.createElement('div');
+          scrollTopInner.style.height = '1px';
+          scrollTop.appendChild(scrollTopInner);
+
+          const scrollBot = document.createElement('div');
+          scrollBot.style.cssText = 'overflow-x:auto;';
+
+          /* ── Table ── */
+          const tbl = document.createElement('table');
+          tbl.style.cssText = `
+            width:100%;border-collapse:collapse;font-size:0.88em;
+            font-family:'Source Serif 4',serif;`;
+
+          /* Head */
+          const thead = tbl.createTHead();
+          const hrow  = thead.insertRow();
+          visibleHeaders.forEach((h, vi) => {
+            const th = document.createElement('th');
+            th.style.cssText = `
+              padding:7px 10px;text-align:left;white-space:nowrap;cursor:pointer;
+              font-family:'JetBrains Mono',monospace;font-size:0.8em;font-weight:700;
+              background:#e8e4dc;border-bottom:2px solid #c84b2f;color:#333;
+              user-select:none;`;
+            const arrow = sortCol === vi ? (sortAsc ? ' \u25b2' : ' \u25bc') : ' \u2195';
+            th.textContent = h + arrow;
+            th.addEventListener('click', () => {
+              if (sortCol === vi) sortAsc = !sortAsc;
+              else { sortCol = vi; sortAsc = true; }
+              render();
+            });
+            hrow.appendChild(th);
+          });
+
+          /* Body */
+          const tbody = tbl.createTBody();
+          data.forEach((row, ri) => {
+            const tr = tbody.insertRow();
+            tr.style.background = ri % 2 === 0 ? '#faf9f6' : '#f2f0eb';
+            tr.addEventListener('mouseover', () => { tr.style.background = '#fdf0ec'; });
+            tr.addEventListener('mouseout',  () => { tr.style.background = ri % 2 === 0 ? '#faf9f6' : '#f2f0eb'; });
+
+            colIndices.forEach(ci => {
+              const td = tr.insertCell();
+              td.style.cssText = 'padding:6px 10px;border-bottom:1px solid #e0ddd6;vertical-align:top;';
+              const val = row[ci] || '';
+              if (ci === sovColIdx) td.innerHTML = sovereigntyBadge(val);
+              else td.textContent = val;
+            });
+          });
+
+          scrollBot.appendChild(tbl);
+
+          /* Sync scrollbars */
+          function syncWidths() {
+            scrollTopInner.style.width = tbl.scrollWidth + 'px';
+          }
+          scrollTop.addEventListener('scroll', () => { scrollBot.scrollLeft = scrollTop.scrollLeft; });
+          scrollBot.addEventListener('scroll', () => { scrollTop.scrollLeft = scrollBot.scrollLeft; });
+
+          wrap.appendChild(scrollTop);
+          wrap.appendChild(scrollBot);
+          container.appendChild(wrap);
+          setTimeout(syncWidths, 50);
+        }
+
+        render();
+      })
+      .catch(err => {
+        container.innerHTML = `<p style="color:#721c24;font-family:'JetBrains Mono',monospace;font-size:0.85em;">
+          Failed to load data: ${escHtml(err.message)}</p>`;
       });
-
-      syncTopScroller();
-    }
-
-    render();
   }
 
+  /* ── Init all tables on page ─────────────────────────────────────────── */
   function init() {
-    document.querySelectorAll('.dl-datatable').forEach(container => {
-      const src = container.dataset.src;
-      const cols = container.dataset.cols ? container.dataset.cols.split(',').map(c => c.trim()) : null;
-      const title = container.dataset.title || '';
-      if (!src) { container.textContent = 'No data source specified.'; return; }
-      container.innerHTML = '<p style="font-family:var(--mono);font-size:0.75rem;color:var(--ink-faint);padding:1rem;">Loading data…</p>';
-      fetch(src)
-        .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
-        .then(text => buildTable(container, parseCSV(text), cols, title))
-        .catch(err => { container.textContent = `Could not load data: ${err.message}`; });
-    });
+    document.querySelectorAll('.dl-datatable').forEach(buildTable);
   }
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();

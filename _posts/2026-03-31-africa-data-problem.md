@@ -4,31 +4,31 @@ title: "Africa we have a data problem"
 subtitle: 'The view from the ground floor of African digital transformation'
 date: 2026-03-31
 tags: [rural infrastructure, foundational data, digitalisation, Africa]
-description: Across Africa rural clinics, schools, registry offices and police stations continue to relay on paper.
+description: Across Africa rural clinics, schools, registry offices and police stations continue to rely on paper.
 has_data_table: true
 ---
 
 ## The prompt
 
-Many African capitals are abuzz with tech solutions. Digital public infrastructures are being built, AI is being explored, the majority of the urban dwellers are connected. But what about the 50 per cent of the continent’s population living in rural areas?
+Many African capitals are abuzz with tech solutions. Digital public infrastructures are being built, AI is being explored, the majority of the urban dwellers are connected. But what about the 50 per cent of the continent's population living in rural areas?
 
-[Brian Chiware writing on LinkedIn in March](https://www.linkedin.com/posts/brianchiware_we-havent-finished-documenting-zimbabwe-activity-7442827730242650112-Dr2R) raised the paradox of Zimbabwe’s new [National AI Strategy](https://veritaszim.net/sites/veritas_d/files/Zimbabwe%20National%20Artificial%20Intelligence%20Strategy.pdf). He observes
+[Brian Chiware writing on LinkedIn in March](https://www.linkedin.com/posts/brianchiware_we-havent-finished-documenting-zimbabwe-activity-7442827730242650112-Dr2R) raised the paradox of Zimbabwe's new [National AI Strategy](https://veritaszim.net/sites/veritas_d/files/Zimbabwe%20National%20Artificial%20Intelligence%20Strategy.pdf). He observes
 
->   “The strategy correctly identifies data silos as a blocker. But silos assume the data exists somewhere. Much of Zimbabwe's most critical data has never been created in machine-readable form at all.”
+>   "The strategy correctly identifies data silos as a blocker. But silos assume the data exists somewhere. Much of Zimbabwe's most critical data has never been created in machine-readable form at all."
 
 This struck a chord. Five years ago my colleague Bernard Sabiti and I summarised our learnings from mapping national data infrastructures in [*The data side of leaving no one behind.*](/assets/pdfs/data-side-of-lnob.pdf)
 
->   “Influenced by our field visits away from the upstream (from national to global) focus of capital cities, we have over time developed a common set of recommendations that we have repeated with increasing confidence. National data infrastructures need to be built from the bottom up. Primary schools, clinics and local government offices are the most widespread physical embodiments of public administration and service delivery. We have therefore argued for the largest part of investments to be concentrated in the digital transformation of these three areas: health management information covering facility-level service delivery; education management information covering the performance of primary schools; and birth registration including the issuance of a legal identity. In this way, a robust national backbone can be constructed that provides both a shareable technical infrastructure and a culture of data use that can catalyse the development of other systems.”
+>   "Influenced by our field visits away from the upstream (from national to global) focus of capital cities, we have over time developed a common set of recommendations that we have repeated with increasing confidence. National data infrastructures need to be built from the bottom up. Primary schools, clinics and local government offices are the most widespread physical embodiments of public administration and service delivery. We have therefore argued for the largest part of investments to be concentrated in the digital transformation of these three areas: health management information covering facility-level service delivery; education management information covering the performance of primary schools; and birth registration including the issuance of a legal identity. In this way, a robust national backbone can be constructed that provides both a shareable technical infrastructure and a culture of data use that can catalyse the development of other systems."
 
-I took the photo below while visiting a primary healthcare clinic in Bauchi in 2019. It is the summary of the clinic’s activities for a month. In the schools and clinics we visited paper ruled. That was six years ago. Vast amounts of donor dollars have been spent on digital technologies since then. So what has improved?
+I took the photo below while visiting a primary healthcare clinic in Bauchi in 2019. It is the summary of the clinic's activities for a month. In the schools and clinics we visited paper ruled. That was six years ago. Vast amounts of donor dollars have been spent on digital technologies since then. So what has improved?
 
-![DHIS2 Monthly entry form](media/nigeria-dhis2-form.jpeg)
+![DHIS2 Monthly entry form](/assets/uploads/nigeria-dhis2-form.jpeg)
 
 The short answer, drawn from a systematic review of all 54 African countries: not much. Not a single country has achieved full digitalisation across all four areas of public service. Eight per cent — 17 of 215 facility-type combinations assessed — can be considered mostly digital. The rest are still on paper, or on paper pretending to be on the road to something else. The details follow.
 
 ## The task
 
-I am a daily user of the Perplexity search engine, which, combined with analysis managed by Claude Opus, is turning into an increasingly reliable open-source intelligence machine. It has proven itself over recent months in performing deep dives on single topics in a single country. Now, with the addition of [Perplexity Computer](https://www.perplexity.ai/hub/blog/introducing-perplexity-computer) I’m able to run a single set of instructions across all 54 African countries.
+I am a daily user of the Perplexity search engine, which, combined with analysis managed by Claude Opus, is turning into an increasingly reliable open-source intelligence machine. It has proven itself over recent months in performing deep dives on single topics in a single country. Now, with the addition of [Perplexity Computer](https://www.perplexity.ai/hub/blog/introducing-perplexity-computer) I'm able to run a single set of instructions across all 54 African countries.
 
 I instructed Perplexity answer, for each country, four questions:
 
@@ -57,13 +57,13 @@ There is, though a possible silver lining for the optimists:
 
 -   Fifty eight per cent are on the road to digitalisation, where the country has adopted a digital system but is taking time to deploy it.
 
-![Digital status by facility](media/rural-digital-1.png)
+![Digital status by facility](/assets/uploads/rural-digital-1.png)
 
 Ranking countries also reveals some surprises. Beyond the usual suspects Eswatini, Cabo Verde and Guinea appear in the top ten.
 
 <figure>
-<img src="media/rural-digital-1.png" alt="Top ranked countries">
-<figcaption >1 = Paper only; 2 = Mostly paper; 3 = Mostly digital</figcaption>
+<img src="/assets/uploads/rural-digital-2.png" alt="Top ranked countries">
+<figcaption>1 = Paper only; 2 = Mostly paper; 3 = Mostly digital</figcaption>
 </figure>
 
 
@@ -79,7 +79,7 @@ If you explore the interactive dashboard and read the country system assessments
     Key barriers: electricity/internet shortages, no equipment (66.6% admin structures lack computers), insufficient training, funding reliance on donors.
 -   **Ethiopian Clinics**  
     Key barriers include unreliable electricity and internet at rural health posts, low digital literacy, heavy workloads creating dual paper-digital reporting burdens, and staff turnover.
--   **South Africa Police**The national ICDMS system aims for electronic case management but faces poor implementation, low training, lost dockets, and no external linkages.
+-   **South Africa Police** The national ICDMS system aims for electronic case management but faces poor implementation, low training, lost dockets, and no external linkages.
 -   **Tanzanian Schools**  
     National EMIS/BEST relies on annual paper forms (TSA) from schools, with rural data gaps due to poor infrastructure, electricity/internet shortages, low digital literacy, and uneven ICT distribution.
 -   **Zimbabwe Police**  
@@ -103,7 +103,7 @@ The data underlying this analysis was generated using Perplexity Computer, with 
 
 4 — Fully digital: Universal digital recording at the point of service, with no paper fallback
 
-Scores were assigned based on synthesis of government policy documents, peer-reviewed research, reports from international bodies (WHO, UNESCO, UNODC, World Bank), and country-specific news sources. 
+Scores were assigned based on synthesis of government policy documents, peer-reviewed research, reports from international bodies (WHO, UNESCO, UNODC, World Bank), and country-specific news sources.
 
 The data was manually sense checked and run through a number of correcting iterations. The assessments in the raw data and on the dashboard are untouched from the final iteration and are subject to the normal disclaimers that are required when working with LLMs.
 
@@ -112,5 +112,5 @@ The data was manually sense checked and run through a number of correcting itera
 <div class="dl-datatable"
   data-src="/assets/data/african-rural-digitalisation.csv"
   data-cols="Country ISO-3 Code, Country Name, Facility, Digitalisation Score, Comments, Source URLs"
-  data-title=" Digitalisation of rural facilities ">
+  data-title="Digitalisation of rural facilities">
 </div>
