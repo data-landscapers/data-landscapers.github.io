@@ -30,9 +30,7 @@ The table can be filtered by country and sovereignty category, and sorted by any
   data-src="/assets/data/data-centres.csv"
   data-cols="Facility Id, Facility Name, Country, Country Name, City, Operational Status, Year Operational, Facility Type, Services Offered, Govt Data Hosted, Operator Name, Ownership Type, Ownership Structure Type, Ownership Chain, Major Shareholders, Government Ownership Pct, Foreign Ownership Pct, Controlling Entities, Control Mechanisms, Recent Investments, Dfi Involvement, Investment Usd, Expansion Plans, Key Tenants, Hyperscaler Relationships, Microsoft, Aws, Google, Cloud Act Exposure, Chinese Entities, Foreign Dependency Score, Open Source Stack, Parent Hq Country, Ultimate Parent Hq Country, Chinese Involvement, Parent Company, Ultimate Parent Company, Sovereignty Category, Data Residency Guarantee, Local Dp Compliance, Total Floor Space Sqm, Rack Capacity, It Capacity Mw, Submarine Cable Access, Ixp Presence, Carrier Neutrality, Gpu Ai Capability, Server Vendors, Cloud Platform, Security Certifications, Gps Coordinates, Comments, Source Urls"
   data-filters="country_name, facility_type"
-  data-title="Africa data centre mapping">
+  data-title="Africa data centre mapping"
+  data-metadata-src="/assets/data/data-centres-metadata.csv">
 </div>
 
-
-
-*This dataset is updated as new information becomes available. If you have corrections or additions, please [get in touch](/contact/).*

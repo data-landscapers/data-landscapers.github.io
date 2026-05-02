@@ -46,13 +46,33 @@
   }
 
   /* ── Download helper ─────────────────────────────────────────────────── */
-  function downloadCSV(src, filename) {
+  function triggerDownload(src, filename) {
     const a = document.createElement('a');
     a.href = src;
     a.download = filename || src.split('/').pop() || 'data.csv';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
+  }
+
+  /* ── Download button factory ─────────────────────────────────────────── */
+  function makeDownloadBtn(label) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.style.cssText = `
+      font-family:'JetBrains Mono',monospace;font-size:0.78em;
+      padding:4px 10px;border:1px solid #c84b2f;border-radius:3px;
+      background:#fff;color:#c84b2f;cursor:pointer;
+      display:inline-flex;align-items:center;gap:5px;white-space:nowrap;
+      line-height:1.4;`;
+    btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 1v7" stroke="#c84b2f" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M3.5 6L6 8.5L8.5 6" stroke="#c84b2f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1 10.5h10" stroke="#c84b2f" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>${escHtml(label)}`;
+    btn.addEventListener('mouseover', () => { btn.style.background = '#fdf0ec'; });
+    btn.addEventListener('mouseout',  () => { btn.style.background = '#fff'; });
+    return btn;
   }
 
   function selectStyle() {
@@ -62,11 +82,49 @@
       max-width:200px;min-width:0;`;
   }
 
+  /* ── Normalise a header string for matching ──────────────────────────── */
+  /* Collapses spaces, hyphens, slashes to underscores; trims edges */
+  function norm(s) {
+    return s.toLowerCase()
+      .replace(/[\s\-\/]+/g, '_')
+      .replace(/_+/g, '_')
+      .replace(/^_|_$/g, '');
+  }
+
+  /* Find a CSV column by name with tolerant matching.
+     1. Exact norm-match  (e.g. "Country Name" matches "country_name")
+     2. Contains-fallback (e.g. "Id" matches "facility_id" — use carefully) */
+  function findCol(headers, colName) {
+    const nc = norm(colName);
+    let idx = headers.findIndex(h => norm(h) === nc);
+    if (idx === -1) {
+      // Only use contains-match if the search term is reasonably specific (4+ chars)
+      if (nc.length >= 4) {
+        idx = headers.findIndex(h => {
+          const nh = norm(h);
+          return nh === nc || nh.includes(nc) || nc.includes(nh);
+        });
+      }
+    }
+    return idx;
+  }
+
+  /* ── Column width hints ──────────────────────────────────────────────── */
+  function colWidthStyle(headerName) {
+    const n = norm(headerName);
+    if (n.includes('url') || n.includes('source_url') || n === 'source')
+      return 'width:240px;min-width:180px;max-width:300px;white-space:normal;word-break:break-all;';
+    if (n.includes('comment') || n.includes('description') || n.includes('note') || n.includes('detail'))
+      return 'min-width:240px;white-space:normal;word-break:normal;';
+    return '';
+  }
+
   /* ── Build one table ─────────────────────────────────────────────────── */
   function buildTable(container) {
     const src        = container.dataset.src;
-    const colList    = (container.dataset.cols     || '').split(',').map(s => s.trim()).filter(Boolean);
-    const filterList = (container.dataset.filters  || '').split(',').map(s => s.trim()).filter(Boolean);
+    const metaSrc    = container.dataset.metadataSrc || null;
+    const colList    = (container.dataset.cols    || '').split(',').map(s => s.trim()).filter(Boolean);
+    const filterList = (container.dataset.filters || '').split(',').map(s => s.trim()).filter(Boolean);
     const title      = container.dataset.title || '';
 
     if (!src) { container.textContent = 'Error: data-src not set.'; return; }
@@ -78,26 +136,20 @@
       .then(text => {
         const { headers, rows } = parseCSV(text);
 
-        /* Normalise a header name for loose matching */
-        const norm = s => s.toLowerCase().replace(/[\s\-]/g, '_');
-
         /* Resolve visible column indices */
         const colIndices = colList.length
-          ? colList.map(c => headers.findIndex(h => norm(h) === norm(c))).filter(i => i !== -1)
+          ? colList.map(c => findCol(headers, c)).filter(i => i !== -1)
           : headers.map((_, i) => i);
 
         const visibleHeaders = colIndices.map(i => headers[i]);
 
-        /* Resolve filter column indices.
-           If data-filters is set, use exactly those columns.
-           Otherwise fall back to auto-detecting country_name and sovereignty_category. */
+        /* Resolve filter column indices */
         let filterColIndices;
         if (filterList.length) {
           filterColIndices = filterList
-            .map(c => headers.findIndex(h => norm(h) === norm(c)))
+            .map(c => findCol(headers, c))
             .filter(i => i !== -1);
         } else {
-          /* Auto-detect fallback */
           const AUTO = ['country_name', 'sovereignty_category'];
           filterColIndices = AUTO
             .map(a => headers.findIndex(h => norm(h) === a))
@@ -107,17 +159,7 @@
         /* sovereignty_category index (for badge rendering) */
         const sovColIdx = headers.findIndex(h => norm(h) === 'sovereignty_category');
 
-        /* Column width hints based on header name */
-        function colWidthStyle(headerName) {
-          const n = norm(headerName);
-          if (n.includes('url') || n.includes('link') || n.includes('source'))
-            return 'width:160px;min-width:120px;max-width:200px;white-space:normal;word-break:break-all;';
-          if (n.includes('comment') || n.includes('description') || n.includes('note') || n.includes('detail'))
-            return 'min-width:240px;white-space:normal;word-break:normal;';
-          return '';
-        }
-
-        /* Per-filter state: map of headerIndex → selected value string */
+        /* Per-filter state: map of headerIndex -> selected value string */
         const filterState = {};
         filterColIndices.forEach(i => { filterState[i] = ''; });
 
@@ -146,8 +188,8 @@
           return [...data].sort((a, b) => {
             const av = a[colIndices[sortCol]] || '';
             const bv = b[colIndices[sortCol]] || '';
-            const n = parseFloat(av), m = parseFloat(bv);
-            const cmp = (!isNaN(n) && !isNaN(m)) ? n - m : av.localeCompare(bv);
+            const nv = parseFloat(av), mv = parseFloat(bv);
+            const cmp = (!isNaN(nv) && !isNaN(mv)) ? nv - mv : av.localeCompare(bv);
             return sortAsc ? cmp : -cmp;
           });
         }
@@ -176,12 +218,12 @@
             toolbar.appendChild(t);
           }
 
-          /* Filter dropdowns — one per filterColIndices entry */
+          /* Filter dropdowns */
           filterColIndices.forEach(ci => {
             const values = uniq(ci);
             if (!values.length) return;
-            const label  = headers[ci];
-            const sel    = document.createElement('select');
+            const label = headers[ci];
+            const sel   = document.createElement('select');
             sel.style.cssText = selectStyle();
             sel.innerHTML = `<option value="">All ${escHtml(label)}</option>` +
               values.map(v => `<option${filterState[ci] === v ? ' selected' : ''}>${escHtml(v)}</option>`).join('');
@@ -208,24 +250,18 @@
           count.textContent = `${data.length.toLocaleString()} row${data.length !== 1 ? 's' : ''}`;
           toolbar.appendChild(count);
 
-          /* ── Download CSV button ── */
-          const dlBtn = document.createElement('button');
-          dlBtn.type = 'button';
-          dlBtn.style.cssText = `
-            font-family:'JetBrains Mono',monospace;font-size:0.78em;
-            padding:4px 10px;border:1px solid #c84b2f;border-radius:3px;
-            background:#fff;color:#c84b2f;cursor:pointer;
-            display:inline-flex;align-items:center;gap:5px;white-space:nowrap;
-            line-height:1.4;`;
-          dlBtn.innerHTML = `<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M6 1v7" stroke="#c84b2f" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M3.5 6L6 8.5L8.5 6" stroke="#c84b2f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M1 10.5h10" stroke="#c84b2f" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>Download CSV`;
-          dlBtn.addEventListener('click', () => downloadCSV(src, filename));
-          dlBtn.addEventListener('mouseover', () => { dlBtn.style.background = '#fdf0ec'; });
-          dlBtn.addEventListener('mouseout',  () => { dlBtn.style.background = '#fff'; });
+          /* Download CSV button */
+          const dlBtn = makeDownloadBtn('Download CSV');
+          dlBtn.addEventListener('click', () => triggerDownload(src, filename));
           toolbar.appendChild(dlBtn);
+
+          /* Download Metadata button — only present when data-metadata-src is set */
+          if (metaSrc) {
+            const metaFilename = metaSrc.split('/').pop() || 'metadata.csv';
+            const metaBtn = makeDownloadBtn('Download metadata');
+            metaBtn.addEventListener('click', () => triggerDownload(metaSrc, metaFilename));
+            toolbar.appendChild(metaBtn);
+          }
 
           wrap.appendChild(toolbar);
 
