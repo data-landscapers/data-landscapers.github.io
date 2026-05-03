@@ -1,0 +1,22 @@
+﻿Column Header,Id,Definition,Values,Comment
+Country Code,cty_code,ISO-3 Country Code,ISO 3166-3,
+Country Name,cty_name,Short name of country,Text,
+Source Geography,src_geo,Is the source of financing Domestic or International,Domestic; International,
+Source Institution Type,src_type,The type of financing institution,"For src_geo = 'Domestic' : Government; Private Sector Investment; Financial Institution Lending; Domestic Innovation Funding
+For src_geo = 'International': Multilateral; Bilateral; Private FDI; Philanthropic; Regional/Continental Initiatives",
+Year From,year_from,The year financing starts,YYYY,
+Year To,year_to,The year financing ends (for multi-year projects only),YYYY,If year_to = year_from then leave blank
+Source Country,src_cty,The country in which the HQ of the international institution is located,Text,Only populate if src_geo = 'International'
+Source Name,src_name,The name of the financing institution/agency/company,Text,
+Project Name,proj_name,The name of the project or programme being financed,Text,
+Project Details,proj_details,Short description of the project or programme,Text,
+Amount,amt_usd,The value of the investment in millions of USD,Float (one decimal place),
+Original Currency,curr_orig,The original currency of the investment,ISO 4217,
+Exchange Rate,curr_rate,"If original currency wasn't USD, the value used for the conversion",Float (three decimal places),If curr_orig = 'usd' then leave blank
+Exchange Rate Year,curr_year,The year used to determine the exchange rate,YYYY,If curr_orig = 'usd' then leave blank
+Finance Type,fin_type,The type of financial instrument,Budget; Grant; Concessional Loan; Commercial Loan; Equity; CAPEX; FDI; VC; Private Investment; Technical Assistance,If more than one type applies list all with a '/' delimiter
+Sector,sector,The primary focus of the investment,ICT infrastructure; digital ID; digital payment; data exchange; e-government; data governance; policy/strategy; capacity building; DPI general; digital transformation general; digital health; digital education,Choose a single value that best describes the primary focus.
+Status,status,The current status of financing,Pipeline; Active; Complete,
+Terms,terms,Any terms attached to the investment,Text,
+Comments,comment,"Any comments required to clarify the accuracy of the data, choice of sector or anything else of relevance.",,
+Source urls,urls,Url/s of evidence for this investment,,At least one source must be given. Separate multiple urls by semi-colon.
