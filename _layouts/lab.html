@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<article>
+  <div class="container">
+    <div class="lab-notice" style="
+      background:#fdf3e3;
+      border-left:4px solid #c84b2f;
+      padding:0.9rem 1.2rem;
+      margin-bottom:2rem;
+      font-family:var(--mono);
+      font-size:0.8rem;
+      color:#7a4010;
+      line-height:1.5;
+    ">
+      <strong style="text-transform:uppercase;letter-spacing:0.06em;font-size:0.75rem;">Working analysis</strong><br>
+      This is live, evolving work. Data, findings and conclusions are subject to revision as research develops.
+      It is published here to share progress with collaborators, not as a finished or fully evidenced position.
+    </div>
+
+    <header class="article-header">
+      {% if page.category %}
+      <div class="article-header__kicker">{{ page.category }}</div>
+      {% endif %}
+      <h1 class="article-header__title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <p class="article-header__subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+      <div class="article-header__byline">
+        Bill Anderson &nbsp;·&nbsp; {{ page.date | date: "%-d %B %Y" }}
+        {% if page.tags %}
+          &nbsp;·&nbsp;
+          {% for tag in page.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        {% endif %}
+      </div>
+    </header>
+
+    <div class="article-body">
+      {{ content }}
+    </div>
+
+    <footer style="padding: 2.5rem 0; border-top: 1px solid var(--rule); margin-top: 3rem;">
+      <a href="{{ '/lab/' | relative_url }}" style="font-size: 0.82rem; color: var(--ink-faint); font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.07em;">← Lab</a>
+    </footer>
+  </div>
+</article>
+
+{% if page.has_data_table %}
+<script src="{{ '/assets/js/datatable.js' | relative_url }}?v=8"></script>
+{% endif %}

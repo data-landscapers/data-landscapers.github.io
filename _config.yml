@@ -7,7 +7,7 @@ baseurl: ""
 author:
   name: Bill Anderson
   email: bill@data-landscapers.com
-  bio: Data governance consultant. Mapping Africa's digital infrastructure. Former IATI technical lead.
+  bio: Data governance consultant. Mapping Africa's data infrastructure. OSINT explorer.
 
 # Build settings
 markdown: kramdown
@@ -36,6 +36,9 @@ collections:
   wip:
     output: true
     permalink: /wip/:name/
+  lab:
+    ouput: true
+    permalink: /lab/:year/:month/:day/:title/ 
 
 defaults:
   - scope:
