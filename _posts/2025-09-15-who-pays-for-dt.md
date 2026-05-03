@@ -294,7 +294,7 @@ This is how Perplexity explained it own strengths and weaknesses in relation to 
 <div class="dl-datatable"
   data-src="/assets/data/dpi-financing-v1.csv"
   data-cols="Country Name, Source Geography, Source Institution Type, Year From, Year To, Source Country, Source Name, Project Name, Project Details, Amount, Original Currency, Exchange Rate, Exchange Rate Year, Finance Type, Sector, Status, Terms, Comments, Source urls, Country Code"
-  data-filters="country_name, sector"
+  data-filters="Country Name, Sector"
   data-title="Financing of Digital Transformation"
   data-metadata-src="/assets/data/dpi-financing-metadata-v1.csv">
 </div>
