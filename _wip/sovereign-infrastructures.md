@@ -3,6 +3,7 @@ layout: default
 title: Who owns and finances ICT infrastructures
 description: An ongoing, ad-hoc project monitoring first and middle mile infrastructure
 status: Active
+client: None
 ---
 
 <div class="container">
