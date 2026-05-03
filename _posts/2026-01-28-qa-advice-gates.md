@@ -2,7 +2,7 @@
 layout: article
 title: A bit of quality assurance advice for Bill Gates
 subtitle: Supporting health workers with AI? No one can disagree with that. Can we?
-date: 2026-01-2028
+date: 2026-01-28
 tags: [US policy, data sovereignty, Africa]
 description: A critique of Bill Gates' misleading evidence of how his collaboration with OpenAI will support health workers in Africa
 has_data_table: false
