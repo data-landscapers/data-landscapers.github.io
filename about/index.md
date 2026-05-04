@@ -6,6 +6,8 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 
 <div class="container">
 
+<div class="cv-section__label">About Data Landscapers</div>
+
 <div class="about-intro">
   <div class="about-intro__text">
     <p>I am an experienced systems architect with expertise in the politics, administration and technology of digital transformation, data governance policy, and data standards. My particular focus is on Africa's digital sovereignty — the struggle to ensure that the continent's data infrastructure is owned, governed and controlled by Africans.</p>
