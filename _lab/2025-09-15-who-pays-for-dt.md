@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: lab
 title: Who pays for African digital transformation?
 subtitle: Assembling a $144 Billion Puzzle from a Thousand Scattered Pieces
 date: 2025-09-15
