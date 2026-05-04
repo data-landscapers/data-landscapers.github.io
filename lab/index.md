@@ -30,7 +30,7 @@ permalink: /lab/
     {% for doc in lab_docs %}
     <article style="padding: 1.4rem 0; border-bottom: 1px solid var(--rule);" data-category="{{ doc.category }}">
       {% if doc.category %}
-      <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.4rem;">{{ doc.category }}</div>
+      <span class="wip-item-card__status wip-item-card__status--active" style="margin-bottom: 0.4rem; display: inline-block;">{{ doc.category }}</span>
       {% endif %}
       <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
         {{ doc.date | date: "%-d %B %Y" }}
