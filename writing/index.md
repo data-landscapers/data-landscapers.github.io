@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Writing
-description: Articles and analysis by Bill Anderson on data governance, digital sovereignty and Africa's digital infrastructure.
+description: Completed research and analysis on data governance, data standards, digital sovereignty and Africa's data infrastructures.
 ---
 
 <div class="container">

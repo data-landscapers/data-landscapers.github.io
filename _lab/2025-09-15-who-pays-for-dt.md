@@ -54,13 +54,19 @@ As I summarise initial ﬁndings I’m going to describe the data as I ﬁnd it 
 
 Over the past decade $144 billion has been invested in ICT Infrastructures (ICT), digital transformation (DT) and digital public infrastructures (DPI) …
 
+<figure>
+<img src="/assets/uploads/dpi-financing-v1-1.png" alt="Geographic spread of financing">
+<figcaption>Geographic spread of financing</figcaption>
+</figure>
+
+
 ### Total ICT/DT/DPI investments 2015 -2025
 
 
 
 … split almost equally between domestic and international investments.
 
-## Share of domestic and international investments
+### Share of domestic and international investments
 
 Predictably, the proportion of investments coming from domestic resources increases in richer countries. Low income countries invest half as much as upper middle income countries from domestic sources.
 
