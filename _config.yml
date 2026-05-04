@@ -37,7 +37,7 @@ collections:
     output: true
     permalink: /wip/:name/
   lab:
-    ouput: true
+    output: true
     permalink: /lab/:year/:month/:day/:title/ 
 
 defaults:
