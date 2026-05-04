@@ -33,9 +33,6 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:name/
-  wip:
-    output: true
-    permalink: /wip/:name/
   lab:
     output: true
     permalink: /lab/:year/:month/:day/:title/ 

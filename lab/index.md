@@ -12,10 +12,26 @@ permalink: /lab/
     </p>
   </header>
 
-  <div class="article-list">
-    {% assign lab_docs = site.lab | sort: 'date' | reverse %}
+  {% assign lab_docs = site.lab | sort: 'date' | reverse %}
+  {% assign categories = lab_docs | map: 'category' | compact | uniq | sort %}
+
+  {% if categories.size > 1 %}
+  <div style="margin-bottom: 1.5rem;">
+    <select id="lab-category-filter" style="font-family: var(--mono); font-size: 0.8em; padding: 4px 8px; border: 1px solid #ccc; border-radius: 3px; background: #fff; color: #333; cursor: pointer;">
+      <option value="">All categories</option>
+      {% for cat in categories %}
+      <option value="{{ cat }}">{{ cat }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  {% endif %}
+
+  <div class="article-list" id="lab-list">
     {% for doc in lab_docs %}
-    <article style="padding: 1.4rem 0; border-bottom: 1px solid var(--rule);">
+    <article style="padding: 1.4rem 0; border-bottom: 1px solid var(--rule);" data-category="{{ doc.category }}">
+      {% if doc.category %}
+      <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.4rem;">{{ doc.category }}</div>
+      {% endif %}
       <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
         {{ doc.date | date: "%-d %B %Y" }}
         {% if doc.tags %}
@@ -33,3 +49,15 @@ permalink: /lab/
     {% endfor %}
   </div>
 </div>
+
+<script>
+  const filter = document.getElementById('lab-category-filter');
+  if (filter) {
+    filter.addEventListener('change', function () {
+      const selected = this.value;
+      document.querySelectorAll('#lab-list article').forEach(function (el) {
+        el.style.display = (!selected || el.dataset.category === selected) ? '' : 'none';
+      });
+    });
+  }
+</script>
