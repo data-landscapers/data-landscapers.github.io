@@ -3,7 +3,7 @@ layout: lab
 title: "Africa's data centre landscape: who owns the infrastructure?"
 subtitle: "A continent-wide mapping of ownership, sovereignty and foreign dependency across data centres in all 54 African countries"
 date: 2026-04-15
-category: ICT infrastructure
+category: ICT Infrastructure
 tags: [data centres, sovereignty, infrastructure]
 description: Mapping ownership, sovereignty and foreign dependency across Africa's data centre landscape.
 has_data_table: true

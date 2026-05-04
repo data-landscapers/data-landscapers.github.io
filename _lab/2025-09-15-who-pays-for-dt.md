@@ -3,7 +3,7 @@ layout: lab
 title: Who pays for African digital transformation?
 subtitle: Assembling a $144 Billion Puzzle from a Thousand Scattered Pieces
 date: 2025-09-15
-category: sustainable financing
+category: Sustainable Financing
 tags: [international finance, digital transformation, OSINT]
 description: There is no comprehensive data available on international financing of digital transformation in Africa. Is open source intelligence using AI deep search ready to tackle this problem?
 has_data_table: true

@@ -6,7 +6,7 @@ permalink: /lab/
 
 <div class="container">
   <header style="padding: 2.5rem 0 1.5rem; border-bottom: 1px solid var(--rule); margin-bottom: 2rem;">
-    <h1 style="font-family: var(--sans); font-size: 1.6rem; margin: 0 0 0.5rem;">Lab</h1>
+    <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.75rem;">Lab</div>
     <p style="font-family: var(--mono); font-size: 0.82rem; color: var(--ink-faint); margin: 0; line-height: 1.5;">
       The contents of this collection are work in progress: live datasets, evolving analysis and draft working papers. They are published to share progress with collaborators and anyone interested in this developing ecosystem - not as finished or fully evidenced positions. Data and conclusions are subject to revision. Note also that extensive use of AI deep search (Perplexity) and LLMs (Claude) are used in this work.
     </p>
@@ -43,7 +43,10 @@ permalink: /lab/
         <a href="{{ doc.url | relative_url }}" style="color: var(--ink); text-decoration: none;">{{ doc.title }}</a>
       </h2>
       {% if doc.subtitle %}
-      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ doc.subtitle }}</p>
+      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.3rem;"><em>{{ doc.subtitle }}</em></p>
+      {% endif %}
+      {% if doc.description %}
+      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ doc.description }}</p>
       {% endif %}
     </article>
     {% endfor %}
