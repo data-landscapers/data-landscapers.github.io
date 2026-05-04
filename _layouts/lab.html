@@ -20,7 +20,7 @@ layout: default
 
     <header class="article-header">
       {% if page.category %}
-      <div class="article-header__kicker">{{ page.category }}</div>
+      <span class="wip-item-card__status wip-item-card__status--active" style="display:inline-block;margin-bottom:0.75rem;">{{ page.category }}</span>
       {% endif %}
       <h1 class="article-header__title">{{ page.title }}</h1>
       {% if page.subtitle %}
