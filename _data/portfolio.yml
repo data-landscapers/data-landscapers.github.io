@@ -1,0 +1,22 @@
+# Portfolio items — edit this file to update the portfolio page.
+#
+# Rules:
+# - date: free text e.g. "2024", "2022–2024", "March 2023"
+# - title: always in double quotes (required — titles often contain colons)
+# - url: optional — remove the line entirely if there is no link
+#         use /assets/pdfs/filename.pdf for PDFs, https:// for external links
+# - description: always in double quotes
+
+- date: "2024"
+  title: "Africa Digital Public Infrastructure Study: Continental survey for the African Development Bank"
+  url: "https://data-landscapers.github.io/africa-dpi/"
+  description: "Continental survey across all 54 African countries covering ICT infrastructure, digital identity, digital payments, data exchange and registries."
+
+- date: "2024"
+  title: "Digital compacts: global ideals, regional realities"
+  url: "/assets/pdfs/Digital_Compacts_Global_ideals_regional_realities.pdf"
+  description: "Analysis of the gap between global digital policy commitments and the realities facing African nations in implementation."
+
+- date: "2023"
+  title: "Example unlinked item: no url line needed"
+  description: "Remove the url line entirely for items with no link — the title will render as plain text."
