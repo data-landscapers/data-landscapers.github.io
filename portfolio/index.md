@@ -17,10 +17,10 @@ description: Selected projects and publications in data governance, digital sove
     <div class="portfolio-item__date">{{ item.date }}</div>
     <div class="portfolio-item__content">
       <div class="portfolio-item__title">
-        {% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
+        {% if item.url %}<a href="{{ item.url }}"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}
       </div>
       {% if item.description %}
-      <div class="portfolio-item__description">{{ item.description }}</div>
+      <div class="portfolio-item__description">{{ item.description | markdownify }}</div>
       {% endif %}
     </div>
   </div>
@@ -66,6 +66,9 @@ description: Selected projects and publications in data governance, digital sove
   font-size: 0.85rem;
   color: var(--ink-light);
   line-height: 1.45;
+  margin: 0;
+}
+.portfolio-item__description p {
   margin: 0;
 }
 </style>
