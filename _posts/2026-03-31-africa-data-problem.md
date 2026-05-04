@@ -5,6 +5,7 @@ subtitle: 'The view from the ground floor of African digital transformation'
 date: 2026-03-31
 tags: [rural infrastructure, foundational data, digitalisation, Africa]
 description: Across Africa rural clinics, schools, registry offices and police stations continue to rely on paper.
+pdf: /assets/pdfs/data-side-of-lnob.pdf
 has_data_table: true
 ---
 
