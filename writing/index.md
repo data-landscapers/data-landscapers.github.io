@@ -8,8 +8,7 @@ description: Completed research and analysis on data governance, data standards,
 
 <header style="padding: 3rem 0 2rem; border-bottom: 1px solid var(--rule);">
   <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.75rem;">Writing</div>
-  <h1>Articles &amp; analysis</h1>
-  <p style="color: var(--ink-light); margin: 0; max-width: 600px;">Data governance. Digital sovereignty. Open source intelligence. The struggle for African-led infrastructure, standards and policy.</p>
+  <p style="color: var(--ink-light); margin: 0;">Data governance. Digital sovereignty. Open source intelligence. The struggle for African-led infrastructure, standards and policy.</p>
 </header>
 
 <ul class="article-list" style="margin-top: 0;">
@@ -18,7 +17,10 @@ description: Completed research and analysis on data governance, data standards,
     <div class="article-list__meta">{{ post.date | date: "%-d %B %Y" }}</div>
     <div class="article-list__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
     {% if post.subtitle %}
-      <p class="article-list__excerpt">{{ post.subtitle }}</p>
+      <p class="article-list__excerpt"><em>{{ post.subtitle }}</em></p>
+    {% endif %}
+    {% if post.description %}
+      <p class="article-list__excerpt">{{ post.description }}</p>
     {% elsif post.excerpt %}
       <p class="article-list__excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
     {% endif %}
