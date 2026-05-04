@@ -23,15 +23,16 @@ title: Home
     </ul>
 
     <div class="section-header" style="margin-top: 1rem;">
-      <h2>Work in progress</h2>
-      <a href="/wip/">All projects →</a>
+      <h2>Lab</h2>
+      <a href="/lab/">All lab items →</a>
     </div>
 
-    {% for item in site.wip limit:3 %}
+    {% assign lab_docs = site.lab | sort: 'date' | reverse %}
+    {% for doc in lab_docs limit:3 %}
     <div class="wip-item-card">
-      <span class="wip-item-card__status wip-item-card__status--{{ item.status | default: 'active' | downcase }}">{{ item.status | default: 'Active' }}</span>
-      <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
-      <p style="font-size: 0.9rem; color: var(--ink-light);">{{ item.description }}</p>
+      {% if doc.category %}<span class="wip-item-card__status wip-item-card__status--active">{{ doc.category }}</span>{% endif %}
+      <h3><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></h3>
+      {% if doc.description %}<p style="font-size: 0.9rem; color: var(--ink-light);">{{ doc.description }}</p>{% endif %}
     </div>
     {% endfor %}
 
