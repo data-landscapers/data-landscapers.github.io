@@ -10,7 +10,7 @@
 - date: September 2024
   title: "Digital Compacts: Global Ideals, Regional Realities"
   url: /assets/pdfs/digital-compacts-global-ideals-regional-realities.pdf
-  description: The Global Digital Compact (https://www.un.org/techenvoy/global-digital-compact) was adopted as part of the UN Summit of the Future in September 2024. This discussion paper critiques       the compact and compares it with the African Digital Compact (https://au.int/en/documents/20240809/african-digital-compact-adc)
+  description: The [Global Digital Compact](https://www.un.org/techenvoy/global-digital-compact) was adopted as part of the UN Summit of the Future in September 2024. This discussion paper critiques       the compact and compares it with the [African Digital Compact](https://au.int/en/documents/20240809/african-digital-compact-adc)
 
 - date: October 2023
   title: "Data Governance: Do all global problems require global solutions?"
@@ -26,3 +26,145 @@
   title: "Is the SDG monitoring framework broken?"
   url: /assets/pdfs/is-the-sdg-monitoring-framework-broken.pdf
   description: In March 2023, the UN Economic and Social Commission for Asia and the Pacific published its annual SDG progress report. It warned that the region requires, at the current rate of progress, a further 42 years to meet the SDGs. It also revealed that there remains insufficient data to monitor 51 of the 169 targets. This discussion paper focused on the SDG global monitoring system from a data perspective.
+
+- date: November 2022
+  title: "UN joint programming on strengthening Malaysia's national system on monitoring & evaluation for the SDGs: Final Report"
+  url: /assets/pdfs/malaysia-final.pdf
+  description: Final report for UNICEF Malaysia country office. The overall objective of this assignment was to work with the Department of Statistics (DOSM) to explore and facilitate implementation of pragmatic solutions for government ministries, departments and agencies to provide data to populate 34 SDG indicators not reported by the Government of Malaysia. More details are available in the accompanying [Technical Report](/assets/pdfs/malaysia-technical.pdf).
+
+- date: October 2022
+  title: "The role of global custodians in supporting Malaysia’s SDG monitoring framework: Case Study"
+  url: /assets/pdfs/malaysia-custodian-study.pdf
+  description: My work in Malaysia for the UNICEF country office exposed a number of obstacles that appear to exist globally in the relationship between national statistics offices (NSOs) and the international agencies (custodians) responsible for curating the SDGs. This study shines a light on these challenges within the context of the commitments made by all parties involved in the governance of the SDGs. This work formed the basis of my paper: ["Is the SDG Monitoring Framework Broken?"](/assets/pdfs/is-the-sdg-monitoring-framework-broken.pdf)
+ 
+ - date: March 2022
+   title: "Data disharmony: How can donors better act on their commitments?"
+   url: /assets/pdfs/data-disharmony.pdf
+   description: This paper examines the role of donors investment in national data ecosystems, focusing in particular on the challenges of harmonisation. The issues we describe here are not new – they are well-known and have been recognised by donors themselves over many years. Rather than simply re-stating the problem, the purpose of this paper to promote an open discussion about why – given longstanding commitments to address these issues – progress has been limited, and what both donors and national governments can do to overcome the challenges of harmonisation in order to maximise the impact of their investments in national data systems.  Co-authored with Bernard Sabiti.
+
+- date: September 2021
+  title: "The data side of leaving no one behind"
+  url: /assets/pdfs/data-side-of-lnob.pdf
+  description: Lessons learned from DI’s work on data landscaping. Co-authored with Bernard Sabiti and Sam Wozniak.
+
+- date: June 2021
+  title: "Meeting the SDGs in South Sudan: The data landscape"
+  url: /assets/pdfs/south-sudan-final.pdf
+  description: The South Sudan United Nations Country Team (UNCT) commissioned Development Initiatives to conduct a data landscape analysis of the country’s data ecosystem, with a view to developing an SDG monitoring and reporting framework and develop a national action plan to guide their data investments over a period of 3–5 years. Bernard Sabiti was the lead consultant on this contract.
+
+- date: June 2021
+  title: "Using near real-time data on aid flows: Lessons learnt"
+  url: https://devinit.github.io/blog/using-near-real-time-data-aid-flows-lessons-learnt/
+  description: Using near real-time data to examine donor response to the Covid-19 pandemic, highlighting an urgent need for timely, disaggregated data.
+
+- date: March 2021
+  title: "Nepal's data landscape"
+  url: /assets/pdfs/nepal-landscape.pdf
+  description: This report is part of a data landscaping exercise conducted under the Data for Development (D4D) in Nepal Programme, Phase II. It includes a diagnostic of the current state of national data infrastructures and recommendations for the further development of Nepal’s national statistical system under federalism. Co-authored with Sam Wozniak and Santosh Gartaula.
+
+- date: February 2021
+  title: "Cuts to the UK 2020 aid budget: What IATI data tells us"
+  url: https://devinit.github.io/resources/cuts-uk-2020-aid-budget-iati-data/
+  description: This briefing compares data published by the UK's FCDO and DFID in 2019 and 2020, showing where aid budget cuts fell among recipients, countries and sectors
+
+- date: June 2020
+  title: "Data issues and challenges for the UNICEF Bangladesh Country Office: Action Plan"
+  url: /assets/pdfs/bangladesh-action-plan.pdf
+  description: DI was contracted to provide UNICEF Bangladesh Country Office (BCO) with an Action Plan making concrete and specific recommendations in relation to its investments in data over the next 3-5 years and beyond. It was requested that the work focus on three priority issues: Meeting the SDGs; climate change adaptation and disaster risk reduction; and the humanitarian-development nexus in the context of the Rohingya refugee crisis. The report was accompanied by a [Diagnostic Report](/assets/pdfs/bangladesh-diagnostic.pdf). Co-authored with Bernard Sabiti and Sam Wozniak.
+
+- date: May 2020
+  title: "The challenges of data on the financing response to Covid-19"
+  url: /assets/pdfs/covid-financing-data-challenges.pdf
+  description: The global financial response has been unprecedented. Huge volumes of resources are being pledged, committed and mobilised from diverse organisations through diverse funding instruments. However, getting an accurate and comprehensive understanding of the extent and detail of the response is difficult. Data on these activities is collected by a range of systems with various purposes and different ways of describing financial flows that may act over different timeframes.  Comparing or combining data from different sources is hard without a joined-up approach to connect the pieces in a coherent whole.
+
+- date: March 2020
+  title: "Digital civil registration and legal identity systems: A joined-up approach to leave no one behind"
+  url: https://devinit.github.io/resources/digital-civil-registration-and-legal-identity-systems/
+  description: An overview of trends in civil registration and vital statistics CRVS. To deliver the SDGs, how can we ensure everyone is counted? Co-authored with Claudia Wells.
+ 
+-  date: October 2019
+   title: "Measuring the state of civil registration and legal identity in Africa"
+   url: https://devinit.github.io/resources/measuring-civil-registration-legal-identity/
+   description: A proposal for an efficient new system to monitor digital CRVS and legal identity systems. Co-authored with Angharad Price, Bernard Sabiti and Martha Bekele
+
+- date: September 2019
+  title: "Data issues and challenges for the UNICEF Nigeria Country Office: Action Plan"
+  url: /assets/pdfs/nigeria-action-plan.pdf
+  description: DI was contracted to provide UNICEF Nigeria with recommendations in relation to its investments in data over the next 3-5 years and beyond, with a particular focus on three of the eight Key Results for Children (KRCs): Immunisation; Learning Outcomes; and Prevention of Violence Against Children. Additionally, it addresses two foundational and cross-cutting issues: CRVS and national identity; and Data collaboration. The plan was accompanied by a [Diagnostic Report](/assets/pdfs/nigeria-diagnostic.pdf). Co-authored with Bernard Sabiti.
+
+- date: July 2019
+  title: "The Data landscape in the United Arab Emirates: Strategic Action Plan" 
+  url: /assets/pdfs/uae-action-plan.pdf
+  description: DI was contracted to work with UNICEF’s Gulf Area Office in the UAE to strengthen the collection, analysis and use of child-related data in UAE, in order to improve results for women and children. These recommendations were accompanied by a [Diagnostic Report](/assets/pdfs/uae-diagnostic.pdf)
+
+- date: April 2019
+  title: "Data for children - Uganda: Joint Diagnostic and Action Plan"
+  url: /assets/pdfs/uganda-action-plan.pdf
+  description: DI was contracted to work with UNICEF Uganda to: analyse and diagnose how better qualitative and quantitative data could have the greatest impact on results for children in its priority areas (child survival and development, basic education and adolescent development, and child protection). Co-authored with Bernard Sabiti and Wilbrod Ntawiha.
+
+- date: November 2018
+  title: "Data for children, UNICEF Zimbabwe: Strategy Action Plan" 
+  url: /assets/pdfs/zimbabwe-action-plan.pdf
+  description: DI was been contracted to work with the UNICEF country office in Zimbabwe to review the state of the data landscape and, informed by UNICEF’s real-world priorities, develop a strategic action plan for its data work and investments over a 3-to-5-year time horizon. Co-authored with Bernard Sabiti and Wilbrod Ntawiha.
+
+- date: November 2017
+  title: "The frontiers of data interoperability for sustainable development"
+  url: /assets/pdfs/frontiers-of-data-interoperability.pdf
+  description: The report is based on research and learning generated by the Joined-Up Data Standards project team at Development Initiatives and Publish What You Fund over the past two years, supplemented by desk research and inputs from key stakeholders from across constituencies who were interviewed as part of the drafting process. Co-authored with Tom Orrell and Liz Steele.
+
+- date: November 2017
+  title: "The development data assessment: reviewing and mapping the best national data assets."
+  url: /assets/pdfs/development-data-assessment.pdf
+  description: A methodology that supports governments to identify where quality data for decision making and policy formulation is available, where data is of poorer quality, and where there are gaps. The methodology is accompanied by a tool that allows users to investigate and interrogate the data. Co-authored with Wilbrod Ntawiha and Steve Kenei.
+
+- date: February 2017
+  title: "Aid, development, data, ownership: What has the data revolution got to do with IATI?"
+  url: /assets/pdfs/iati-and-the-data-revolution.pdf
+  description: A challenge to the IATI community to take demand more seriously than supply.
+
+- date: January 2017
+  title: "Long term investments in a short term world: Arguments for sustainable data."
+  url: /assets/pdfs/long-term-investments.pdf
+  description: Based on discussions that took place at the World Data Forum in January 2017 in Cape Town, this paper argues that the current focus on household surveys will not give developing countries the data they need to meet the Sustainable Development Goals. Longer-term thinking is essential in our approach to sustainable development data.
+
+- date: May 2016
+  title: "Uganda’s data ecosystem: A quantitative review of data production in Uganda"
+  url: /assets/pdfs/uganda-data-ecosystem.pdf
+  description: This report is the first half of a two-part study making quantitative and qualitative assessments of the state of data production and use in Uganda. National, continental and global development agendas are all calling for data to play a catalytic role in both the meeting and monitoring of ambitious goals. This study assesses the readiness of the Ugandan national statistical system – an ecosystem that includes both official and nongovernmental producers and users of data – to meet these challenges. Co-authored with Wilbrod Ntawiha.
+
+- date: August 2016
+  title: "Defining Humanitarian Emergencies: a joined-up approach"
+  url: https://devinit.github.io/blog/defining-humanitarian-emergencies-joined-approach/
+  description: For humanitarian decision-making to be effectively harmonised, data from a variety of sources needs to be joined up. The way in which emergencies are defined and reported is an essential part of this.
+
+- date: June 2016
+  title: "Household surveys: do competing standards serve country needs?"
+  url: /assets/pdfs/juds-household-surveys.pdf
+  description: Written by Beata Lisowska under my direction, a ground-breaking study in critiquing the duplication of resources and efforts involved in competing surveys,
+
+- date: January 2016
+  title: "The Open Data Charter: A breakthrough for joined-up data standards"
+  url: https://devinit.github.io/blog/open-data-charter-breakthrough-joined-data-standards/
+  description: The international Open Data Charter launched in New York last month is the first globally inclusive and comprehensive manifesto of its type.
+
+- date: October 2015
+  title: "What to do with one and a half billion dollars..."
+  url: https://devinit.github.io/blog/what-to-do-with-one-and-a-half-billion-dollars/
+  description: The World Bank plans to raise and spend $1,5 billion - $300m every three years until 2030 on household surveys. This single commitment dwarves all other investments that have been made towards building a base for sustainable data collection and usage. It sends a signal that recurrent expenditure producing short-term results to meet the needs of global goals is preferable to capital investments producing resilient country information systems that will have a life way beyond 2030.
+ 
+- date: September 2015
+  title: "Quantifying the challenges facing the Data Revolution in Africa: A first attempt"
+  url: https://devinit.github.io/blog/quantifying-the-challenges-facing-the-data-revolution-in-africa-a-first-attempt/
+  description: There is a need for a more granular and timely resource that reflects both best practice and challenges across all the data sources required to meet the needs of statisticians and the goals of the Data Revolution. A first attempt based on a preliminary desk study has created a table for all African countries mapping nine indicators against a simple traffic light system.
+
+- date: February 2015
+  title: "Some thoughts on the data revolution in Uganda"
+  url: https://devinit.github.io/resources/some-thoughts-on-the-data-revolution-in-uganda/
+  description: Development Initiatives and Development Research and Training worked on a ‘Joined-Up Data Uganda’ pilot programme in two rural districts. We attempted to join up disaggregated data sets from various sources to create usable sub-district-level information. Our target users were district officials and community-based organisations. These notes were based on my limited experience working in Uganda and on the observations of our colleagues in DRT who understand the challenges and opportunities of accessing and using information in Uganda better than most.
+
+- date: 2015
+  title: "Adventures in the data revolution - a three-part series"
+  url: Currently unavailable
+  description: Three blogs written for a Gates Foundation project - Grand Challenges Explorations: Using Data for Impact in Uganda Communities. Co-authored with Bernard Sabiti.
+
+
