@@ -6,7 +6,7 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 
 <div class="container">
 
-<div class="cv-section__label">About Data Landscapers</div>
+<div class="cv-section__label" style="padding-top: 2.5rem;">About Data Landscapers</div>
 
 <div class="about-intro">
   <div class="about-intro__text">
