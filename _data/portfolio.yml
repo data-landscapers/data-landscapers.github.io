@@ -7,16 +7,22 @@
 #         use /assets/pdfs/filename.pdf for PDFs, https:// for external links
 # - description: always in double quotes
 
-- date: "2024"
-  title: "Africa Digital Public Infrastructure Study: Continental survey for the African Development Bank"
-  url: "https://data-landscapers.github.io/africa-dpi/"
-  description: "Continental survey across all 54 African countries covering ICT infrastructure, digital identity, digital payments, data exchange and registries."
+- date: September 2024
+  title: "Digital Compacts: Global Ideals, Regional Realities"
+  url: /assets/pdfs/digital-compacts-global-ideals-regional-realities.pdf
+  description: The Global Digital Compact (https://www.un.org/techenvoy/global-digital-compact) was adopted as part of the UN Summit of the Future in September 2024. This discussion paper critiques       the compact and compares it with the African Digital Compact (https://au.int/en/documents/20240809/african-digital-compact-adc)
 
-- date: "2024"
-  title: "Digital compacts: global ideals, regional realities"
-  url: "/assets/pdfs/Digital_Compacts_Global_ideals_regional_realities.pdf"
-  description: "Analysis of the gap between global digital policy commitments and the realities facing African nations in implementation."
+- date: October 2023
+  title: "Data Governance: Do all global problems require global solutions?"
+  url: https://devinit.github.io/blog/data-governance-does-it-require-a-global-solution-/
+  description: A blog originally published on the DI website highlights some of the complexities in aiming for a global consensus on data governance.
 
-- date: "2023"
-  title: "Example unlinked item: no url line needed"
-  description: "Remove the url line entirely for items with no link — the title will render as plain text."
+- date: May 2023
+  title: "SDG learnings from the World Data Forum in Hangzhou: Falling between stools and masters"
+  url: https://devinit.github.io/blog/sdg-learnings-world-data-forum-hangzhou/ 
+  description: The UN World Data Forum took place in Hangzhou, China in April 2023. As a UN conference, aimed at spurring innovation, partnerships and high-level political and financial support, the forum can tend towards diplomacy over discussion, with government and multilateral officials and statisticians lining up to politely agree with each other and champion success. We set out to invigorate proceedings with a debate on ‘Is the SDG Monitoring Framework Broken?’, which drew on our recent discussion paper of the same name. Co-authored with Claudia Wells
+
+- date: April 2023
+  title: "Is the SDG monitoring framework broken?"
+  url: /assets/pdfs/is-the-sdg-monitoring-framework-broken.pdf
+  description: In March 2023, the UN Economic and Social Commission for Asia and the Pacific published its annual SDG progress report. It warned that the region requires, at the current rate of progress, a further 42 years to meet the SDGs. It also revealed that there remains insufficient data to monitor 51 of the 169 targets. This discussion paper focused on the SDG global monitoring system from a data perspective.
