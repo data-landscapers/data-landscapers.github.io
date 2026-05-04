@@ -6,12 +6,6 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 
 <div class="container">
 
-<header style="padding: 3rem 0 2rem; border-bottom: 1px solid var(--rule);">
-  <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.75rem;">About</div>
-  <h1>Bill Anderson</h1>
-  <p style="font-size: 1.05rem; color: var(--ink-light); margin: 0;">Data governance consultant &nbsp;·&nbsp; Data Landscapers Ltd</p>
-</header>
-
 <div class="about-intro">
   <div class="about-intro__text">
     <p>I am an experienced systems architect with expertise in the politics, administration and technology of digital transformation, data governance policy, and data standards. My particular focus is on Africa's digital sovereignty — the struggle to ensure that the continent's data infrastructure is owned, governed and controlled by Africans.</p>
