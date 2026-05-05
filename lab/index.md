@@ -28,22 +28,16 @@ permalink: /lab/
 
   <div class="article-list" id="lab-list">
     {% for doc in lab_docs %}
-    <article style="padding: 1.4rem 0; border-bottom: 1px solid var(--rule);" data-category="{{ doc.category }}">
-      {% if doc.category %}
-      <span class="wip-item-card__status wip-item-card__status--active" style="margin-bottom: 0.4rem; display: inline-block;">{{ doc.category }}</span>
-      {% endif %}
+    <article style="padding: 0.6rem 0; border-bottom: 1px solid var(--rule);" data-category="{{ doc.category }}">
       <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
+        {% if doc.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ doc.category }}</span>{% endif %}
         {{ doc.date | date: "%-d %B %Y" }}
-        {% if doc.tags %}
-          &nbsp;·&nbsp;
-          {% for tag in doc.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
-        {% endif %}
       </div>
       <h2 style="font-size: 1.1rem; margin: 0 0 0.3rem;">
         <a href="{{ doc.url | relative_url }}" style="color: var(--ink); text-decoration: none;">{{ doc.title }}</a>
       </h2>
       {% if doc.subtitle %}
-      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.3rem;"><em>{{ doc.subtitle }}</em></p>
+      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.2rem;"><em>{{ doc.subtitle }}</em></p>
       {% endif %}
       {% if doc.description %}
       <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ doc.description }}</p>
@@ -52,6 +46,10 @@ permalink: /lab/
     {% endfor %}
   </div>
 </div>
+
+<style>
+  #lab-list a:hover { color: var(--link) !important; }
+</style>
 
 <script>
   const filter = document.getElementById('lab-category-filter');
