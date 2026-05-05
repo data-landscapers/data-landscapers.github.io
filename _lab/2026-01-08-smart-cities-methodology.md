@@ -17,12 +17,12 @@ This is the methodology used to produce the article ["African smart cities: A cr
 These notes outline the design of the project through iterative interactions with Perplexity.
 
 1.  **Perplexity - Context Instructions**
-    1.1.  **Prompt**  
+    - **Prompt**  
         > This space is for a paper I intend to write which will be supported by a comprehensive database. The focus is on a critical analysis of how smart city technology is being deployed and to what ends. Who is funding it? Who owns it? What features and functionalities are being prioritised? To what extent state surveillance is driving the agenda? What real value is being added? I am looking for three major types of evidence: Firstly accurate data on systems, funding, ownership, deployment to populate a database that I will design. Secondly up-to-date news on systems and issues arising. Thirdly critical analysis from academics and policy experts.
 2.  **Perplexity - Annotated bibliography**
-    2.1.  **Prompt**  
+    -  **Prompt**  
         > Could we start by producing an annotated bibliography of key literature that covers all the issues covered in the context instructions.
-    2.2.  **Output**
+    -  **Output**
         [Smart City Annotated Bibliography](https://docs.google.com/document/d/1IDkhhmrFosoQhOsTwxFPaTc8mnjgZSslqjaoiSSbg3M/edit?usp=drive_link)
 3.  **Process bibliography**
     1.  Create Zotero collection.   
@@ -63,9 +63,9 @@ These notes outline the design of the project through iterative interactions wit
     3.  **Revision**  
         Decided instead to run one thread per city: bibliographic notes then news notes then analysis
 10. **Produce bibliographic notes for a city**
-    1.  **Prompt**  
+    - **Prompt**  
         > Follow instructions in [biblio-mining-instructions.txt](https://drive.google.com/file/d/1ymBvySobRFmTgzscEAC014Mbj6CJbABa/view?usp=drive_link) for [City_name]  
-        **Example output**  
+    - **Example output**  
         [Nairobi-biblio.md](https://drive.google.com/file/d/1yoy3bnMjnDFRgAV_ueRKOwdH9PCo_8L3/view?usp=drive_link)
 11. **Produce news notes for a city**
     1.  **Prompt**  
