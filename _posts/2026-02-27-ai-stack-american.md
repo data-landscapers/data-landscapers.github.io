@@ -3,7 +3,7 @@ layout: article
 title: "You can have any AI stack you like, so long as it's American"
 subtitle: '"Our cloud, our chips, our algorithms" — a new kind of sovereignty emerges from Washington'
 date: 2026-02-27
-tags: [US policy, data sovereignty, Africa]
+category: Colonialism
 description: How the Trump administration's AI export programme is redefining sovereignty to mean owning access to American technology.
 has_data_table: false
 ---

@@ -3,7 +3,7 @@ layout: article
 title: "African smart cities: A critical analysis"
 subtitle: 'An exercise in open source intelligence using an AI-powered search engine.'
 date: 2026-01-08
-tags: [technology]
+category: OSINT
 description: Across Africa rural clinics, schools, registry offices and police stations continue to rely on paper.
 pdf: /assets/pdfs/smart-cities.pdf
 has_data_table: true
