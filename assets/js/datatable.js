@@ -111,9 +111,10 @@
     const src        = container.dataset.src;
     const fullSrc    = container.dataset.fullSrc || null;
     const metaSrc    = container.dataset.metadataSrc || null;
-    const colList    = (container.dataset.cols    || '').split(',').map(s => s.trim()).filter(Boolean);
-    const filterList = (container.dataset.filters || '').split(',').map(s => s.trim()).filter(Boolean);
-    const title      = container.dataset.title || '';
+    const colList       = (container.dataset.cols    || '').split(',').map(s => s.trim()).filter(Boolean);
+    const filterList    = (container.dataset.filters || '').split(',').map(s => s.trim()).filter(Boolean);
+    const title         = container.dataset.title || '';
+    const minColWidth   = container.dataset.minColWidth ? parseInt(container.dataset.minColWidth) : null;
 
     if (!src) { container.textContent = 'Error: data-src not set.'; return; }
 
@@ -263,12 +264,13 @@
           const hrow = document.createElement('tr');
           visibleHeaders.forEach((h, vi) => {
             const th = document.createElement('th');
+            const minW = minColWidth ? `min-width:${minColWidth}px;` : '';
             th.style.cssText = `
               padding:7px 10px;text-align:left;white-space:nowrap;cursor:pointer;
               font-family:'JetBrains Mono',monospace;font-size:0.8em;font-weight:700;
               background:#e8e4dc;color:#333;user-select:none;
               overflow:hidden;text-overflow:ellipsis;
-              ${colWidthStyle(h)}`;
+              ${minW}${colWidthStyle(h)}`;
             const arrow = sortCol === vi ? (sortAsc ? ' \u25b2' : ' \u25bc') : ' \u2195';
             th.textContent = h + arrow;
             th.addEventListener('click', () => {
@@ -284,7 +286,13 @@
 
           /* ── Top scrollbar mirror ── */
           const scrollTop = document.createElement('div');
-          scrollTop.style.cssText = 'overflow-x:auto;height:12px;';
+          scrollTop.style.cssText = 'overflow-x:auto;height:10px;cursor:pointer;';
+          scrollTop.innerHTML = `<style>
+            .dl-datatable div::-webkit-scrollbar { height: 10px; }
+            .dl-datatable div::-webkit-scrollbar-track { background: #e8e4dc; }
+            .dl-datatable div::-webkit-scrollbar-thumb { background: #c84b2f; border-radius: 4px; }
+            .dl-datatable div::-webkit-scrollbar-thumb:hover { background: #a33a22; }
+          </style>`;
           const scrollTopInner = document.createElement('div');
           scrollTopInner.style.height = '1px';
           scrollTop.appendChild(scrollTopInner);
@@ -297,8 +305,7 @@
           const tbl = document.createElement('table');
           tbl.style.cssText = `
             border-collapse:collapse;font-size:0.88em;
-            font-family:'Source Serif 4',serif;
-            min-width:100%;width:max-content;`;
+            font-family:'Source Serif 4',serif;`;
 
           const tbody = tbl.createTBody();
           data.forEach((row, ri) => {
@@ -310,7 +317,8 @@
 
             colIndices.forEach((ci) => {
               const td = tr.insertCell();
-              td.style.cssText = `padding:6px 10px;border-bottom:1px solid #e0ddd6;vertical-align:top;${colWidthStyle(headers[ci])}`;
+              const minW = minColWidth ? `min-width:${minColWidth}px;` : '';
+              td.style.cssText = `padding:6px 10px;border-bottom:1px solid #e0ddd6;vertical-align:top;${minW}${colWidthStyle(headers[ci])}`;
               const val = row[ci] || '';
               if (ci === sovColIdx) td.innerHTML = sovereigntyBadge(val);
               else td.textContent = val;
