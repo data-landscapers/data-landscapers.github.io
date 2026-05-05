@@ -45,7 +45,7 @@ description: Data governance consulting services from Bill Anderson — Data Lan
 
 <section style="padding: 2.5rem 0;">
   <h2 style="font-size: 0.72rem; font-family: var(--mono); font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-faint); margin-bottom: 1.5rem;">Get in touch</h2>
-  <p>Email: <script>document.write('<a hr' + 'ef="mai' + 'lto:bill' + '@data-landscapers.com">bill' + '@data-landscapers.com</a>');</script></p>
+  <p>Email: <script>document.write('<a hr' + 'ef="mai' + 'lto:bill-anderson' + '@data-landscapers.com">bill-anderson' + '@data-landscapers.com</a>');</script></p>
   <p style="color: var(--ink-light); font-size: 0.92rem;">I am based in the UK and work internationally. Response time is typically within two working days.</p>
   <p style="margin-top: 1.5rem;">
     <a href="https://linkedin.com/in/billanderson10" target="_blank" rel="noopener" class="btn" style="margin-right: 0.75rem;">LinkedIn</a>
