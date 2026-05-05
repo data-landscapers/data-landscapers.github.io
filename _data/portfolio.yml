@@ -18,7 +18,7 @@
   title: "Data Governance: Do all global problems require global solutions?"
   url: https://devinit.github.io/blog/data-governance-does-it-require-a-global-solution-/
   category: Governance
-  description: A blog originally published on the DI website highlights some of the complexities in aiming for a global consensus on data governance.
+  description: A blog originally published on the DI website highlights some of the complexities in aiming for a global consensus on digital or data governance.
 
 - date: May 2023
   title: "SDG learnings from the World Data Forum in Hangzhou: Falling between stools and masters"
@@ -196,7 +196,8 @@
   title: "Some thoughts on the data revolution in Uganda"
   url: https://devinit.github.io/resources/some-thoughts-on-the-data-revolution-in-uganda/
   category: Landscaping
-  description: Development Initiatives and Development Research and Training worked on a ‘Joined-Up Data Uganda’ pilot programme in two rural districts. We attempted to join up disaggregated data sets from various sources to create usable sub-district-level information. Our target users were district officials and community-based organisations. These notes were based on my limited experience working in Uganda and on the observations of our colleagues in DRT who understand the challenges and opportunities of accessing and using information in Uganda better than most.
+  description: |
+    Development Initiatives and Development Research and Training worked on a ‘Joined-Up Data Uganda’ pilot programme in two rural districts. We attempted to join up disaggregated data sets from various sources to create usable sub-district-level information. Our target users were district officials and community-based organisations. These notes were based on my limited experience working in Uganda and on the observations of our colleagues in DRT who understand the challenges and opportunities of accessing and using information in Uganda better than most.
 
 - date: 2015
   title: "Adventures in the data revolution - a three-part series"
