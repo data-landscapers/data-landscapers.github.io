@@ -22,11 +22,11 @@ description: Bill Anderson — data governance consultant, data landscaping spec
   <div>
     <!-- Profile image placeholder — replace src with actual photo -->
     <img src="/assets/uploads/bill-anderson.jpg" alt="Bill Anderson" style="width: 180px; border-radius: 2px;">
-</div>
-
-    </div>
   </div>
 
-
-
 </div>
+</div>
+
+
+
+
