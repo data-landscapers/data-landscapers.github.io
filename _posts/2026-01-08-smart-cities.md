@@ -5,7 +5,7 @@ subtitle: 'An exercise in open source intelligence using an AI-powered search en
 date: 2026-01-08
 tags: [technology]
 description: Across Africa rural clinics, schools, registry offices and police stations continue to rely on paper.
-pdf: /assets/pdfs/data-side-of-lnob.pdf
+pdf: /assets/pdfs/smart-cities.pdf
 has_data_table: true
 ---
 
