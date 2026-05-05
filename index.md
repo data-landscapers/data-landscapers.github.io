@@ -47,12 +47,12 @@ title: Home
 
    <div class="sidebar-block">
       <div class="sidebar-block__label">Current focus</div>
-      <p>Digital public infrastructures in Africa; Financial sustainability; AI and open source intelligence; Digital colonialism<a href="/about/">More →</a></p>
+      <p>Digital public infrastructures in Africa; Financial sustainability; AI and open source intelligence; Digital colonialism.  <a href="/about/">More →</a></p>
     </div>
     
     <div class="sidebar-block">
       <div class="sidebar-block__label">Contact</div>
-      <p><a href="/contact/">Available to chat or for consulting</a> — data governance, digital infrastructure, standrads, OSINT research for Africa.</p>
+      <p><a href="/contact/">Available to chat or for consulting</a> — data governance, digital infrastructure, standards, OSINT research for Africa.</p>
     </div>
 
   </aside>
