@@ -112,8 +112,8 @@ The data was manually sense checked and run through a number of correcting itera
 
 <div class="dl-datatable"
   data-src="/assets/data/african-rural-digitalisation.csv"
-  data-cols="Country ISO-3 Code, Country Name, Facility, Digitalisation Score, Comments, Source URLs"
-  data-min-col-width="120"
-  data-filters="country_name, facility"
+  data-cols="Country Name, Facility, Digitalisation Score, Comments, Source URLs, Country ISO-3 Code"
+  data-min-col-width="150"
+  data-filters="Country Name, Facility"
   data-title="Digitalisation of rural facilities">
 </div>
