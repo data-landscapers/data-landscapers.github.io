@@ -12,9 +12,9 @@ permalink: /lab/2026/01/08/smart-cities-methodology/
 
 
 
-This is the methodology used to produce the article ["African smart cities: A critical analysis"](/_posts/2026-01-08-smart-cities.md)
+This is the methodology used to produce the article [**"African smart cities: A critical analysis"**](/_posts/2026-01-08-smart-cities.md)
 
-These notes outline the design of the project through iterative interactions with Perplexity.
+These notes outline the design of the project through iterative interactions with Perplexity. NB. This exercise was carried out before Perplexity Computer became available (which would allowed for simultaneous data capture for all 54 countries).
 
 1.  **Perplexity - Context Instructions**
     - **Prompt**  
