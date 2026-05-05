@@ -346,5 +346,5 @@ Each city analysis draws on news sources, academic literature, government docume
   data-src="/assets/data/smart-cities.csv"
   data-cols="Section, Indicator Name, Abidjan, Accra, Cairo, Dakar, Johannesburg, Kampala, Kigali, Lagos, Lusaka, Nairobi, Rabat, Tunis"
   data-title="African Smart Cities"
-  data-metadata-src="/assets/data/smart-cities-metadata.csv>
+  data-metadata-src="/assets/data/smart-cities-metadata.csv">
 </div>
