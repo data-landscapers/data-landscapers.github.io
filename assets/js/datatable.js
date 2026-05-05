@@ -297,7 +297,8 @@
           const tbl = document.createElement('table');
           tbl.style.cssText = `
             border-collapse:collapse;font-size:0.88em;
-            font-family:'Source Serif 4',serif;`;
+            font-family:'Source Serif 4',serif;
+            min-width:100%;width:max-content;`;
 
           const tbody = tbl.createTBody();
           data.forEach((row, ri) => {
@@ -344,11 +345,13 @@
             scrollBot.scrollLeft  = scrollTop.scrollLeft;
           });
 
-          // Run after layout — also push headerWrap below toolbar
+          // Run after layout — also push headerWrap below toolbar + nav
           setTimeout(() => {
             syncWidths();
+            const NAV_HEIGHT = 68;
             const toolbarH = toolbar.offsetHeight;
-            headerWrap.style.top = toolbarH + 'px';
+            toolbar.style.top = NAV_HEIGHT + 'px';
+            headerWrap.style.top = (NAV_HEIGHT + toolbarH) + 'px';
           }, 50);
         }
 
