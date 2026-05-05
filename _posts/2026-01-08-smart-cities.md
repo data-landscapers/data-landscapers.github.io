@@ -331,10 +331,6 @@ The twelve case studies are available here:
 
 Each city analysis draws on news sources, academic literature, government documents, and data collection spanning ownership, finance, technology, governance, surveillance, performance, social impact, environmental impact, economic benefit, and systems integration. These sources can be found in the annexes to each case study. (The separation of the sources from the main body of text is not ideal but was the result of technical issues instructing the report writing engine.)
 
-### Structured Data
-
--   [**Smart City Data**](https://docs.google.com/spreadsheets/d/1GmPbuXlXatwxNndScu4o-r65hEmtmDX-akhhWZbklqs/edit?usp=sharing)This is a dataset of 73 indicators used in the case studies. The workbook contains a comparative table, the metadata used for data collection, and the detailed sheets for each city with notes and sources.
--   [**Smart City Finance**](https://docs.google.com/spreadsheets/d/1mFAgYHpLjQROw7Y_O0RVMeNNLrQyZ03T9v-je5-B0dA/edit?usp=sharing)A breakdown of financing extracted from the case studies.
 
 ### Annotated Bibliography
 
@@ -344,3 +340,11 @@ Each city analysis draws on news sources, academic literature, government docume
 
 -   [**The full methodology, outlining the design of the project through incremental iterative interactions with Perplexity, can be found here.**](/_labs/2026-01-08-smart-cities-methodology)
 
+## Data
+
+<div class="dl-datatable"
+  data-src="/assets/data/smart-cities.csv"
+  data-cols="Section, Indicator Name, Abidjan, Accra, Cairo, Dakar, Johannesburg, Kampala, Kigali, Lagos, Lusaka, Nairobi, Rabat, Tunis"
+  data-title="African Smart Cities"
+  data-metadata-src="/assets/data/smart-cities-metadata.csv>
+</div>
