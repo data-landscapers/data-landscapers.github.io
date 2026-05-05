@@ -34,7 +34,8 @@ These notes outline the design of the project through iterative interactions wit
         [news-sources.md](https://drive.google.com/file/d/1Qy5qkWgN6gn9-5rPoAz4CingK_ut0lu1/view?usp=drive_link)
 5.  **Select cities to include in the study**
     -  **Output**  
-         Overall ranking from [African Smart City Index 2024](https://smart-cities.africa/wp-content/uploads/2025/05/African-Smart-City-Index-2024-min.pdf) [cities.csv](https://drive.google.com/file/d/1giL89kJn2oI9Tg20mAZknRsBFrEzhOxe/view?usp=drive_link)
+         Overall ranking from [African Smart City Index 2024](https://smart-cities.africa/wp-content/uploads/2025/05/African-Smart-City-Index-2024-min.pdf)  
+         [cities.csv](https://drive.google.com/file/d/1giL89kJn2oI9Tg20mAZknRsBFrEzhOxe/view?usp=drive_link)
 6.  **Define analytical categories**
     -  **Prompt**  
         > I need to break my evidence down into a set of comparable categories, Included in this will be a checklist of potential features - eg broadband availability, transport, surveillance, etc. can you provide me with a list of all features that can be described elements of a smart city
@@ -74,7 +75,7 @@ These notes outline the design of the project through iterative interactions wit
          > Follow instructions in [news-mining-instructions.txt](https://drive.google.com/file/d/1vKmnMzULBe9_WbHn5W44tsRV0OneEFsy/view?usp=drive_link) for [City_name]
     -  **Example Output**  
         [Nairobi-news.md](https://drive.google.com/file/d/176nk5jDBSM80M6Kwomsz3p8bU7qOqtA5/view?usp=drive_link)
-12. Merge bibliographic and news notes
+12. **Merge bibliographic and news notes**
     -  **Upload city notes to thread (example)**  
         [Nairobi-biblio.md](https://drive.google.com/file/d/1yoy3bnMjnDFRgAV_ueRKOwdH9PCo_8L3/view?usp=drive_link)  
         [Nairobi-news.md](https://drive.google.com/file/d/176nk5jDBSM80M6Kwomsz3p8bU7qOqtA5/view?usp=drive_link)
@@ -99,3 +100,6 @@ These notes outline the design of the project through iterative interactions wit
         [Nairobi-analysis.md](https://drive.google.com/file/d/191oubXhNBKbZbEoMQShWMwMXygSBLTt6/view?usp=drive_link)
     -  **Add notes as annex to analysis and convert to Word**  
         [Nairobi-analysis.docx](https://docs.google.com/document/d/1jDUusI62MEZdR6EJDNNehNT8J_IqIzw9/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true)
+15. **Synthesis report**
+    -  **Prompt**  
+         > Using the 12 attached country case studies I would like you to produce a critical analysis of smart city initiatives in Africa. Start with an introduction that provides an explanation of the scope of initiatives we have included in these studies and the selection of case studies. Then first deal with the good side of things: real social, economic and environmental benefits. The bulk of the report should then follow: a critique of governance, finance, inclusivity, accountability and surveillance. Finally the conclusion should situate itself in the context of the four African Union instruments (AU Data Policy Framework, AU Digital Transformation Strategy, Continental AI Strategy and African Digital Compact). I will leave the choice of headings and sub-headings up to you. I will add a methodology note at the end which will include an explanation that the sources can be found in a separate document. In other words no citations are necessary here.
