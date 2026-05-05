@@ -42,24 +42,17 @@ title: Home
 
     <div class="sidebar-block">
       <div class="sidebar-block__label">About</div>
-      <p>Data governance consultant. 14 years at Development Initiatives including as technical lead of IATI. Now mapping Africa's digital infrastructure. <a href="/about/">More →</a></p>
+      <p>A collection of writings, both past and present, curated by Bill Anderson. <a href="/about/">More →</a></p>
     </div>
 
-    <div class="sidebar-block">
+   <div class="sidebar-block">
       <div class="sidebar-block__label">Current focus</div>
-      <ul>
-        {% for item in site.current_focus %}
-        <li>
-          <a href="{{ item.url }}" {% if item.external %}target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
-          {% if item.meta %}<span class="meta">{{ item.meta }}</span>{% endif %}
-        </li>
-        {% endfor %}
-      </ul>
+      <p>Digital public infrastructures in Africa; Financial sustainability; AI and open source intelligence; Digital colonialism<a href="/about/">More →</a></p>
     </div>
-
+    
     <div class="sidebar-block">
       <div class="sidebar-block__label">Contact</div>
-      <p><a href="/contact/">Available for consulting</a> — data governance, digital infrastructure, OSINT research for Africa.</p>
+      <p><a href="/contact/">Available to chat or for consulting</a> — data governance, digital infrastructure, standrads, OSINT research for Africa.</p>
     </div>
 
   </aside>
