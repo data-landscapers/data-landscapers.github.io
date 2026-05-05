@@ -334,7 +334,7 @@ Each city analysis draws on news sources, academic literature, government docume
 
 ### Annotated Bibliography
 
--   [**An annotated bibliography of over 100 academic papers and policy briefs**](https://docs.google.com/document/d/1IDkhhmrFosoQhOsTwxFPaTc8mnjgZSslqjaoiSSbg3M/edit?usp=drive_link)
+-   [**An annotated bibliography of over 100 academic papers and policy briefs**](/_labs/2026-01-08-smart-cities-bibliography)
 
 ### Methodology
 
