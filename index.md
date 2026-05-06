@@ -34,12 +34,13 @@ title: Home
     {% assign lab_docs = site.lab | sort: 'date' | reverse %}
     {% for doc in lab_docs limit:3 %}
     <div class="wip-item-card" style="padding: 0.6rem 0;">
-      <div class="article-list__meta">
+      <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
         {% if doc.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ doc.category }}</span>{% endif %}
         {{ doc.date | date: "%-d %B %Y" }}
       </div>
-      <h3 style="margin: 0.2rem 0 0;"><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></h3>
-      {% if doc.subtitle %}<p style="font-size: 0.9rem; color: var(--ink-light); margin: 0.2rem 0 0;"><em>{{ doc.subtitle }}</em></p>{% endif %}
+      <h3 style="margin: 0 0 0.1rem;"><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></h3>
+      {% if doc.subtitle %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.1rem;"><em>{{ doc.subtitle }}</em></p>{% endif %}
+      {% if doc.description %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ doc.description }}</p>{% endif %}
     </div>
     {% endfor %}
 
