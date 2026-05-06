@@ -32,7 +32,7 @@ description: Selected projects and publications in data governance, digital sove
       {{ item.date }}
     </div>
     <div style="font-family: var(--display); font-size: 1.2rem; font-weight: 700; line-height: 1.3; margin-bottom: 0.2rem;">
-      {% if item.url %}<a href="{{ item.url }}" style="color: var(--ink); text-decoration: none; border-bottom: none;"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}
+      {% if item.url %}<a href="{{ item.url }}" style="color: var(--ink); text-decoration: none; border-bottom: none;">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
     </div>
     {% if item.description %}
     <div style="font-size: 0.85rem; color: var(--ink-light); line-height: 1.45;">{{ item.description | markdownify }}</div>
