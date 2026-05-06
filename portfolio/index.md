@@ -44,7 +44,7 @@ description: Selected projects and publications in data governance, digital sove
 </div>
 
 <style>
-  #portfolio-list a:hover { color: var(--accent) !important; text-decoration: none; }
+  #portfolio-list a:hover { color: var(--accent) !important; text-decoration: none; border-bottom-color: transparent !important; }
   #portfolio-list div > p { margin: 0; }
 </style>
 

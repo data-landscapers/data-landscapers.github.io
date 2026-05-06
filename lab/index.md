@@ -48,7 +48,7 @@ permalink: /lab/
 </div>
 
 <style>
-  #lab-list a:hover { color: var(--link) !important; }
+  #lab-list a:hover { color: var(--accent) !important; text-decoration: none; border-bottom-color: transparent !important; }
 </style>
 
 <script>
