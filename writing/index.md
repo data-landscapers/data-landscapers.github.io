@@ -28,16 +28,16 @@ description: Completed research and analysis on data governance, data standards,
 <ul class="article-list" id="writing-list" style="margin-top: 0;">
   {% for post in site.posts %}
   <li class="article-list__item" style="padding: 0.6rem 0;" data-category="{{ post.category }}">
-    <div class="article-list__meta">
+    <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
       {% if post.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ post.category }}</span>{% endif %}
       {{ post.date | date: "%-d %B %Y" }}
     </div>
-    <div class="article-list__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
-    {% if post.subtitle %}<p class="article-list__excerpt" style="margin-bottom: 0;"><em>{{ post.subtitle }}</em></p>{% endif %}
+    <div class="article-list__title" style="margin-bottom: 0.2rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+    {% if post.subtitle %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.1rem;"><em>{{ post.subtitle }}</em></p>{% endif %}
     {% if post.description %}
-      <p class="article-list__excerpt" style="margin-top: 0;">{{ post.description }}</p>
+      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ post.description }}</p>
     {% elsif post.excerpt %}
-      <p class="article-list__excerpt" style="margin-top: 0;">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ post.excerpt | strip_html | truncate: 200 }}</p>
     {% endif %}
   </li>
   {% endfor %}
