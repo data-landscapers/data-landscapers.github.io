@@ -33,8 +33,8 @@ permalink: /lab/
         {% if doc.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ doc.category }}</span>{% endif %}
         {{ doc.date | date: "%-d %B %Y" }}
       </div>
-      <h2 style="font-size: 1.1rem; margin: 0 0 0.3rem;">
-        <a href="{{ doc.url | relative_url }}" style="color: var(--ink); text-decoration: none;">{{ doc.title }}</a>
+      <h2 style="font-size: 1.2rem; font-family: var(--display); font-weight: 700; line-height: 1.3; margin: 0 0 0.2rem;">
+        <a href="{{ doc.url | relative_url }}" style="color: var(--ink); text-decoration: none; border-bottom: none;">{{ doc.title }}</a>
       </h2>
       {% if doc.subtitle %}
       <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.2rem;"><em>{{ doc.subtitle }}</em></p>

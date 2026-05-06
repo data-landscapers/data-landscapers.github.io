@@ -31,8 +31,8 @@ description: Selected projects and publications in data governance, digital sove
       {% if item.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ item.category }}</span>{% endif %}
       {{ item.date }}
     </div>
-    <div style="font-family: var(--serif); font-size: 0.95rem; line-height: 1.4; margin-bottom: 0.25rem;">
-      {% if item.url %}<a href="{{ item.url }}" style="color: var(--ink); text-decoration: none;"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}
+    <div style="font-family: var(--display); font-size: 1.2rem; font-weight: 700; line-height: 1.3; margin-bottom: 0.2rem;">
+      {% if item.url %}<a href="{{ item.url }}" style="color: var(--ink); text-decoration: none; border-bottom: none;"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}
     </div>
     {% if item.description %}
     <div style="font-size: 0.85rem; color: var(--ink-light); line-height: 1.45;">{{ item.description | markdownify }}</div>
