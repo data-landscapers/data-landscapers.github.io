@@ -32,7 +32,7 @@ description: Selected projects and publications in data governance, digital sove
       {{ item.date }}
     </div>
     <div style="font-family: var(--serif); font-size: 0.95rem; line-height: 1.4; margin-bottom: 0.25rem;">
-      {% if item.url %}<a href="{{ item.url }}" style="color: var(--link); text-decoration: none;"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}
+      {% if item.url %}<a href="{{ item.url }}" style="color: var(--ink); text-decoration: none;"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}
     </div>
     {% if item.description %}
     <div style="font-size: 0.85rem; color: var(--ink-light); line-height: 1.45;">{{ item.description | markdownify }}</div>
@@ -44,7 +44,7 @@ description: Selected projects and publications in data governance, digital sove
 </div>
 
 <style>
-  #portfolio-list a:hover { color: var(--link); text-decoration: underline; }
+  #portfolio-list a:hover { color: var(--accent) !important; text-decoration: none; }
   #portfolio-list div > p { margin: 0; }
 </style>
 
