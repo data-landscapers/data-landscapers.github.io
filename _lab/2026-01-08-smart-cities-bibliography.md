@@ -4,7 +4,7 @@ title: "African smart cities: annotated bibliography"
 subtitle: AI-driven literature review
 date: 2026-01-08
 category: OSINT
-description: "AI-developed literature review for the article - African smart cities: A critical analysis"
+description: "A bibliography constructed by Perplexity to set context for the work collecting smart city data.
 has_data_table: false
 permalink: /lab/2026/01/08/smart-cities-bibliography/
 ---

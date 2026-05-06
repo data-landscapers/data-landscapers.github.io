@@ -1,7 +1,7 @@
 # Data Landscapers — data-landscapers.com
 
 Personal and company website for Bill Anderson / Data Landscapers Ltd.
-Built with Jekyll, hosted on GitHub Pages.
+Built with Jekyll by Claude, hosted on GitHub Pages.
 
 ## Local development
 
@@ -17,8 +17,7 @@ Push to `main` branch. GitHub Actions builds and deploys automatically.
 
 ## Adding content
 
-### Writing articles
-**Via CMS (recommended):** Go to `data-landscapers.com/admin/` and log in with GitHub.
+### Writing 'live' articles
 
 **Via file:** Create a new `.md` file in `_posts/` with the filename format `YYYY-MM-DD-title.md` and the following front matter:
 
@@ -27,38 +26,57 @@ Push to `main` branch. GitHub Actions builds and deploys automatically.
 layout: article
 title: "Your title"
 subtitle: "Optional subtitle"
+description:
 date: 2026-05-01
-category: Data governance
-tags: [tag1, tag2]
+category: Governance
+pdf: /assets/pdfs/optional-download.pdf # omit if no PDF
 has_data_table: false   # set true if article contains a data table
 ---
 ```
 
-### Adding a data table to an article
+### Writing 'work in progress' articles
+
+**Via file:** Create a new `.md` file in `_lab/` with the filename format `YYYY-MM-DD-title.md` and the following front matter:
+
+```yaml
+---
+layout: lab
+title: "Africa's data centre landscape: who owns the infrastructure?"
+subtitle: "A continent-wide mapping of ownership, sovereignty and foreign dependency across data centres in all 54 African countries"
+date: 2026-04-15
+category: Infrastructure
+description: Mapping ownership, sovereignty and foreign dependency across Africa's data centre landscape.
+has_data_table: true
+permalink: /lab/2026/04/15/africa-data-centres/
+---
+```
+
+
+### Adding a data table to post or lab
 
 Set `has_data_table: true` in the front matter, then place the CSV in `assets/data/` and add a div:
 
 ```html
 <div class="dl-datatable"
   data-src="/assets/data/your-file.csv"
+  data-metadata-src="/assets/data/downloadable-metadata.csv
   data-cols="col1,col2,col3"
+  data-filters="col2,col3"
   data-title="Table title">
 </div>
 ```
 
 `data-cols` is optional — omit to show all columns. Column names must match the CSV header row exactly.
 
-### Adding a WIP project
-Create a file in `_wip/` with front matter:
+### Adding a portfolio document
+Add to /_data/portfolio.yml
 
 ```yaml
----
-layout: default
-title: "Project name"
-description: "One-sentence description"
-status: Active   # Active | Planned | Complete
-client: "Client name"
----
+- date: September 2024
+  title: "Digital Compacts: Global Ideals, Regional Realities"
+  url: /assets/pdfs/digital-compacts-global-ideals-regional-realities.pdf
+  category: Governance
+  description:
 ```
 
 ## Structure
