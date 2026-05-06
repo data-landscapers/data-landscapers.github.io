@@ -32,7 +32,7 @@ title: Home
     </div>
 
     {% assign lab_docs = site.lab | sort: 'date' | reverse %}
-    {% for doc in lab_docs limit:3 %}
+    {% for doc in lab_docs limit:5 %}
     <div class="wip-item-card" style="padding: 0.6rem 0;">
       <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
         {% if doc.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ doc.category }}</span>{% endif %}
