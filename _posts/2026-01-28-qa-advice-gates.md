@@ -4,7 +4,7 @@ title: A bit of quality assurance advice for Bill Gates
 subtitle: Supporting health workers with AI? No one can disagree with that. Can we?
 date: 2026-01-28
 category: Colonialism
-description: A critique of Bill Gates' misleading evidence of how his collaboration with OpenAI will support health workers in Africa
+description: In January Bill Gates published a blog announcing a joint investment with OpenAI to deploy AI in primary healthcare clinics. This article critiques his misuse of evidence.
 has_data_table: false
 ---
 

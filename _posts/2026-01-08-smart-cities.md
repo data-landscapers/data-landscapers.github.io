@@ -4,7 +4,7 @@ title: "African smart cities: A critical analysis"
 subtitle: 'An exercise in open source intelligence using an AI-powered search engine.'
 date: 2026-01-08
 category: OSINT
-description: Across Africa rural clinics, schools, registry offices and police stations continue to rely on paper.
+description: This is an exercise in pushing the boundaries of current AI research capacity. It analyses smart city initiatives in twelve African countries. This paper is accompanied by a dataset and an annotated bibliography - all three produced by Perplexity AI. It also links to a detailed methodology.
 pdf: /assets/pdfs/smart-cities.pdf
 has_data_table: true
 ---
