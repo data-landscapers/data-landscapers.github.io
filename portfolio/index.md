@@ -31,7 +31,7 @@ description: Selected projects and publications in data governance, digital sove
       {% if item.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ item.category }}</span>{% endif %}
       {{ item.date }}
     </div>
-    <div style="font-family: var(--display); font-size: 1.2rem; font-weight: 700; line-height: 1.3; margin-bottom: 0.2rem;">
+    <div style="font-family: 'Trebuchet MS', 'Gill Sans', Calibri, sans-serif; font-size: 1.2rem; font-weight: 700; line-height: 1.3; margin-bottom: 0.2rem;">
       {% if item.url %}<a href="{{ item.url }}" style="color: var(--ink); text-decoration: none; border-bottom: none;">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
     </div>
     {% if item.description %}
