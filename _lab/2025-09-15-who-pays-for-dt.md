@@ -56,7 +56,7 @@ As I summarise initial ﬁndings I’m going to describe the data as I ﬁnd it 
 
 Over the past decade $144 billion has been invested in ICT Infrastructures (ICT), digital transformation (DT) and digital public infrastructures (DPI) …
 
-<figure style="width: 80%; margin: 1.5rem auto;">
+<figure style="width: 70%; margin: 1.5rem auto;">
 <img src="/assets/uploads/dpi-financing-v1-1.png">
 <figcaption>Geographic spread of financing</figcaption>
 </figure>
@@ -65,21 +65,21 @@ Over the past decade $144 billion has been invested in ICT Infrastructures (ICT)
 
 Predictably, the proportion of investments coming from domestic resources increases in richer countries. Low income countries invest half as much as upper middle income countries from domestic sources.
 
-<figure style="width: 80%; margin: 1.5rem auto;">
+<figure style="width: 70%; margin: 1.5rem auto;">
   <img src="/assets/uploads/dpi-financing-v1-2.png">
   <figcaption>Source of finance by income group</figcaption>
 </figure>
 
 New investments peaked in 2020 and have fallen off drastically since then. (NB that many investments span multiple years – the graph shows the start year for each investment)
 
-<figure style="width: 80%; margin: 1.5rem auto;">
+<figure style="width: 70%; margin: 1.5rem auto;">
   <img src="/assets/uploads/dpi-financing-v1-3.png">
   <figcaption>Start year of financial commitments</figcaption>
 </figure>
 
 Quantifying investments by focus or sector is a little difficult as 30% have been classiﬁed non-speciﬁcally as relating generally to DT or DPI. Improvements to the prompt instructions are required to disaggregate this classiﬁcation. The estimate of only 5% going to Digital Id is likely to be understated. The ﬁgure for ICT infrastructure is likely to be more accurate as it easier to deﬁne.
 
-<figure style="width: 60%; margin: 1.5rem auto;">
+<figure style="width: 70%; margin: 1.5rem auto;">
   <img src="/assets/uploads/dpi-financing-v1-4.png">
   <figcaption>Investments by sector</figcaption>
 </figure>
@@ -113,17 +113,13 @@ The private sector contributes over half of all domestic investments, but the ma
 
 Only eight countries contribute at least 15 percent of investments from government budgets.
 
-<figure style="width: 60%; margin: 1.5rem auto;">
+<figure style="width: 70%; margin: 1.5rem auto;">
   <img src="/assets/uploads/dpi-financing-v1-9.png">
   <figcaption>Government share of DT/DPI budget</figcaption>
 </figure>
 
 
-International investments are still dominated by bilateral and multilateral institutions …
-
-### International investments by type of source
-
-… although OECD countries account for only 20% of this total …
+International investments are still dominated by bilateral and multilateral institutions, although OECD countries account for only 20% of this total …
 
 ### Share of bilateral investments
 

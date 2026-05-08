@@ -51,7 +51,6 @@ permalink: /lab/2026/04/15/africa-data-centres/
 ---
 ```
 
-
 ### Adding a data table to post or lab
 
 Set `has_data_table: true` in the front matter, then place the CSV in `assets/data/` and add a div:
@@ -92,11 +91,7 @@ margin: auto = centre, 0 = left
     <figcaption>Caption two</figcaption>
   </figure>
 </div>
-
-
-
 ```
-
 
 ### Adding a portfolio document
 Add to /_data/portfolio.yml
