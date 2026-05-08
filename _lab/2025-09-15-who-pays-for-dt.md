@@ -101,11 +101,11 @@ The private sector contributes over half of all domestic investments, but the ma
 
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 1.5rem 0;">
   <figure style="flex: 1; margin: 0; min-width: 200px">
-    <img src="/assets/uploads/dpi-financing-v1-56.png">
+    <img src="/assets/uploads/dpi-financing-v1-7.png">
     <figcaption>Non-ICT domestic investments by type of source</figcaption>
   </figure>
   <figure style="flex: 1; margin: 0; min-width: 200px">
-    <img src="/assets/uploads/dpi-financing-v1-6.png">
+    <img src="/assets/uploads/dpi-financing-v1-8.png">
     <figcaption>Domestic government investment by sector</figcaption>
   </figure>
 </div>
