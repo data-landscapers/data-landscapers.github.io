@@ -68,6 +68,36 @@ Set `has_data_table: true` in the front matter, then place the CSV in `assets/da
 
 `data-cols` is optional — omit to show all columns. Column names must match the CSV header row exactly.
 
+### Inserting an image
+
+```html
+<figure style="width: 60%; margin: 1.5rem auto;">
+  <img src="/assets/uploads/filename.jpg" alt="Description">
+  <figcaption>Caption if needed</figcaption>
+</figure>
+```
+
+margin: auto = centre, 0 = left
+
+### Two images side-by-side
+
+```html
+<div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 1.5rem 0;">
+  <figure style="flex: 1; margin: 0; min-width: 200px">
+    <img src="/assets/uploads/image1.jpg" alt="Description one">
+    <figcaption>Caption one</figcaption>
+  </figure>
+  <figure style="flex: 1; margin: 0; min-width: 200px">
+    <img src="/assets/uploads/image2.jpg" alt="Description two">
+    <figcaption>Caption two</figcaption>
+  </figure>
+</div>
+
+
+
+```
+
+
 ### Adding a portfolio document
 Add to /_data/portfolio.yml
 

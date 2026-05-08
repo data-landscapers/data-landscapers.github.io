@@ -58,13 +58,17 @@ There is, though a possible silver lining for the optimists:
 
 -   Fifty eight per cent are on the road to digitalisation, where the country has adopted a digital system but is taking time to deploy it.
 
-![Digital status by facility](/assets/uploads/rural-digital-1.png)
+<figure style="width: 60%; margin: 1.5rem auto;">
+  <img src="/assets/uploads/rural-digital-1.png" alt="Digital status by facility">
+  <figcaption>Digital status by facility</figcaption>
+</figure>
+
 
 Ranking countries also reveals some surprises. Beyond the usual suspects Eswatini, Cabo Verde and Guinea appear in the top ten.
 
-<figure>
-<img src="/assets/uploads/rural-digital-2.png" alt="Top ranked countries">
-<figcaption>1 = Paper only; 2 = Mostly paper; 3 = Mostly digital</figcaption>
+<figure style="width: 60%; margin: 1.5rem auto;">
+  <img src="/assets/uploads/rural-digital-2.png" alt="Top ranked countries">
+  <figcaption>1 = Paper only; 2 = Mostly paper; 3 = Mostly digital</figcaption>
 </figure>
 
 
