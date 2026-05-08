@@ -84,15 +84,18 @@ Quantifying investments by focus or sector is a little difficult as 30% have bee
   <figcaption>Investments by sector</figcaption>
 </figure>
 
-### Breakdown of investments by focus/sector
+The private sector contributes over half of all domestic investments, but the majority of this goes to ICT infrastructure
 
-The private sector contributes over half of all domestic investments …
-
-### Domestic Investments by type of source
-
-… bur the majority of this goes to ICT infrastructure, …
-
-### Domestic ICT Infrastructure Investments by type of source
+<div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 1.5rem 0;">
+  <figure style="flex: 1; margin: 0; min-width: 200px">
+    <img src="/assets/uploads/dpi-financing-v1-5.png">
+    <figcaption>Domestic investments by type of source</figcaption>
+  </figure>
+  <figure style="flex: 1; margin: 0; min-width: 200px">
+    <img src="/assets/uploads/dpi-financing-v1-6.png">
+    <figcaption>Domestic ICT Infrastructure Investments by type of source</figcaption>
+  </figure>
+</div>
 
 … while government budgets provide over half of DT/DPI investments …
 
