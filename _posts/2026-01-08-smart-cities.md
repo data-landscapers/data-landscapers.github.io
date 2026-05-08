@@ -12,7 +12,7 @@ has_data_table: true
 
 ## Introduction
 
-It may be strange to start a paper with its methodology, but in this case it is necessary. This entire study was researched and written by Perplexity, an AI-powered answer engine that combines large language models with real-time internet search capabilities. Unlike traditional search engines that return lists of links, Perplexity interprets natural language questions, conducts comprehensive web searches across multiple sources and, most importantly, generates results with inline citations linking to original sources. This transparency in sourcing enables relatively easy verification of information to maintain research rigour. My role in this, as in all my open source intelligence projects, is to design the concept, build metadata, write instructions and review outcomes. [**The full methodology, outlining the design of the project through incremental iterative interactions with Perplexity, can be found here.**](/_labs/2026-01-08-smart-cities-methodology)
+It may be strange to start a paper with its methodology, but in this case it is necessary. This entire study was researched and written by Perplexity, an AI-powered answer engine that combines large language models with real-time internet search capabilities. Unlike traditional search engines that return lists of links, Perplexity interprets natural language questions, conducts comprehensive web searches across multiple sources and, most importantly, generates results with inline citations linking to original sources. This transparency in sourcing enables relatively easy verification of information to maintain research rigour. My role in this, as in all my open source intelligence projects, is to design the concept, build metadata, write instructions and review outcomes. [**The full methodology, outlining the design of the project through incremental iterative interactions with Perplexity, can be found here.**](/lab/2026/01/08/smart-cities-methodology/)
 
 This analysis examines initiatives across twelve major African urban centres: [Abidjan](https://docs.google.com/document/d/1g9l51_9Gte6v3lWJZohn6DNuJoZkzIeg/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true), [Accra](https://docs.google.com/document/d/15FLheck29w-_IrkGNrN9M-v_DAcEeQPW/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true), [Cairo](https://docs.google.com/document/d/14uwIPTSIznnzgs200XEJW950jUoyC1hD/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true), [Dakar](https://docs.google.com/document/d/1Hfntxob-Oljgi9ZipNecGJt7gDM_J4y3/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true), [Johannesburg](https://docs.google.com/document/d/1opfKiaeD0Cb3XiU60JPATfp-3Fnfmoa6/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true), [Kampala](https://docs.google.com/document/d/1DPiVyD8QbCcbeU6Ew9hBHabYy5I9rC0n/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true), [Kigali](https://docs.google.com/document/d/1r3lDDu5rOhz5Cl_rlN44LNqC6M1OAWZw/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true), [Lagos](https://docs.google.com/document/d/1VGc-mVL9py8mTzT8c0s3wF2C2MrO4sVh/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true), [Lusaka](https://docs.google.com/document/d/1zfO8J9qHY9t_odmyq_nFUPEpTqq7eHkE/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true), [Nairobi](https://docs.google.com/document/d/1opSDNA3WBSM-VdOrj02IWdoWCpXGkuHp/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true), [Rabat](https://docs.google.com/document/d/1qSKYlPRax4XolwqUcd2Ye7JyH6WPR7Ku/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true), and [Tunis](https://docs.google.com/document/d/1oxetz16Im-TO-WJnun8NXqKirOyLOKG3/edit?usp=drive_link&ouid=117923093939100282219&rtpof=true&sd=true). The selection, based on rankings in the African Smart City Index 2024, reflects a spectrum of development levels, from emerging technology hubs like Nairobi and Kigali to established metropolitan centres such as Johannesburg and Cairo, alongside rapidly urbanising cities like Lagos and Accra.
 
@@ -26,7 +26,7 @@ While smart city initiatives across these twelve cities have generated tangible 
 
 Digital government platforms have demonstrably improved access to public services in several cities. Nairobi's eCitizen portal provides access to over 16,000 government services, significantly reducing the time and cost citizens previously expended navigating bureaucratic processes. Kigali's Irembo platform has achieved remarkable uptake with over 3 million registered users accessing services including birth certificates, business registration, and driving licences through digital channels. Revenue collection has improved through digital systems in Accra, Lagos, and Nairobi, reducing leakage and improving fiscal capacity.
 
-Financial inclusion has advanced dramatically through mobile money systems, particularly in East Africa. Kenya's M-Pesa has become the continental exemplar, providing financial services to previously unbanked populations and enabling digital economic participation. Nairobi's technology startup ecosystem secured $638 million in venture capital funding in 2024, and Lagos has emerged as West Africa's technology hub. Smart waste management systems have improved collection efficiency in Kigali, and smart metering has reduced non-revenue water losses in several cities. Intelligent transport systems have improved traffic flow in Cairo and Nairobi, though benefits remain concentrated in affluent corridors.
+Financial inclusion has advanced dramatically through mobile money systems, particularly in East Africa. Kenya's M-Pesa has become the continental exemplar, providing financial services to previously unbanked populations and enabling digital economic participation. Nairobi's technology startup ecosystem secured \$638 million in venture capital funding in 2024, and Lagos has emerged as West Africa's technology hub. Smart waste management systems have improved collection efficiency in Kigali, and smart metering has reduced non-revenue water losses in several cities. Intelligent transport systems have improved traffic flow in Cairo and Nairobi, though benefits remain concentrated in affluent corridors.
 
 These gains are real. They are, however, insufficient to justify current approaches when set against the governance failures, financial dependencies, exclusionary patterns, and surveillance expansion documented below.
 
@@ -38,7 +38,7 @@ Regulatory frameworks consistently lag technological deployments. Data protectio
 
 ## Financing
 
-The financing architecture of smart city initiatives reveals troubling patterns of external dependency, debt accumulation, and opacity. Nairobi alone has accumulated over $1.3 billion in documented external borrowing for smart city infrastructure, from Korean, Chinese, and Italian sources. Egypt's New Administrative Capital, with total costs estimated in the tens of billions, has been financed through multiple external sources including Chinese loans and UAE investments, contributing to debt levels that triggered an IMF programme.
+The financing architecture of smart city initiatives reveals troubling patterns of external dependency, debt accumulation, and opacity. Nairobi alone has accumulated over \$1.3 billion in documented external borrowing for smart city infrastructure, from Korean, Chinese, and Italian sources. Egypt's New Administrative Capital, with total costs estimated in the tens of billions, has been financed through multiple external sources including Chinese loans and UAE investments, contributing to debt levels that triggered an IMF programme.
 
 Contracts for Chinese-financed projects typically include confidentiality clauses preventing public disclosure of loan conditions, interest rates, repayment schedules, and collateral arrangements. Citizens are asked to service debts whose terms remain unknown. When technology vendors also provide or arrange financing, they become both creditors and suppliers — an arrangement that drives up costs, discourages competitive bidding, and locks cities into vendor ecosystems determined by financing sources rather than local need.
 
@@ -105,16 +105,13 @@ The twelve case studies are available here:
 
 Each city analysis draws on news sources, academic literature, government documents, and data collection spanning ownership, finance, technology, governance, surveillance, performance, social impact, environmental impact, economic benefit, and systems integration. These sources can be found in the annexes to each case study. (The separation of the sources from the main body of text is not ideal but was the result of technical issues instructing the report writing engine.)
 
-
 ### Annotated Bibliography
 
--   [**An annotated bibliography of over 100 academic papers and policy briefs**](/_labs/2026-01-08-smart-cities-bibliography)
+-   [An annotated bibliography of over 100 academic papers and policy briefs](/lab/2026/01/08/smart-cities-bibliography/)
 
 ### Methodology
 
--   [**The full methodology, outlining the design of the project through incremental iterative interactions with Perplexity, can be found here.**](/_labs/2026-01-08-smart-cities-methodology)
-
-## Data
+-   [The full methodology, outlining the design of the project through incremental iterative interactions with Perplexity, can be found here.](/lab/2026/01/08/smart-cities-methodology/)
 
 <div class="dl-datatable"
   data-src="/assets/data/smart-cities.csv"
@@ -123,3 +120,4 @@ Each city analysis draws on news sources, academic literature, government docume
   data-title="African Smart Cities"
   data-metadata-src="/assets/data/smart-cities-metadata.csv">
 </div>
+
