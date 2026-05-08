@@ -79,7 +79,7 @@ New investments peaked in 2020 and have fallen off drastically since then. (NB t
 
 Quantifying investments by focus or sector is a little difficult as 30% have been classiﬁed non-speciﬁcally as relating generally to DT or DPI. Improvements to the prompt instructions are required to disaggregate this classiﬁcation. The estimate of only 5% going to Digital Id is likely to be understated. The ﬁgure for ICT infrastructure is likely to be more accurate as it easier to deﬁne.
 
-<figure style="width: 80%; margin: 1.5rem auto;">
+<figure style="width: 60%; margin: 1.5rem auto;">
   <img src="/assets/uploads/dpi-financing-v1-4.png">
   <figcaption>Investments by sector</figcaption>
 </figure>
@@ -111,34 +111,13 @@ The private sector contributes over half of all domestic investments, but the ma
 </div>
 
 
-### Government budget investments
+Only eight countries contribute at least 15 percent of investments from government budgets.
 
-Eight countries contribute over 20 percent of investments from government budgets.
+<figure style="width: 60%; margin: 1.5rem auto;">
+  <img src="/assets/uploads/dpi-financing-v1-9.png">
+  <figcaption>Government share of DT/DPI budget</figcaption>
+</figure>
 
-### Top 20 government budget share of investments
-
-| Country      | Government Investment (USDm) | Total Investments (USDm) | Government share (%) |
-|--------------|------------------------------|--------------------------|----------------------|
-| Algeria      | 5,930                        | 17,260                   | 34                   |
-| Egypt        | 7,330                        | 23,725                   | 31                   |
-| Rwanda       | 645                          | 2,212                    | 29                   |
-| South Africa | 2,241                        | 7,690                    | 29                   |
-| Botswana     | 340                          | 1,574                    | 22                   |
-| Kenya        | 1,405                        | 6,507                    | 22                   |
-| Nigeria      | 2,800                        | 13,587                   | 21                   |
-| Eswatini     | 37                           | 185                      | 20                   |
-| Libya        | 340                          | 1,835                    | 19                   |
-| Angola       | 805                          | 4,378                    | 18                   |
-| Lesotho      | 51                           | 279                      | 18                   |
-| Morocco      | 1,730                        | 10,005                   | 17                   |
-| Namibia      | 375                          | 2,315                    | 16                   |
-| Tunisia      | 1,000                        | 6,545                    | 15                   |
-| Mauritius    | 220                          | 1,487                    | 15                   |
-| Tanzania     | 550                          | 4,000                    | 14                   |
-| Ethiopia     | 595                          | 4,723                    | 13                   |
-| Mozambique   | 220                          | 2,051                    | 11                   |
-| Ghana        | 190                          | 1,790                    | 11                   |
-| Uganda       | 340                          | 3,344                    | 10                   |
 
 International investments are still dominated by bilateral and multilateral institutions …
 
