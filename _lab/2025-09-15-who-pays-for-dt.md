@@ -111,101 +111,56 @@ The private sector contributes over half of all domestic investments, but the ma
 </div>
 
 
-Only eight countries contribute at least 15 percent of investments from government budgets.
+Only eight countries have more than 20 percent of investments from government budgets.
 
 <figure style="width: 70%; margin: 1.5rem auto;">
   <img src="/assets/uploads/dpi-financing-v1-9.png">
-  <figcaption>Government share of DT/DPI budget</figcaption>
+  <figcaption>Top 15 government budget share of investments</figcaption>
 </figure>
 
 
-International investments are still dominated by bilateral and multilateral institutions, although OECD countries account for only 20% of this total …
+International investments are still dominated by bilateral and multilateral institutions. Multilateral investments are dominated by the World Bank, African Development Bank and the European Union.
 
-### Share of bilateral investments
+<div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 1.5rem 0;">
+  <figure style="flex: 1; margin: 0; min-width: 200px">
+    <img src="/assets/uploads/dpi-financing-v1-10.png">
+    <figcaption>International investments by type of source</figcaption>
+  </figure>
+  <figure style="flex: 1; margin: 0; min-width: 200px">
+    <img src="/assets/uploads/dpi-financing-v1-11.png">
+    <figcaption>Multilateral investments</figcaption>
+  </figure>
+</div>
 
-… but the picture changes when ICT infrastructure is removed from the frame (but note the presence of India, Russia, Türkiye and Brazil)
 
-### Share of bilateral investments excluding ICT infrastructure
 
-Multilateral investments are dominated by the World Bank, African Development Bank and the European Union.
+OECD countries account for less than 40% of bilateral investments, but the picture changes when ICT infrastructure is removed from the frame (but note the presence of India, Russia, Türkiye and Brazil)
 
-### Share of multilateral investments
+<div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 1.5rem 0;">
+  <figure style="flex: 1; margin: 0; min-width: 200px">
+    <img src="/assets/uploads/dpi-financing-v1-12.png">
+    <figcaption>Share of bilateral investments</figcaption>
+  </figure>
+  <figure style="flex: 1; margin: 0; min-width: 200px">
+    <img src="/assets/uploads/dpi-financing-v1-13.png">
+    <figcaption>Share of bilateral investments excluding ICT infrastructure</figcaption>
+  </figure>
+</div>
+
 
 You will be hard-pressed to ﬁnd another comparable list of top investors as this …
 
-### Top 20 international investors
-
-| **Investor**                                                      | **USDm** |
-|-------------------------------------------------------------------|----------|
-| World Bank                                                        | 8,982    |
-| China International Development Cooperation Agency                | 5,989    |
-| China Development Bank/EXIM Bank                                  | 5,530    |
-| African Development Bank (AfDB)                                   | 7,435    |
-| European Union                                                    | 5,186    |
-| Agence Française de Développement (AFD)                           | 2,503    |
-| USAID                                                             | 2,178    |
-| Chinese Technology & Infrastructure Companies                     | 1,998    |
-| European Investment Bank                                          | 1,888    |
-| International VC/PE Funds                                         | 1,570    |
-| Bill & Melinda Gates Foundation                                   | 1,426    |
-| Export-Import Bank of India                                       | 1,395    |
-| United Nations Development Programme                              | 1,368    |
-| German Corporation for International Cooperation (GIZ)            | 1,091    |
-| Arab League Digital Cooperation Initiative                        | 1,063    |
-| UNICEF                                                            | 1,040    |
-| Russian Federal Agency for the Commonwealth of Independent States | 935      |
-| Union for the Mediterranean Digital Initiative                    | 890      |
-| Foreign, Commonwealth & Development Office (FCDO)                 | 877      |
-| Safaricom Ethiopia                                                | 850      |
+<figure style="width: 70%; margin: 1.5rem auto;">
+  <img src="/assets/uploads/dpi-financing-v1-14.png">
+  <figcaption>Top 20 international investors</figcaption>
+</figure>
 
 … nor this.
 
-**Top ﬁve investors for each sector**
-
-| **Sector / Institution**                                               | **USDm** |
-|------------------------------------------------------------------------|----------|
-| **Capacity Building**                                                  |          |
-| Germany                                                                | 1,613    |
-| Arab League Digital Cooperation Initiative                             | 1,038    |
-| United States                                                          | 648      |
-| Mastercard Foundation                                                  | 645      |
-| European Technology & Services Companies                               | 480      |
-| **Data Governance**                                                    |          |
-| United Nations Development Programme                                   | 1,340    |
-| United States                                                          | 1,163    |
-| Russia                                                                 | 935      |
-| European Union Global Gateway                                          | 450      |
-| Nigeria Data Protection Commission                                     | 180      |
-| **Digital Id**                                                         |          |
-| DG de la Sûreté Nationale & Office National des Statistiques (Algeria) | 950      |
-| Ministry of Interior & National ID Authority Egypt)                    | 850      |
-| World Bank                                                             | 780      |
-| National Identity Management Commission (Nigeria)                      | 650      |
-| Department of Home Affairs (South Africa)                              | 618      |
-| **Digital Payment**                                                    |          |
-| International VC/PE Funds                                              | 1,475    |
-| Nigerian Fintech Ecosystem                                             | 980      |
-| Egyptian Banking Sector & FinTech Ecosystem                            | 850      |
-| Vodacom Group                                                          | 771      |
-| Bharti Airtel International                                            | 685      |
-| **e-Government**                                                       |          |
-| Information Technology Industry Development Agency (Egypt)             | 1,800    |
-| Agence Nationale de Développement de l'Investissement (Algeria)        | 1,500    |
-| Various Government Ministries (South Africa)                           | 660      |
-| India                                                                  | 495      |
-| Agence de Développement du Numérique (Morocco)                         | 420      |
-| **DT/DPI General**                                                     |          |
-| World Bank                                                             | 8,117    |
-| Ministry of Communications and Information Technology (Egypt)          | 2,800    |
-| Ministère de la Numérisation et des Statistiques (Algeria)             | 2,800    |
-| European Union                                                         | 2,665    |
-| France                                                                 | 2,072    |
-| **ICT Infrastructure**                                                 |          |
-| China                                                                  | 11,519   |
-| African Development Bank (AfDB)                                        | 4,552    |
-| Telecom Egypt                                                          | 2,500    |
-| Algérie Télécom                                                        | 2,100    |
-| European Investment Bank                                               | 1,888    |
+<figure style="width: 70%; margin: 1.5rem auto;">
+  <img src="/assets/uploads/dpi-financing-v1-15.png">
+  <figcaption>Top five investors in each sector</figcaption>
+</figure>
 
 ## Things to do
 
