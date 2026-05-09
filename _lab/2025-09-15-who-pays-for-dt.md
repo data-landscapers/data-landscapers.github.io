@@ -13,12 +13,12 @@ permalink: /lab/2025/09/15/who-pays-for-dt/
 
 ## The problem
 
-How is digital transformation and digital public infrastructure (DPI) in Africa being ﬁnanced? How much, on what and by whom? This would seem to be a very basic question to which no one has attempted to provide anything nearing a comprehensive answer.
+How is digital transformation and digital public infrastructure (DPI) in Africa being financed? How much, on what and by whom? This would seem to be a very basic question to which no one has attempted to provide anything nearing a comprehensive answer.
 
 -   Official development assistance recorded by the OECD and IATI excludes most non-OECD members. Who is keeping track, for example, of Chinese, Russian, Indian, Turkish and many Gulf state investments?
--   No comparable data on domestic ﬁnancing is gathered at a regional or continental level and the coding of national accounts data submitted to the IMF does not answer the right questions.
+-   No comparable data on domestic financing is gathered at a regional or continental level and the coding of national accounts data submitted to the IMF does not answer the right questions.
 -   Most data on FDI and other private sector investments, where available, sits behind expensive paywalls.
--   OECD, IMF, World Bank and UN sector classiﬁcations have not kept up with technological developments over the past decade. How do you ﬁnd structured data on digital transformation and DPI when the systems are unaware of these concepts?
+-   OECD, IMF, World Bank and UN sector classifications have not kept up with technological developments over the past decade. How do you find structured data on digital transformation and DPI when the systems are unaware of these concepts?
 
 However, while structured data systems might be lagging behind, the internet continues to expand the availability of news, academic research, industry intelligence and information in general. Open source intelligence can now provide a pretty good answer to these questions. The problem is this takes a lot of time and a lot of human quality checking.
 
@@ -34,23 +34,23 @@ This is Perplexity’s explanation:
 
 ### What You CAN Rely On:
 
--   *I can access and synthesize large amounts of non-mainstream data that would take you weeks to ﬁnd manually*
+-   *I can access and synthesize large amounts of non-mainstream data that would take you weeks to find manually*
 -   *I can identify patterns and connections across diverse sources that aren't easily visible*
 -   *I provide good starting points and directional insights for complex research questions*
 -   *I can compile comprehensive datasets from multiple authoritative sources*
 
 ### What You CANNOT Fully Rely On:
 
--   *Perfect accuracy of every data point without your own veriﬁcation*
--   *My ability to assess source credibility with the same expertise you have in your ﬁeld*
+-   *Perfect accuracy of every data point without your own verification*
+-   *My ability to assess source credibility with the same expertise you have in your field*
 -   *Complex geopolitical interpretations that require deep contextual knowledge*
 -   *URLs remaining accessible or sources being exactly as represented*
 
 ### Recommendation for Your Research Approach
 
--   *Use my capabilities as a research accelerator and pattern detector, not as a ﬁnal authority.*
+-   *Use my capabilities as a research accelerator and pattern detector, not as a final authority.*
 
-As I summarise initial ﬁndings I’m going to describe the data as I ﬁnd it and will not continually repeat disclaimers and make excuses for inaccuracies. This is the starting point in an exercise that will hopefully improve with experience. The intention moving forward is to ﬁne tune the training methodology rather than ﬁx the data manually.
+As I summarise initial findings I’m going to describe the data as I find it and will not continually repeat disclaimers and make excuses for inaccuracies. This is the starting point in an exercise that will hopefully improve with experience. The intention moving forward is to fine tune the training methodology rather than fix the data manually.
 
 ## Some results
 
@@ -77,7 +77,7 @@ New investments peaked in 2020 and have fallen off drastically since then. (NB t
   <figcaption>Start year of financial commitments</figcaption>
 </figure>
 
-Quantifying investments by focus or sector is a little difficult as 30% have been classiﬁed non-speciﬁcally as relating generally to DT or DPI. Improvements to the prompt instructions are required to disaggregate this classiﬁcation. The estimate of only 5% going to Digital Id is likely to be understated. The ﬁgure for ICT infrastructure is likely to be more accurate as it easier to deﬁne.
+Quantifying investments by focus or sector is a little difficult as 30% have been classified non-specifically as relating generally to DT or DPI. Improvements to the prompt instructions are required to disaggregate this classification. The estimate of only 5% going to Digital Id is likely to be understated. The figure for ICT infrastructure is likely to be more accurate as it easier to define.
 
 <figure style="width: 70%; margin: 1.5rem auto;">
   <img src="/assets/uploads/dpi-financing-v1-4.png">
@@ -148,7 +148,7 @@ OECD countries account for less than 40% of bilateral investments, but the pictu
 </div>
 
 
-You will be hard-pressed to ﬁnd another comparable list of top investors as this …
+You will be hard-pressed to find another comparable list of top investors as this …
 
 <figure style="width: 70%; margin: 1.5rem auto;">
   <img src="/assets/uploads/dpi-financing-v1-14.png">
@@ -166,7 +166,7 @@ You will be hard-pressed to ﬁnd another comparable list of top investors as th
 
 -   Do a deep dive into a number of countries to manually verify results.
 -   Identify glaring inaccuracies and engage with Perplexity to understand the errors in its logic.
--   Manually recode the “DPI/DT General” classiﬁcations and devise instructions for Perplexity to reﬂect this recoding.
+-   Manually recode the “DPI/DT General” classifications and devise instructions for Perplexity to reflect this recoding.
 -   Rerun the exercise for selected countries and check manually for improvements.
 -   Rebuild the entire database.
 
