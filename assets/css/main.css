@@ -89,7 +89,7 @@ pre code { background: none; padding: 0; color: var(--ink); }
 ul, ol { padding-left: 1.5rem; margin-bottom: 1.25rem; }
 li { margin-bottom: 0.35rem; }
 
-figure { margin: 1.5rem 0; }
+figure { margin-top: 1.5rem; margin-bottom: 1.5rem; }
 figcaption { font-size: 0.82rem; color: var(--accent); margin-top: 0.5rem; line-height: 1.5; }
 
 /* ── LAYOUT ── */
