@@ -1,7 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#faf9f6"/>
-  <rect x="4" y="8" width="14" height="2" fill="#c84b2f"/>
-  <rect x="4" y="13" width="24" height="2" fill="#1a1a18"/>
-  <rect x="4" y="18" width="20" height="2" fill="#1a1a18"/>
-  <rect x="4" y="23" width="16" height="2" fill="#1a1a18"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Data Landscapers">
+  <!--
+    Favicon for data-landscapers.com.
+    Africa silhouette traced from the master logo, simplified for legibility at 16x16.
+    Toggle the cream background by uncommenting the rect below.
+  -->
+  <!-- <rect width="64" height="64" fill="#F5F1E8"/> -->
+
+  <g fill="none" stroke="#1A2238" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Africa outline -->
+    <path d="M 28.03 54.03 L 26.32 52.86 L 22.15 42.79 L 22.96 38.45 L 19.93 33.47 L 20.14 30.00 L 17.08 28.40 L 10.96 29.37 L 6.00 24.63 L 6.81 17.70 L 14.86 9.00 L 16.97 9.54 L 24.29 7.97 L 25.37 11.00 L 29.00 12.47 L 30.74 10.95 L 38.54 12.14 L 38.73 14.77 L 42.85 21.71 L 46.18 25.15 L 49.21 24.44 L 50.00 25.23 L 48.54 29.67 L 45.69 32.63 L 39.95 28.89 L 34.75 30.30 L 33.93 29.48 L 31.96 31.14 L 28.65 37.31 L 29.30 43.71 L 33.77 47.85 L 36.34 48.91 L 32.47 53.22 L 28.03 54.03 Z" stroke-width="2.4"/>
+    <!-- Inner contour ring -->
+    <path d="M 28.67 44.71 L 27.61 43.99 L 25.03 37.74 L 25.53 35.05 L 23.65 31.96 L 23.78 29.81 L 21.88 28.82 L 18.09 29.42 L 15.01 26.48 L 15.52 22.18 L 20.51 16.79 L 21.82 17.13 L 26.35 16.15 L 27.02 18.04 L 29.28 18.94 L 30.35 18.00 L 35.19 18.74 L 35.31 20.37 L 37.86 24.67 L 39.93 26.80 L 41.81 26.37 L 42.29 26.85 L 41.39 29.61 L 39.62 31.44 L 36.06 29.12 L 32.84 30.00 L 32.33 29.49 L 31.11 30.52 L 29.06 34.35 L 29.46 38.31 L 32.23 40.88 L 33.83 41.54 L 31.43 44.21 L 28.67 44.71 Z" stroke-width="1.4" opacity="0.8"/>
+  </g>
+
+  <!-- Magnifying glass over south-east Africa -->
+  <g>
+    <!-- Opaque cream fill to mask underlying contours -->
+    <circle cx="41.0" cy="40.0" r="9.5" fill="#F5F1E8"/>
+    <!-- Terracotta contour arcs inside the lens -->
+    <g fill="none" stroke="#C25B3F" stroke-width="1.5" stroke-linecap="round">
+      <path d="M 34.5 37.0 Q 41.0 34.5 47.5 37.0"/>
+      <path d="M 34.0 40.5 Q 41.0 38.0 48.0 40.5"/>
+      <path d="M 34.5 44.0 Q 41.0 41.5 47.5 44.0"/>
+    </g>
+    <!-- Lens rim -->
+    <circle cx="41.0" cy="40.0" r="9.5" fill="none" stroke="#1A2238" stroke-width="2.6"/>
+    <!-- Stubby 45-degree handle -->
+    <g transform="translate(47.72,46.72) rotate(45)">
+      <rect x="0" y="-2.3" width="8.5" height="4.6" rx="2.3" ry="2.3"
+            fill="#7B8CA8" stroke="#1A2238" stroke-width="1.7"/>
+    </g>
+  </g>
 </svg>

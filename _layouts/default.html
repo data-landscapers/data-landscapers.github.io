@@ -14,8 +14,11 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a href="{{ '/' | relative_url }}" class="site-logo">
-        Data Landscapers
-        <span class="site-logo__sub">Mapping Africa's data landscape</span>
+        <img src="{{ '/assets/uploads/logo_transparent_512.png' | relative_url }}" alt="Data Landscapers" class="site-logo__img">
+        <span class="site-logo__text">
+          Data Landscapers
+          <span class="site-logo__sub">Mapping Africa's data landscape</span>
+        </span>
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.classList.toggle('open'); document.getElementById('site-nav').classList.toggle('open')">
         <span></span><span></span><span></span>
