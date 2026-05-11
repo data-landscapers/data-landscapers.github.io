@@ -89,8 +89,8 @@ pre code { background: none; padding: 0; color: var(--ink); }
 ul, ol { padding-left: 1.5rem; margin-bottom: 1.25rem; }
 li { margin-bottom: 0.35rem; }
 
-hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
-img { max-width: 100%; height: auto; display: block; }
+figure { margin: 1.5rem 0; }
+figcaption { font-size: 0.82rem; color: var(--accent); margin-top: 0.5rem; line-height: 1.5; }
 
 /* ── LAYOUT ── */
 .site-wrap { min-height: 100vh; display: flex; flex-direction: column; }
