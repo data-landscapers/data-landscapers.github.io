@@ -8,7 +8,9 @@ description: Completed research and analysis on data governance, data standards,
 
 <header style="padding: 3rem 0 2rem; border-bottom: 1px solid var(--rule);">
   <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.75rem;">Writing</div>
-  <p style="color: var(--ink-light); margin: 0;">Data governance. Digital sovereignty. Open source intelligence. The struggle for African-led infrastructure, standards and policy.</p>
+  <p style="font-family: var(--mono); font-size: 0.82rem; color: var(--ink-faint); margin: 0; line-height: 1.5;">
+     These are finished pieces of recent work. I had planned to migrate to SubStack but didn't feel comfortable there, so this is my new home. The other benefit of this site is that I am able to display and host datasets and their metadata more elegantly than a GDoc link.
+    </p>
 </header>
 
 {% assign all_posts = site.posts %}
