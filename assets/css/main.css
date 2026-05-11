@@ -118,7 +118,7 @@ figcaption { font-size: 0.82rem; color: var(--accent); margin-top: 0.5rem; line-
 .site-logo__img { height: 80px; width: 80px; display: block; }
 .site-logo__text { display: flex; flex-direction: column; }
 .site-logo:hover { color: var(--accent); border: none; }
-.site-logo__sub { font-family: var(--serif); font-size: 0.65rem; font-weight: 300; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-top: -3px; }
+.site-logo__sub { font-family: var(--serif); font-size: 1.2rem; font-weight: 300; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-top: -3px; }
 
 /* Desktop nav */
 .site-nav { display: flex; gap: 1.75rem; align-items: center; }
