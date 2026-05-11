@@ -304,7 +304,7 @@
 
           const tbl = document.createElement('table');
           tbl.style.cssText = `
-            border-collapse:collapse;font-size:0.88em;
+            border-collapse:collapse;font-size:0.78em;
             font-family:'Lato',Calibri,Arial,sans-serif;`;
 
           const tbody = tbl.createTBody();
