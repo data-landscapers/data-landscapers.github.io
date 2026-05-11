@@ -258,7 +258,7 @@
           const headerTbl = document.createElement('table');
           headerTbl.style.cssText = `
             border-collapse:collapse;font-size:0.88em;
-            font-family:'Source Serif 4',serif;
+            font-family:'Lato',Calibri,Arial,sans-serif;
             table-layout:fixed;`;
 
           const hrow = document.createElement('tr');
@@ -305,7 +305,7 @@
           const tbl = document.createElement('table');
           tbl.style.cssText = `
             border-collapse:collapse;font-size:0.88em;
-            font-family:'Source Serif 4',serif;`;
+            font-family:'Lato',Calibri,Arial,sans-serif;`;
 
           const tbody = tbl.createTBody();
           data.forEach((row, ri) => {
