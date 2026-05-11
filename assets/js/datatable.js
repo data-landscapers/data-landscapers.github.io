@@ -318,7 +318,7 @@
             colIndices.forEach((ci) => {
               const td = tr.insertCell();
               const minW = minColWidth ? `min-width:${minColWidth}px;` : '';
-              td.style.cssText = `padding:6px 10px;border-bottom:1px solid #e0ddd6;vertical-align:top;${minW}${colWidthStyle(headers[ci])}`;
+              td.style.cssText = `padding:6px 10px;border-bottom:1px solid #e0ddd6;vertical-align:top;line-height:1.3;${minW}${colWidthStyle(headers[ci])}`;
               const val = row[ci] || '';
               if (ci === sovColIdx) td.innerHTML = sovereigntyBadge(val);
               else td.textContent = val;
