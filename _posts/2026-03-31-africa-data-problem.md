@@ -5,7 +5,7 @@ subtitle: 'The view from the ground floor of African digital transformation'
 date: 2026-03-31
 category: Transformation
 description: Data collected for all 54 African countries on the digital status of rural facilities - primary healthcare clinics, primary schools, registry offices and police stations - reveal that paper remains the overriding means of maintaining records.
-pdf: /assets/pdfs/data-side-of-lnob.pdf
+pdf: /assets/pdfs/2021-data-side-of-lnob.pdf
 has_data_table: true
 ---
 
