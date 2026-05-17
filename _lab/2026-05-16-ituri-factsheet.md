@@ -9,9 +9,9 @@ pdf: /assets/pdfs/2026-ituri-factsheet.pdf
 permalink: /lab/2026/05/16/who-pays-for-dt/
 ---
 
+This document is a test of the developing abilities of AI-powered search to collect useful information on a quick turnaround without any prior knowledge or expertise. The data it contains has been cited but not verified.
 
-
-Contents
+## Contents
 
 [Introduction](#introduction)
 
