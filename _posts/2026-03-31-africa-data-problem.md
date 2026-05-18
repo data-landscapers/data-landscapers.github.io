@@ -17,7 +17,7 @@ Many African capitals are abuzz with tech solutions. Digital public infrastructu
 
 >   "The strategy correctly identifies data silos as a blocker. But silos assume the data exists somewhere. Much of Zimbabwe's most critical data has never been created in machine-readable form at all."
 
-This struck a chord. Five years ago my colleague Bernard Sabiti and I summarised our learnings from mapping national data infrastructures in [*The data side of leaving no one behind.*](/assets/pdfs/data-side-of-lnob.pdf)
+This struck a chord. Five years ago my colleague Bernard Sabiti and I summarised our learnings from mapping national data infrastructures in [*The data side of leaving no one behind.*](/assets/pdfs/2021-data-side-of-lnob.pdf)
 
 >   "Influenced by our field visits away from the upstream (from national to global) focus of capital cities, we have over time developed a common set of recommendations that we have repeated with increasing confidence. National data infrastructures need to be built from the bottom up. Primary schools, clinics and local government offices are the most widespread physical embodiments of public administration and service delivery. We have therefore argued for the largest part of investments to be concentrated in the digital transformation of these three areas: health management information covering facility-level service delivery; education management information covering the performance of primary schools; and birth registration including the issuance of a legal identity. In this way, a robust national backbone can be constructed that provides both a shareable technical infrastructure and a culture of data use that can catalyse the development of other systems."
 

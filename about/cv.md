@@ -117,7 +117,7 @@ description: Full curriculum vitae of Bill Anderson, data governance consultant 
       <a href="/assets/pdfs/2022-data-disharmony.pdf"><em>Data disharmony: how can donors better act on their commitments?</em></a>
     </li>
     <li style="padding: 0.75rem 0;">
-      <a href="/assets/pdfs/2023-is-the-SDG-monitoring-framework-broken.pdf"><em>Is the SDG monitoring framework broken?</em></a>
+      <a href="/assets/pdfs/2023-is-the-sdg-monitoring-framework-broken.pdf"><em>Is the SDG monitoring framework broken?</em></a>
     </li>
   </ul>
 </section>
