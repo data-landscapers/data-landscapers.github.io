@@ -109,15 +109,15 @@ description: Full curriculum vitae of Bill Anderson, data governance consultant 
   <div class="cv-section__label">Publications</div>
   <ul style="list-style: none; padding: 0;">
     <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--rule);">
-      <a href="/assets/pdfs/digital-compacts-global-ideals-regional-realities.pdf"><em>Digital compacts: global ideals, regional realities</em></a>    </li>
+      <a href="/assets/pdfs/2024-digital-compacts-global-ideals-regional-realities.pdf"><em>Digital compacts: global ideals, regional realities</em></a>    </li>
     <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--rule);">
-      <a href="/assets/pdfs/data-side-of-lnob.pdf"><em>The data side of leaving no one behind</em></a>
+      <a href="/assets/pdfs/2021-data-side-of-lnob.pdf"><em>The data side of leaving no one behind</em></a>
     </li>
     <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--rule);">
-      <a href="/assets/pdfs/data-disharmony.pdf"><em>Data disharmony: how can donors better act on their commitments?</em></a>
+      <a href="/assets/pdfs/2022-data-disharmony.pdf"><em>Data disharmony: how can donors better act on their commitments?</em></a>
     </li>
     <li style="padding: 0.75rem 0;">
-      <a href="/assets/pdfs/Is-the-SDG-monitoring-framework-broken.pdf"><em>Is the SDG monitoring framework broken?</em></a>
+      <a href="/assets/pdfs/2023-is-the-SDG-monitoring-framework-broken.pdf"><em>Is the SDG monitoring framework broken?</em></a>
     </li>
   </ul>
 </section>
