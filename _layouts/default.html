@@ -17,7 +17,7 @@
   <meta property="og:description" content="{{ desc }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:image" content="{{ img }}">
-  <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}">
+  <meta property="og:type" content="{% if page.layout == 'article' or page.layout == 'lab' %}article{% else %}website{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
 
   <!-- Twitter -->
@@ -27,7 +27,7 @@
   <meta name="twitter:image" content="{{ img }}">
 
   <!-- JSON-LD: BlogPosting for articles -->
-  {% if page.layout == "article" %}
+  {% if page.layout == "article" or page.layout == "lab" %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
