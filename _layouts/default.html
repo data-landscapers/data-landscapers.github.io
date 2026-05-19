@@ -4,9 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+
+  {% assign desc = page.description | default: page.summary | default: site.description %}
+  {% assign img = page.image | default: "/assets/uploads/logo_transparent_512.png" | absolute_url %}
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ desc }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ img }}">
+  <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ desc }}">
+  <meta name="twitter:image" content="{{ img }}">
+
+  <!-- JSON-LD: BlogPosting for articles -->
+  {% if page.layout == "article" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ desc | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": "Bill Anderson",
+      "url": "https://data-landscapers.com/about/"
+    },
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+    "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+    "image": {{ img | jsonify }},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Data Landscapers",
+      "url": "https://data-landscapers.com/"
+    }
+  }
+  </script>
+  {% endif %}
+
+  <!-- JSON-LD: WebSite + Person on homepage -->
+  {% if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.title }}",
+    "url": "https://data-landscapers.com/",
+    "author": {
+      "@type": "Person",
+      "name": "Bill Anderson",
+      "jobTitle": "Data governance and digital infrastructure researcher",
+      "url": "https://data-landscapers.com/about/"
+    }
+  }
+  </script>
+  {% endif %}
 </head>
 <body>
 <div class="site-wrap">

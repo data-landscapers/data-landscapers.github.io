@@ -4,7 +4,8 @@ title: A bit of quality assurance advice for Bill Gates
 subtitle: Supporting health workers with AI? No one can disagree with that. Can we?
 date: 2026-01-28
 category: Colonialism
-description: In January Bill Gates published a blog announcing a joint investment with OpenAI to deploy AI in primary healthcare clinics. This article critiques his misuse of evidence.
+summary: In January Bill Gates published a blog announcing a joint investment with OpenAI to deploy AI in primary healthcare clinics. This article critiques his misuse of evidence.
+description: Gates misrepresents health worker employment evidence in justifying his new Horizon 1000 initiative with OpenAI in Rwanda.
 has_data_table: false
 ---
 

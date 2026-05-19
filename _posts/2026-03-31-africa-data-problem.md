@@ -4,7 +4,8 @@ title: "Africa we have a data problem"
 subtitle: 'The view from the ground floor of African digital transformation'
 date: 2026-03-31
 category: Transformation
-description: Data collected for all 54 African countries on the digital status of rural facilities - primary healthcare clinics, primary schools, registry offices and police stations - reveal that paper remains the overriding means of maintaining records.
+summary: Data collected for all 54 African countries on the digital status of rural facilities - primary healthcare clinics, primary schools, registry offices and police stations - reveal that paper remains the overriding means of maintaining records.
+description: Rural clinics, schools, registry offices and police stations in most African countries still rely on paper records. Digital transformation is very slow.
 pdf: /assets/pdfs/2021-data-side-of-lnob.pdf
 has_data_table: true
 ---

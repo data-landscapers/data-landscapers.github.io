@@ -4,7 +4,8 @@ title: African smart cities methodology
 subtitle: Learning to manage AI tools for open source intelligence
 date: 2026-01-08
 category: OSINT
-description: "Notes tracing the iterative development of the article - African smart cities: A critical analysis. This methodology had now been superceded with further advances in AI orchestration agents."
+summary: "Notes tracing the iterative development of the article - African smart cities: A critical analysis. This methodology had now been superceded with further advances in AI orchestration agents."
+description: Open source intelligence methodology used to document African smart cities and surveillance technologies.
 has_data_table: false
 permalink: /lab/2026/01/08/smart-cities-methodology/
 ---

@@ -39,8 +39,8 @@ permalink: /lab/
       {% if doc.subtitle %}
       <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.2rem;"><em>{{ doc.subtitle }}</em></p>
       {% endif %}
-      {% if doc.description %}
-      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ doc.description }}</p>
+      {% if doc.summary %}
+      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ doc.summary }}</p>
       {% endif %}
     </article>
     {% endfor %}

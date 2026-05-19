@@ -1,55 +1,62 @@
 ---
 layout: default
-title: Writing
-description: Completed research and analysis on data governance, data standards, digital sovereignty and Africa's data infrastructures.
+title: Lab
+permalink: /lab/
 ---
 
 <div class="container">
+  <header style="padding: 2.5rem 0 1.5rem; border-bottom: 1px solid var(--rule); margin-bottom: 2rem;">
+    <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.75rem;">Lab</div>
+    <p style="font-family: var(--mono); font-size: 0.82rem; color: var(--ink-faint); margin: 0; line-height: 1.5;">
+      The contents of this collection are work in progress: live datasets, evolving analysis and draft working papers. They are published to share progress with collaborators and anyone interested in this developing ecosystem - not as finished or fully evidenced positions. Data and conclusions are subject to revision. Note also that extensive use of AI deep search (Perplexity) and LLMs (Claude) are used in this work.
+    </p>
+  </header>
 
-{% assign all_posts = site.posts %}
-{% assign categories = all_posts | map: 'category' | compact | uniq | sort %}
+  {% assign lab_docs = site.lab | sort: 'date' | reverse %}
+  {% assign categories = lab_docs | map: 'category' | compact | uniq | sort %}
 
-{% if categories.size > 1 %}
-<div style="margin: 1.25rem 0 0.5rem;">
-  <select id="writing-category-filter" style="font-family: var(--mono); font-size: 0.8em; padding: 4px 8px; border: 1px solid #ccc; border-radius: 3px; background: #fff; color: #333; cursor: pointer;">
-    <option value="">All categories</option>
-    {% for cat in categories %}
-    <option value="{{ cat }}">{{ cat }}</option>
+  {% if categories.size > 1 %}
+  <div style="margin-bottom: 1.5rem;">
+    <select id="lab-category-filter" style="font-family: var(--mono); font-size: 0.8em; padding: 4px 8px; border: 1px solid #ccc; border-radius: 3px; background: #fff; color: #333; cursor: pointer;">
+      <option value="">All categories</option>
+      {% for cat in categories %}
+      <option value="{{ cat }}">{{ cat }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  {% endif %}
+
+  <div class="article-list" id="lab-list">
+    {% for doc in lab_docs %}
+    <article style="padding: 0.6rem 0; border-bottom: 1px solid var(--rule);" data-category="{{ doc.category }}">
+      <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
+        {% if doc.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ doc.category }}</span>{% endif %}
+        {{ doc.date | date: "%-d %B %Y" }}
+      </div>
+      <h2 style="font-size: 1.2rem; font-family: var(--display); font-weight: 700; line-height: 1.3; margin: 0 0 0.2rem;">
+        <a href="{{ doc.url | relative_url }}" style="color: var(--ink); text-decoration: none; border-bottom: none;">{{ doc.title }}</a>
+      </h2>
+      {% if doc.subtitle %}
+      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.2rem;"><em>{{ doc.subtitle }}</em></p>
+      {% endif %}
+      {% if doc.description %}
+      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ doc.description }}</p>
+      {% endif %}
+    </article>
     {% endfor %}
-  </select>
+  </div>
 </div>
-{% endif %}
 
-<ul class="article-list" id="writing-list" style="margin-top: 0;">
-  {% for post in site.posts %}
-  <li class="article-list__item" style="padding: 0.6rem 0;" data-category="{{ post.category }}">
-    <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
-      {% if post.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ post.category }}</span>{% endif %}
-      {{ post.date | date: "%-d %B %Y" }}
-    </div>
-    <div class="article-list__title" style="margin-bottom: 0.2rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
-    {% if post.subtitle %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.1rem;"><em>{{ post.subtitle }}</em></p>{% endif %}
-    {% if post.description %}
-      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ post.description }}</p>
-    {% elsif post.excerpt %}
-      <p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ post.excerpt | strip_html | truncate: 200 }}</p>
-    {% endif %}
-  </li>
-  {% endfor %}
-</ul>
-
-{% if site.posts.size == 0 %}
-<p style="color: var(--ink-faint); padding: 2rem 0; font-family: var(--mono); font-size: 0.8rem;">No articles yet.</p>
-{% endif %}
-
-</div>
+<style>
+  #lab-list a:hover { color: var(--accent) !important; text-decoration: none; border-bottom-color: transparent !important; }
+</style>
 
 <script>
-  const writingFilter = document.getElementById('writing-category-filter');
-  if (writingFilter) {
-    writingFilter.addEventListener('change', function () {
+  const filter = document.getElementById('lab-category-filter');
+  if (filter) {
+    filter.addEventListener('change', function () {
       const selected = this.value;
-      document.querySelectorAll('#writing-list li').forEach(function (el) {
+      document.querySelectorAll('#lab-list article').forEach(function (el) {
         el.style.display = (!selected || el.dataset.category === selected) ? '' : 'none';
       });
     });

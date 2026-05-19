@@ -4,7 +4,8 @@ title: Ituri Province (DRC) Ebola Outbreak Infrastructure Factsheet
 subtitle: Ad-hoc data collection on available infrastructures
 date: 2026-05-17
 category: OSINT
-description: This document is a test of the developing abilities of AI-powered search to collect useful information on a quick turnaround without any prior knowledge or expertise. The data it contains has been cited but not verified.
+summary: This document is a test of the developing abilities of AI-powered search to collect useful information on a quick turnaround without any prior knowledge or expertise. The data it contains has been cited but not verified.
+description: Ebola outbreak in Ituri provubnce, DRC. Fact sheet on provincial health, government and transport infrastructures.
 pdf: /assets/pdfs/2026-ituri-factsheet.pdf
 permalink: /lab/2026/05/16/ituri-factsheet/
 ---

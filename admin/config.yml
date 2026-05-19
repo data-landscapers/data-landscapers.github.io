@@ -18,7 +18,8 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Category", name: "category", widget: "string", required: false }
       - { label: "Tags", name: "tags", widget: "list", required: false }
-      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Summary (displayed on index pages)", name: "summary", widget: "string", required: false }
+      - { label: "SEO description (≤155 chars, for search engines)", name: "description", widget: "string", required: false }
       - { label: "Has data table", name: "has_data_table", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -29,7 +30,8 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Summary (displayed on index pages)", name: "summary", widget: "string" }
+      - { label: "SEO description (≤155 chars, for search engines)", name: "description", widget: "string", required: false }
       - { label: "Status", name: "status", widget: "select", options: ["Active", "Planned", "Complete"] }
       - { label: "Client", name: "client", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }

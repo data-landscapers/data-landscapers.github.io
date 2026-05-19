@@ -4,7 +4,8 @@ title: "Africa's data centre landscape: who owns the infrastructure?"
 subtitle: "A continent-wide mapping of ownership, sovereignty and foreign dependency across data centres in all 54 African countries"
 date: 2026-04-15
 category: Infrastructure
-description: A first attempt to collect data on Africa's data centres with a particular focus on ownership and influence. Includes a downloadable dataset and the metadata instructing Perplexity how to collect the data.
+summary: A first attempt to collect data on Africa's data centres with a particular focus on ownership and influence. Includes a downloadable dataset and the metadata instructing Perplexity how to collect the data.
+description: Dataset and metadata on the ownership of data centres in Africa.
 has_data_table: true
 permalink: /lab/2026/04/15/africa-data-centres/
 ---

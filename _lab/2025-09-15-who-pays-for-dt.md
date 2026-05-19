@@ -5,7 +5,8 @@ subtitle: Assembling a $144 Billion Puzzle from a Thousand Scattered Pieces
 date: 2025-09-15
 category: Finance
 tags: [international finance, digital transformation, OSINT]
-description: There is no comprehensive data available on the financing of digital transformation in Africa. Is open source intelligence using AI deep search ready to tackle this problem? This article includes a dataset of 1,454 records and the methodology used to instruct Perplexity to collect the data.
+summary: There is no comprehensive data available on the financing of digital transformation in Africa. Is open source intelligence using AI deep search ready to tackle this problem? This article includes a dataset of 1,454 records and the methodology used to instruct Perplexity to collect the data.
+description: Who finances digital public infrastructure in Africa? An attempt to create a comprehensive database using AI deep search.
 has_data_table: true
 permalink: /lab/2025/09/15/who-pays-for-dt/
 ---
