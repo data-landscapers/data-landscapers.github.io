@@ -11,6 +11,8 @@ has_data_table: false
 ---
 *This is the executive summary of an in-depth audit of Google's footprint in Africa. The full report is available on the Download PDF button.*
 
+[The pledge](#the-pledge) - [First mile](#first-mile) - [Data centres](#data-centres) - [Gemini lock-in](#gemini-lock-in) - [Cassava](#cassava) - [MoUs](#MoUs) - [AfCFTA](#afcfta) - [Transparency](#transparency) - [Partner or predator?](#partner-or-predator?)
+
 ## The pledge
 
 In February 2022, at the African Union Summit business forum, Google CEO Sundar Pichai committed US\$1 billion over five years to "accelerate Africa's digital transformation". The money was promised across four pillars: affordable internet access, support for startups and SMEs, digitisation for enterprises and governments, and nonprofit support. By September 2025, Google's Senior VP James Manyika told Bloomberg the company had "exceeded the \$1 billion mark".
@@ -19,7 +21,7 @@ The headline obscures more than it reveals. Google has never published an audite
 
 More strikingly, the assets documented in this report — two undersea cables, extensive overland cabling, the Johannesburg cloud region, four planned hubs — represent capital expenditure that, on industry-norm benchmarks, runs to several billion dollars in its own right. None of it is visibly contained within the pledge envelope. The defensible reading is that Google's actual African commitment over 2022–2026 is materially larger than US\$1 billion, quite possibly multiples of it. The absence of disclosure makes the true number unknowable from outside. The recycled headline figure is doing communications work, not financial-disclosure work.
 
-## The first mile
+## First mile
 
 Subsea cables are the pipes that carry the internet into Africa. Google now operates two of them. Equiano, named for the 18th-century abolitionist Olaudah Equiano, has been operational since 2022 with landings in Togo, Nigeria, Namibia, St Helena and South Africa; Google's own commissioned impact assessments project around 21% lower retail internet prices and faster speeds in landing countries. Umoja, announced in 2024 and targeting completion in 2027, will be the first fibre route directly connecting Africa to Australia. In September 2025 Google announced four further infrastructure hubs — north, south, east and west — each combining cable landing stations with adjacent data-centre capacity.
 
@@ -27,7 +29,7 @@ Once those hubs are operational, Google together with Meta will account for an e
 
 It is also a snapshot, not a permanent state. SEACOM 2.0 — financed entirely by African and Aga Khan institutional shareholders, with no hyperscaler or development-bank equity — is targeted for service in 2029–2030, with design capacity larger than every hyperscaler cable to Africa combined.
 
-## Data centres and where the data ends up
+## Data centres
 
 An African government, bank, hospital or university choosing Google Cloud today is choosing one of two destinations for its data: a single building in Johannesburg, or somewhere abroad. There is no second Google Cloud region on the continent. Customers who want to keep data in-country in Lagos, Nairobi or Cape Town can do so — but only by stepping outside Google Cloud and running their own infrastructure in third-party colocation facilities, which gives up the managed-service layer that is the reason most customers choose Google Cloud in the first place.
 
@@ -47,7 +49,7 @@ This is not a generic AI subsidy. Gemini's free distribution runs only through G
 
 The whole vertical stack — cable, data centre, model, app — is the product. The free Gemini is how Google fills it with users. The two are sized to fill each other.
 
-## Cassava: anchor of sovereignty, or anchor tenant?
+## Cassava
 
 Strive Masiyiwa has been among the most articulate champions of African scientific and digital sovereignty — through Econet, Liquid Intelligent Technologies, the Pan-African e-Network, his service on the African Union's Smart Africa board, and his current chairmanship of the African Union's Africa AI Council. Cassava Technologies — the company that now houses Liquid's continental fibre, data-centre and cloud business — is the closest thing Africa has to a sovereign hyperscaler-scale infrastructure platform.
 
@@ -72,7 +74,7 @@ This is the visible half of what is best understood as a deliberate two-track op
 
 The two tracks reinforce each other. A free training programme delivered through an AU-endorsed MoU builds the user base for the commercial cloud. Commercial infrastructure investment builds the credibility that secures the next MoU. Each individual deal performs double duty. Each track de-risks the other. The institutional presence is not a marketing veneer over the commercial estate. It is structurally fused with it — and that is the design, not an accident.
 
-## AfCFTA at stake
+## AfCFTA
 
 The African Continental Free Trade Area is the most ambitious economic instrument in Africa's post-colonial history. Its Digital Trade Protocol is the rulebook for an eventual 1.4 billion-person market. It will determine how much control African states retain over data about their citizens, and whether African regulators will ever have the right to inspect the AI systems that foreign firms deploy on the continent.
 
