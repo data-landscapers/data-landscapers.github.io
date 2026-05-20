@@ -51,7 +51,7 @@ The whole vertical stack — cable, data centre, model, app — is the product. 
 
 ## Cassava
 
-Strive Masiyiwa has been among the most articulate champions of African scientific and digital sovereignty — through Econet, Liquid Intelligent Technologies, the Pan-African e-Network, his service on the African Union's Smart Africa board, and his current chairmanship of the African Union's Africa AI Council. Cassava Technologies — the company that now houses Liquid's continental fibre, data-centre and cloud business — is the closest thing Africa has to a sovereign hyperscaler-scale infrastructure platform.
+Strive Masiyiwa has been among the most articulate champions of African scientific and digital sovereignty — through Econet, Liquid Intelligent Technologies (now part of Cassava Technologies), his service as the African Union Special Envoy on COVID-19 coordinating the Africa Vaccine Acquisition Task Team, his role as Special Advisor to African Presidents on US/Africa food security, and his ongoing engagement with the AU's continental AI agenda. Cassava Technologies — the company that now houses Liquid's continental fibre, data-centre and cloud business — is the closest thing Africa has to a sovereign hyperscaler-scale infrastructure platform.
 
 The single question that defines Cassava Technologies' new position is whether it remains an anchor of African digital sovereignty, or has become an anchor tenant of Google's African expansion.
 
@@ -68,7 +68,7 @@ Alongside the commercial infrastructure sits an institutional one. Google has si
 -   the AfCFTA Secretariat (delivered through the November 2025 ADIEP programme to train 7,500 SMEs in cross-border digital trade across nineteen countries);
 -   Smart Africa, where Google holds platinum membership.
 
-None of these MoUs carries a published dollar value, governance mechanism or exit clause. All of them give Google a seat in the rooms where African AI and digital-trade rules are being written.
+None of these MoUs carries a published dollar value, governance mechanism or exit clause. All of them give Google a seat in the rooms where African AI and digital-trade rules are being written. The inaugural Africa AI Council — unveiled by the Smart Africa Board in Conakry on 17 November 2025, jointly selected by Smart Africa, the African Union Commission and the ITU — names Google's Managing Director for Sub-Saharan Africa, Alex Okosi, as one of its eight independent members.
 
 This is the visible half of what is best understood as a deliberate two-track operating model. One track builds the cables, the cloud region, and the enterprise customer base. The other runs the MoUs, the AU and ECA work, the commissioned policy blueprints, the educator partnerships, and the platinum memberships.
 
@@ -107,3 +107,5 @@ The pattern across cables, cloud, free AI tools, equity stakes, institutional Mo
 The strategy is legal and well-executed, even where its individual components are only partially transparent. Its aggregate effect is to make African states structurally dependent on Google for the digital plumbing of their economies.
 
 And the very legal frameworks that would constrain that dependency — data sovereignty laws, source-code review rights, digital services taxes — are simultaneously being lobbied against by the same Google executives who sign the partnership MoUs.
+
+[**Download the full report.**](/assets/pdfs/2026-google-in-africa.pdf)
