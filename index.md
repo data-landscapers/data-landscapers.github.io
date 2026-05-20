@@ -21,7 +21,7 @@ title: Home
         </div>
         <div class="article-list__title" style="margin-bottom: 0.2rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
         {% if post.subtitle %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.1rem;"><em>{{ post.subtitle }}</em></p>{% endif %}
-        {% if post.description %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ post.description }}</p>{% elsif post.excerpt %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ post.excerpt | strip_html | truncate: 180 }}</p>{% endif %}
+        {% if post.summary %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ post.summary }}</p>{% elsif post.excerpt %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ post.excerpt | strip_html | truncate: 180 }}</p>{% endif %}
       </li>
       {% endfor %}
     </ul>
@@ -40,7 +40,7 @@ title: Home
       </div>
       <h3 style="margin: 0 0 0.1rem;"><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></h3>
       {% if doc.subtitle %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.1rem;"><em>{{ doc.subtitle }}</em></p>{% endif %}
-      {% if doc.description %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ doc.description }}</p>{% endif %}
+      {% if doc.summary %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ doc.summary }}</p>{% endif %}
     </div>
     {% endfor %}
 
