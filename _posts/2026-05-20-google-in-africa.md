@@ -104,6 +104,8 @@ Taken together, the public record is sufficient to map Google's footprint in Afr
 
 Google's investments in Africa are not philanthropy. They are commercially rational.
 
+One of the cornerstones of Google's African strategy never appears as an explicit claim in any of Google's own materials. However, three recent policy documents that Google has commissioned or co-funded to articulate the strategic case for AI in Africa (all authored by the CEO of an American think tank who also contributed to the Digital Trade Protocols), when read in aggregate, share a single unstated premise: that African states cannot finance the underlying digital infrastructure themselves, and that someone else has to do it for them.
+
 The pattern across cables, cloud, free AI tools, equity stakes, institutional MoUs and policy advocacy is what the cloud industry itself calls a "land and expand" strategy. Free tools and cables build user habits; user habits build enterprise lock-in; enterprise lock-in justifies more infrastructure; more infrastructure deepens dependency.
 
 The strategy is legal and well-executed, even where its individual components are only partially transparent. Its aggregate effect is to make African states structurally dependent on Google for the digital plumbing of their economies.
