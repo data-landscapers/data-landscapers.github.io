@@ -76,9 +76,11 @@ The two tracks reinforce each other. A free training programme delivered through
 
 ## AfCFTA
 
-The African Continental Free Trade Area is the most ambitious economic instrument in Africa's post-colonial history. Its Digital Trade Protocol is the rulebook for an eventual 1.4 billion-person market. It will determine how much control African states retain over data about their citizens, and whether African regulators will ever have the right to inspect the AI systems that foreign firms deploy on the continent.
+The African Continental Free Trade Area is the most ambitious economic instrument in Africa's post-colonial history. Google is a key supporter. The AfCFTA Digital Inclusion & Entrepreneurship Programme (ADIEP) is a free training initiative targeting 7,500 small and medium-sized enterprises. Gemini sits at the heart of the training.
 
-The Protocol's Articles 20, 22 and 24 closely mirror long-standing US negotiating positions on digital trade. The external technical-assistance ecosystem that ran in parallel with its drafting included Google-adjacent actors.
+The Digital Trade Protocol is the rulebook for an eventual 1.4 billion-person market. It will determine how much control African states retain over data about their citizens, and whether African regulators will ever have the right to inspect the AI systems that foreign firms deploy on the continent.
+
+The Protocol's Articles 20 (free cross-border data flows), 22 (restrictions on data localisation) and 24 (prohibition on source-code disclosure requirements) closely mirror long-standing US negotiating positions on digital trade. The external technical-assistance ecosystem that ran in parallel with its drafting included Google-adjacent actors.
 
 The Protocol does not sit in isolation. It sits inside a continental policy architecture built around three earlier AU instruments — the Data Policy Framework, the Continental AI Strategy, and the Digital Transformation Strategy for Africa 2020–2030. The central commitments of all three are data sovereignty, African ownership of digital public infrastructure, and the capacity to set continental rules without external capture.
 
