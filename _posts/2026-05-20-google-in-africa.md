@@ -3,7 +3,7 @@ layout: article
 title: "Google in Africa"
 subtitle: 'Partner or predator?'
 date: 2026-05-20
-category: Colonialism
+category: Sovereignty
 summary: An in-depth audit of Google's footprint in Africa and its consequences for digital sovereignty.
 description: An audit of Google in Africa. Cables, data centres, MoUs, full-stack vendor lock-in from free Gemini.
 pdf: /assets/pdfs/2026-google-in-africa.pdf

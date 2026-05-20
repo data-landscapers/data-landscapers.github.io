@@ -3,7 +3,7 @@ layout: article
 title: "You can have any AI stack you like, so long as it's American"
 subtitle: '"Our cloud, our chips, our algorithms" — a new kind of sovereignty emerges from Washington'
 date: 2026-02-27
-category: Colonialism
+category: Sovereignty
 summary: At the India AI Impact Summit in February the White House Director of Tech Policy announced that its new state-funded AI Export Program will seek to impose US technology stacks on those poorer countries deemed to be of strategic interest to the USA.
 description: Under the USA AI Export Program poor African countries will be pressurised to adopt all-American technology stacks.
 has_data_table: false
