@@ -11,7 +11,7 @@ has_data_table: false
 ---
 *This is the executive summary of an in-depth audit of Google's footprint in Africa. The full report is available on the Download PDF button.*
 
-[The pledge](#the-pledge) - [First mile](#first-mile) - [Data centres](#data-centres) - [Gemini lock-in](#gemini-lock-in) - [Cassava](#cassava) - [MoUs](#MoUs) - [AfCFTA](#afcfta) - [Transparency](#transparency) - [Partner or predator?](#partner-or-predator?)
+[The pledge](#the-pledge) - [First mile](#first-mile) - [Data centres](#data-centres) - [Gemini lock-in](#gemini-lock-in) - [Cassava](#cassava) - [MoUs](#MoUs) - [AfCFTA](#afcfta) - [Transparency](#transparency) - [Partner or predator](#partner-or-predator)
 
 ## The pledge
 
@@ -98,7 +98,7 @@ Across the workstreams documented here, transparency is the recurring weak link:
 
 Taken together, the public record is sufficient to map Google's footprint in Africa. It is not sufficient to audit it.
 
-## Partner or predator?
+## Partner or predator
 
 Google's investments in Africa are not philanthropy. They are commercially rational.
 
