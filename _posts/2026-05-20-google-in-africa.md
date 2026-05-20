@@ -23,7 +23,7 @@ More strikingly, the assets documented in this report — two undersea cables, e
 
 ## First mile
 
-Subsea cables are the pipes that carry the internet into Africa. Google now operates two of them. Equiano, named for the 18th-century abolitionist Olaudah Equiano, has been operational since 2022 with landings in Togo, Nigeria, Namibia, St Helena and South Africa; Google's own commissioned impact assessments project around 21% lower retail internet prices and faster speeds in landing countries. Umoja, announced in 2024 and targeting completion in 2027, will be the first fibre route directly connecting Africa to Australia. In September 2025 Google announced four further infrastructure hubs — north, south, east and west — each combining cable landing stations with adjacent data-centre capacity.
+Subsea cables are the pipes that carry the internet into Africa. Google now owns two of them. Equiano, named for the 18th-century abolitionist Olaudah Equiano, has been operational since 2022 with landings in Togo, Nigeria, Namibia, St Helena and South Africa; Google's own commissioned impact assessments project around 21% lower retail internet prices and faster speeds in landing countries. Umoja, announced in 2024 and targeting completion in 2027, will be the first fibre route directly connecting Africa to Australia. In September 2025 Google announced four further infrastructure hubs — north, south, east and west — each combining cable landing stations with adjacent data-centre capacity.
 
 Once those hubs are operational, Google together with Meta will account for an estimated 65–75% of new high-capacity subsea capacity being built into the continent. That is a level of single-hyperscaler concentration without precedent in African connectivity infrastructure.
 
