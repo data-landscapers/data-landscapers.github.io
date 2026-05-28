@@ -8,9 +8,9 @@ summary: AfCFTA and Smart Africa are building competing cross-border data exchan
 has_data_table: false
 ---
 
-On 12 November 2025, at the Transform Africa Summit in Conakry, the existence of Smart Africa Data Exchange (SADX) was [unveiled](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/): a system for cross-border data exchange owned by [**Smart Africa**](https://smartafrica.org/).
+On 12 November 2025, at the Transform Africa Summit in Conakry, the existence of Smart Africa Data Exchange (**SADX**) was [unveiled](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/): a system for cross-border data exchange owned by [**Smart Africa**](https://smartafrica.org/).
 
-Five days later, at a closed side-event at the B20 Summit in Johannesburg, the Africa Digital Access and Public Infrastructure for Trade (ADAPT) was [launched:](https://blog.iota.org/adapt-africa-digital-trade/) a system for cross-border data exchange owned by the secretariat of the Africa Continental Free Trade Area ([**AfCFTA**](https://au-afcfta.org/)).
+Five days later, at a closed side-event at the B20 Summit in Johannesburg, the Africa Digital Access and Public Infrastructure for Trade (**ADAPT**) was [launched:](https://blog.iota.org/adapt-africa-digital-trade/) a system for cross-border data exchange owned by the secretariat of the Africa Continental Free Trade Area ([**AfCFTA**](https://au-afcfta.org/)).
 
 **SADX** [announced](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/) a pilot with Benin, Ghana and Rwanda in November.
 
