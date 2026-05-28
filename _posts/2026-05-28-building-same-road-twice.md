@@ -26,7 +26,7 @@ The [AfCFTA Secretariat](https://au-afcfta.org/) is a functionally autonomous bo
 
 The [African Union’s Digital Transformation Strategy](https://au.int/sites/default/files/documents/38507-doc-DTS_for_Africa_2020-2030_English.pdf) contains a SWOT analysis. Weakness number one:
 
->   Weak coordination among continental institutions pursuing the digitalization agenda of the continent. This deficiency must be addressed immediately, otherwise the project is already destined to fail even before being implemented.
+>   Weak coordination among continental institutions pursuing the digitalization agenda of the continent. This deficiency must be addressed immediately, otherwise the project is already destined to fail even before being implemented. 
 
 The purpose of the strategy couldn’t be clearer:
 
