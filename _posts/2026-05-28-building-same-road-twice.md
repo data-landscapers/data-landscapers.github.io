@@ -20,7 +20,7 @@ Five days later, at a closed side-event at the B20 Summit in Johannesburg, the A
 
 **ADAPT** [is being driven](https://www.youtube.com/watch?v=0Wf4ghtrlfg) by the Tony Blair Global Institute, the World Economic Forum and the IOTA Foundation. It utilises the [Trade Worldwide Information Network](https://www.twin.org/home) (TWIN) which is built on [IOTA](https://www.iota.org/) blockchain technology. IOTA is simultaneously a non-profit technology foundation and the custodian of a live cryptocurrency. TWIN's software code is open source, but its underlying ledger [infrastructure](https://twindev.org/assets/files/TWIN_Whitepaper_Reference_Architecture-V1.0-January-2026-9f2ab8f3019bcaf1b88cdd9cda72210a.pdf) runs on IOTA's network.
 
-[**Smart Africa**](https://smartafrica.org/) is a multi-stakeholder alliance whose founding manifesto was endorsed by all African Union Heads of State. The AU Commission is a partner within the Alliance.
+**Smart Africa** is a multi-stakeholder alliance whose founding manifesto was endorsed by all African Union Heads of State. The AU Commission is a partner within the Alliance.
 
 The **AfCFTA Secretariat** is a functionally autonomous body within the African Union system with its own legal personality, established by the AU Assembly to coordinate implementation of the African Continental Free Trade Area.
 
