@@ -8,7 +8,7 @@ summary: AfCFTA and Smart Africa are building competing cross-border data exchan
 has_data_table: false
 ---
 
-On 12 November 2025, at the Transform Africa Summit (TAS) in Conakry, the existence of Smart Africa Data Exchange (SADX) pilot was [unveiled](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/): a system for cross-border data exchange.
+On 12 November 2025, at the Transform Africa Summit (TAS) in Conakry, the existence of Smart Africa Data Exchange (SADX) pilot was [unveiled](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/): a system for cross-border data exchange. 
 
 Five days later, at a closed side-event at the B20 Summit in Johannesburg, the Africa Digital Access and Public Infrastructure for Trade (ADAPT) was [launched:](https://blog.iota.org/adapt-africa-digital-trade/) a system for cross-border data exchange.
 
@@ -32,4 +32,4 @@ The purpose of the strategy couldn’t be clearer:
 
 >   To leverage the strengths and address the current lack of a common digital coordination framework, the AU Commission is coordinating the development and formulation of the Digital Transformation Strategy for Africa to guide a common, coordinated digitalization agenda, enhance synergies and avoid duplication of effort.
 
-So what is going on?
+**So what is going on?**
