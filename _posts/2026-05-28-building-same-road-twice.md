@@ -8,21 +8,21 @@ summary: AfCFTA and Smart Africa are building competing cross-border data exchan
 has_data_table: false
 ---
 
-On 12 November 2025, at the Transform Africa Summit (TAS) in Conakry, the existence of Smart Africa Data Exchange (SADX) pilot was [unveiled](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/): a system for cross-border data exchange. 
+On 12 November 2025, at the Transform Africa Summit in Conakry, the existence of Smart Africa Data Exchange (SADX) was [unveiled](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/): a system for cross-border data exchange. 
 
 Five days later, at a closed side-event at the B20 Summit in Johannesburg, the Africa Digital Access and Public Infrastructure for Trade (ADAPT) was [launched:](https://blog.iota.org/adapt-africa-digital-trade/) a system for cross-border data exchange.
 
-SADX [announced](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/) a pilot with Benin, Ghana and Rwanda in November.
+**SADX** [announced](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/) a pilot with Benin, Ghana and Rwanda in November.
 
-ADAPT [announced](https://www.biometricupdate.com/202605/nigeria-kenya-morocco-selected-for-afcfta-digital-identity-and-dpi-rollout) a pilot with Kenya, Morocco and Nigeria in May 2026.
+**ADAPT** [announced](https://www.biometricupdate.com/202605/nigeria-kenya-morocco-selected-for-afcfta-digital-identity-and-dpi-rollout) a pilot with Kenya, Morocco and Nigeria in May 2026.
 
-SADX is supported by the [Data Governance in Africa](https://d4dhub.eu/initiatives/data-governance-in-africa) initiative (an EU project with input from Belgium, Estonia, Finland, France and Germany). It is based on X-Road technology with development being led by [Ascend Digital Solutions](https://ascenddigitalsol.com/), a Ghanaian tech company.
+**SADX** is supported by the [Data Governance in Africa](https://d4dhub.eu/initiatives/data-governance-in-africa) initiative (an EU project with input from Belgium, Estonia, Finland, France and Germany). It is based on X-Road technology with development being led by [Ascend Digital Solutions](https://ascenddigitalsol.com/), a Ghanaian tech company.
 
-[ADAPT is being driven](https://www.youtube.com/watch?v=0Wf4ghtrlfg) by the Tony Blair Global Institute, the World Economic Forum and the IOTA Foundation. It utilises the [Trade Worldwide Information Network](https://www.twin.org/home) (TWIN) which is built on [IOTA](https://www.iota.org/) blockchain technology. IOTA is simultaneously a non-profit technology foundation and the custodian of a live cryptocurrency. TWIN's software code is open source, but its underlying ledger [infrastructure](https://twindev.org/assets/files/TWIN_Whitepaper_Reference_Architecture-V1.0-January-2026-9f2ab8f3019bcaf1b88cdd9cda72210a.pdf) runs on IOTA's network.
+**ADAPT** [is being driven](https://www.youtube.com/watch?v=0Wf4ghtrlfg) by the Tony Blair Global Institute, the World Economic Forum and the IOTA Foundation. It utilises the [Trade Worldwide Information Network](https://www.twin.org/home) (TWIN) which is built on [IOTA](https://www.iota.org/) blockchain technology. IOTA is simultaneously a non-profit technology foundation and the custodian of a live cryptocurrency. TWIN's software code is open source, but its underlying ledger [infrastructure](https://twindev.org/assets/files/TWIN_Whitepaper_Reference_Architecture-V1.0-January-2026-9f2ab8f3019bcaf1b88cdd9cda72210a.pdf) runs on IOTA's network.
 
-[Smart Africa](https://smartafrica.org/) is a multi-stakeholder alliance whose founding manifesto was endorsed by all African Union Heads of State. The AU Commission is a partner within the Alliance.
+[**Smart Africa**](https://smartafrica.org/) is a multi-stakeholder alliance whose founding manifesto was endorsed by all African Union Heads of State. The AU Commission is a partner within the Alliance.
 
-The [AfCFTA Secretariat](https://au-afcfta.org/) is a functionally autonomous body within the African Union system with its own legal personality, established by the AU Assembly to coordinate implementation of the African Continental Free Trade Area.
+The [**AfCFTA Secretariat**](https://au-afcfta.org/) is a functionally autonomous body within the African Union system with its own legal personality, established by the AU Assembly to coordinate implementation of the African Continental Free Trade Area.
 
 The [African Union’s Digital Transformation Strategy](https://au.int/sites/default/files/documents/38507-doc-DTS_for_Africa_2020-2030_English.pdf) contains a SWOT analysis. Weakness number one:
 
