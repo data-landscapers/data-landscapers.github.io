@@ -8,9 +8,9 @@ summary: AfCFTA and Smart Africa are building competing cross-border data exchan
 has_data_table: false
 ---
 
-On 12 November 2025, at the Transform Africa Summit in Conakry, the existence of Smart Africa Data Exchange (SADX) was [unveiled](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/): a system for cross-border data exchange. 
+On 12 November 2025, at the Transform Africa Summit in Conakry, the existence of Smart Africa Data Exchange (SADX) was [unveiled](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/): a system for cross-border data exchange owned by [**Smart Africa**](https://smartafrica.org/).
 
-Five days later, at a closed side-event at the B20 Summit in Johannesburg, the Africa Digital Access and Public Infrastructure for Trade (ADAPT) was [launched:](https://blog.iota.org/adapt-africa-digital-trade/) a system for cross-border data exchange.
+Five days later, at a closed side-event at the B20 Summit in Johannesburg, the Africa Digital Access and Public Infrastructure for Trade (ADAPT) was [launched:](https://blog.iota.org/adapt-africa-digital-trade/) a system for cross-border data exchange owned by the secretariat of the Africa Continental Free Trade Area ([**AfCFTA**](https://au-afcfta.org/)).
 
 **SADX** [announced](https://smartafrica.org/transform-africa-summit-2025-conakry-becomes-the-epicenter-of-digital-cooperation-in-africa/) a pilot with Benin, Ghana and Rwanda in November.
 
@@ -22,7 +22,7 @@ Five days later, at a closed side-event at the B20 Summit in Johannesburg, the A
 
 [**Smart Africa**](https://smartafrica.org/) is a multi-stakeholder alliance whose founding manifesto was endorsed by all African Union Heads of State. The AU Commission is a partner within the Alliance.
 
-The [**AfCFTA Secretariat**](https://au-afcfta.org/) is a functionally autonomous body within the African Union system with its own legal personality, established by the AU Assembly to coordinate implementation of the African Continental Free Trade Area.
+The **AfCFTA Secretariat** is a functionally autonomous body within the African Union system with its own legal personality, established by the AU Assembly to coordinate implementation of the African Continental Free Trade Area.
 
 The [African Union’s Digital Transformation Strategy](https://au.int/sites/default/files/documents/38507-doc-DTS_for_Africa_2020-2030_English.pdf) contains a SWOT analysis. Weakness number one:
 
