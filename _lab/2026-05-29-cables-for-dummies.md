@@ -9,8 +9,6 @@ description: A plain-English explainer about undersea cables. What are they, how
 permalink: /lab/2026/05/29/cables-for-dummies/
 ---
 
-# How Undersea Cables Work: A Beginner's Guide
-
 International connectivity rests on a network of cables lying on the ocean floor. This is a plain-English explainer of what those cables are, how their capacity is bought and sold, how the companies that run them make money, and one concept that trips almost everyone up — IP transit. No prior knowledge assumed.
 
 ## What the cable actually is
