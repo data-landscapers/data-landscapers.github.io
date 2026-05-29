@@ -4,8 +4,8 @@ title: Undersea cables for dummies
 subtitle: A non-technical guide
 date: 2026-05-29
 category: Infrastructure
-summary: A plain-English explainer about undersea cables: what are they, how their capacity is bought and sold, and how the companies that run them make money.
-description: A plain-English explainer about undersea cables: what are they, how their capacity is bought and sold, and how the companies that run them make money.
+summary: A plain-English explainer about undersea cables. What are they, how their capacity is bought and sold, and how the companies that run them make money.
+description: A plain-English explainer about undersea cables. What are they, how their capacity is bought and sold, and how the companies that run them make money.
 permalink: /lab/2026/05/29/cables-for-dummies/
 ---
 
