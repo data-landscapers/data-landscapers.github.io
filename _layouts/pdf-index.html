@@ -14,10 +14,6 @@ layout: default
   {% endif %}
 </div>
 
-{%- comment -%}
-  The content block below contains the full extracted PDF text.
-  It is hidden from visitors but indexed by Pagefind.
-{%- endcomment -%}
-<div data-pagefind-body style="display:none;">
+<div style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap;">
   {{ content }}
 </div>
