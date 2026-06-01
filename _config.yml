@@ -30,6 +30,8 @@ exclude:
   - README.md
   - admin/
 
+google_analytics: G-BF3X4N6YML
+
 collections:
   portfolio:
     output: true
