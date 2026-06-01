@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="container" style="padding: 3rem 1.5rem;">
+  <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.75rem;">{{ page.category }}</div>
+  <h1 style="font-size: 1.6rem; margin-bottom: 0.5rem;">{{ page.title }}</h1>
+  <p style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 1.5rem;">{{ page.date_label }}</p>
+  {% if page.description %}
+  <p style="color: var(--ink-light); margin-bottom: 1.5rem;">{{ page.description }}</p>
+  {% endif %}
+  {% if page.pdf_url %}
+  <a href="{{ page.pdf_url }}" class="btn btn--accent">↓ Download PDF</a>
+  <p style="margin-top: 1rem; font-size: 0.82rem; color: var(--ink-faint);">Or <a href="/portfolio/">return to Portfolio</a></p>
+  {% endif %}
+</div>
+
+{%- comment -%}
+  The content block below contains the full extracted PDF text.
+  It is hidden from visitors but indexed by Pagefind.
+{%- endcomment -%}
+<div data-pagefind-body style="display:none;">
+  {{ content }}
+</div>

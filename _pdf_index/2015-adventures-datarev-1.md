@@ -1,0 +1,15 @@
+---
+category: Landscaping
+date_label: March 2015
+description: 'First of three blogs written for a Gates Foundation project - Grand
+  Challenges Explorations: Using Data for Impact in Uganda Communities. Co-authored
+  with Bernard Sabiti.'
+layout: pdf-index
+pdf_url: /assets/pdfs/2015-adventures-datarev-1.pdf
+sitemap: false
+title: 'Adventures in the data revolution: Collecting Ugandan data'
+---
+
+First of three blogs written for a Gates Foundation project - Grand Challenges Explorations: Using Data for Impact in Uganda Communities. Co-authored with Bernard Sabiti.
+
+It took us a while to realise that what lies inside this room is indeed an untapped goldmine: there is a lot of good quality development data in Uganda. The Ministry of Finance, through its budget website provides large amounts of sub-district data on revenues, expenditure, administration and performance. • Every school feeds data into the Education Management Information System (EMIS). • Every clinic provides monthly performance data into the Health Management Information System (HMIS). • The collection of data by the Uganda Bureau of Statistics (UBOS) in the recent census is believed to have been extremely successful, particularly in rural areas. • UBOS is also piloting its groundbreaking Community Information System – but unfortunately not in our districts. The problem is that much of this data is not publicly available and none of it is available in an easy-to-use electronic format. The government is not deliberately ‘untransparent’. It is keen that its data is properly used – perhaps, even, overly worried about its misuse – and shares it with anyone who can formally present a case for how they intend to use it. The challenge is to show these ministries the value of their data being used more widely. So without these formal agreements in place we needed to jump through hoops. Here is a taster of how we built our first joined-up picture on primary school results: 2014 school results are available from the autonomous Uganda National Examination Board (UNEB), but they cost a lot of money – 200,000 Ugandan shillings (US$70) per year per district. There are 112 districts! Through delicate persuasion of a contact of a contact in the Ministry of Education, we were able to obtain a 15,000-page pdf document containing final-year results for the entire country. • School enrolment figures are available in the EMIS, but we had no access. The district education officers shared this data with us. • School budgets (recurrent and development) are available in a pdf from the budget website. • The number of teachers employed in each school is also available from budget work plans on this site. • Parish-level demographic data from the 2014 census was shared with us ‘unofficially’ by a UBOS employee. • And to visualise all this data at parish level we needed the latest geographic shape files – which UBOS is currently revising and for which we are waiting patiently.

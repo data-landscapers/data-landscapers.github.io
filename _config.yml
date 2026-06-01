@@ -38,6 +38,9 @@ collections:
   lab:
     output: true
     permalink: /lab/:year/:month/:day/:title/
+  pdf_index:
+    output: true
+    permalink: /pdf-index/:name/
 
 defaults:
   - scope:
@@ -60,3 +63,8 @@ defaults:
       type: "lab"
     values:
       layout: "lab"
+  - scope:
+      path: ""
+      type: "pdf_index"
+    values:
+      layout: "pdf-index"

@@ -1,0 +1,15 @@
+---
+category: Finance
+date_label: February 2017
+description: A challenge to the IATI community to take demand more seriously than
+  supply.
+layout: pdf-index
+pdf_url: /assets/pdfs/2017-iati-and-the-data-revolution.pdf
+sitemap: false
+title: 'Aid, development, data, ownership: What has the data revolution got to do
+  with IATI?'
+---
+
+A challenge to the IATI community to take demand more seriously than supply.
+
+multilateral agencies. Very few representatives of developing countries were present in these meetings, and I don’t remember a single demand ever being put by them on the table. The fact is IATI was established as a northern supply-side initiative and so, in practice, it remains. Despite IATI now being recognised by many as a good example of a multi- stakeholder initiative it is not an equitable partnership. Despite 28 developing country governments now being IATI members — quaintly and anachronistically still referred to as ‘partner countries’ — most fail to pay their nominal membership fee or cover their travel costs to meetings. And despite constituting a third of the 77-strong IATI Members Assembly their voice is rarely heard. IATI is still a relatively young initiative. It takes time to get a new publishing standard established and to become part of the norm. It is starting to gain traction in a number of areas. Some publishers, for example, have benefited from the improved quality control regimes required by transparency and by better visibility of their funds as they flow down the aid delivery chain. Advocacy organisations in some developed countries are increasingly using IATI as a means of holding their government’s to account. It is hoped that in the next few years that IATI will be able to play an important role in the cost- effectiveness of humanitarian operations through the provision of timely and relevant data, particularly in fast onset emergencies. But the big prize still eludes us. With a few exceptions, the data that is now available through IATI is not being used as envisioned by the initiative’s architects in Accra back in 2008. It is not being used to meet the needs of developing countries. We, the suppliers of IATI data, have been having pained discussions on this topic for years: • The quality of data from many publishers remains a big issue (although there is now a lot of very good data available). • We have not sold IATI as well as we could: most of IATI’s leading donor champions, for instance,have still not properly briefed their country offices on the benefits of the data. • The tools available for users to access the data are not yet adequate. We need to sort these issues out — and hopefully we will take some steps in this direction at the TAG. They are necessary steps, but they will remain insufficient. Data plays an increasingly critical role in national development. Planners and policy makers in developing countries need a handle on all the resources available to them: domestic and international; public and private. They need to pull together all this
