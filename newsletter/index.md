@@ -17,7 +17,7 @@ description: Subscribe to Data Landscapers — a weekly digest of new writing an
     <div class="newsletter-form-block">
 
       <form
-        action="https://newsletter.data-landscapers.com/api/v1/subscriptions"
+        action="https://buttondown.com/api/emails/embed-subscribe/data-landscapers"
         method="post"
         class="nl-form"
       >
@@ -43,6 +43,7 @@ description: Subscribe to Data Landscapers — a weekly digest of new writing an
             <option value="Europe">Europe</option>
             <option value="North America">North America</option>
             <option value="Latin America and Caribbean">Latin America and Caribbean</option>
+            <option value="South America">South America</option>
             <option value="Oceania">Oceania</option>
           </select>
         </div>
@@ -62,7 +63,7 @@ description: Subscribe to Data Landscapers — a weekly digest of new writing an
           <button type="submit" class="nl-form__submit">Subscribe</button>
         </div>
 
-        <p class="nl-form__note">No spam. Unsubscribe at any time. Sent via <a href="https://buttondown.com" target="_blank" rel="noopener">Buttondown</a>.</p>
+        <p class="nl-form__note">No spam. Unsubscribe at any time. Sent via <a href="https://buttondown.com/refer/data-landscapers" target="_blank" rel="noopener">Buttondown</a>.</p>
 
       </form>
 

@@ -54,14 +54,14 @@ title: Home
     </div>
 
     <div class="sidebar-block">
-      <div class="sidebar-block__label" style="color: var(--accent);">Current focus</div>
-      <p>Digital public infrastructures in Africa; Financial sustainability; AI and open source intelligence; Digital colonialism. <a href="/about/">More →</a></p>
-    </div>
-
-    <div class="sidebar-block">
       <div class="sidebar-block__label" style="color: var(--accent);">Newsletter</div>
       <p style="margin-bottom: 1rem;">Weekly digest of new writing and research. No spam.</p>
       {% include subscribe-button.html %}
+    </div>
+
+    <div class="sidebar-block">
+      <div class="sidebar-block__label" style="color: var(--accent);">Current focus</div>
+      <p>Digital public infrastructures in Africa; Financial sustainability; AI and open source intelligence; Digital colonialism. <a href="/about/">More →</a></p>
     </div>
 
     <div class="sidebar-block">

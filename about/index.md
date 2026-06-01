@@ -6,7 +6,13 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 
 <div class="container">
 
-<div class="cv-section__label" style="padding-top: 2.5rem;">About Data Landscapers</div>
+<div style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--rule); margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+  <div>
+    <div class="cv-section__label" style="margin-bottom: 0.5rem;">About Data Landscapers</div>
+    <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">Weekly digest of new writing and research on Africa's data infrastructure, digital sovereignty and governance.</p>
+  </div>
+  {% include subscribe-button.html %}
+</div>
 
 <div class="about-intro__text">
   <p>This site is a collection of writings, both past and present, curated by Bill Anderson. The writing is divided into three sections:</p>
@@ -39,12 +45,6 @@ description: Bill Anderson — data governance consultant, data landscaping spec
   <div>
     <img src="/assets/uploads/bill-anderson.jpg" alt="Bill Anderson" style="width: 180px; border-radius: 2px;">
   </div>
-</div>
-
-<div style="padding: 2.5rem 0; border-top: 1px solid var(--rule); margin-top: 1rem;">
-  <div class="sidebar-block__label" style="color: var(--accent); font-family: var(--mono); font-size: 0.67rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Newsletter</div>
-  <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 1.25rem;">Weekly digest of new writing and research on Africa's data infrastructure, digital sovereignty and governance.</p>
-  {% include subscribe-button.html %}
 </div>
 
 </div>
