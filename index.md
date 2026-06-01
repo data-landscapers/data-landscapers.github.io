@@ -59,6 +59,12 @@ title: Home
     </div>
 
     <div class="sidebar-block">
+      <div class="sidebar-block__label" style="color: var(--accent);">Newsletter</div>
+      <p style="margin-bottom: 1rem;">Weekly digest of new writing and research. No spam.</p>
+      {% include subscribe-button.html %}
+    </div>
+
+    <div class="sidebar-block">
       <div class="sidebar-block__label" style="color: var(--accent);">Contact</div>
       <p><a href="/contact/">Available to chat or for consulting</a> — data governance, digital infrastructure, standards, OSINT research for Africa.</p>
     </div>

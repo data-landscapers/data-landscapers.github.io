@@ -41,4 +41,10 @@ description: Bill Anderson — data governance consultant, data landscaping spec
   </div>
 </div>
 
+<div style="padding: 2.5rem 0; border-top: 1px solid var(--rule); margin-top: 1rem;">
+  <div class="sidebar-block__label" style="color: var(--accent); font-family: var(--mono); font-size: 0.67rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;">Newsletter</div>
+  <p style="font-size: 0.92rem; color: var(--ink-light); margin-bottom: 1.25rem;">Weekly digest of new writing and research on Africa's data infrastructure, digital sovereignty and governance.</p>
+  {% include subscribe-button.html %}
+</div>
+
 </div>

@@ -19,7 +19,6 @@ kramdown:
   hard_wrap: false
 
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
@@ -38,7 +37,7 @@ collections:
     permalink: /portfolio/:name/
   lab:
     output: true
-    permalink: /lab/:year/:month/:day/:title/ 
+    permalink: /lab/:year/:month/:day/:title/
 
 defaults:
   - scope:
@@ -56,3 +55,8 @@ defaults:
       type: "wip"
     values:
       layout: "wip-item"
+  - scope:
+      path: ""
+      type: "lab"
+    values:
+      layout: "lab"
