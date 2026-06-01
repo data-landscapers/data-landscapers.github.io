@@ -4,12 +4,13 @@ title: Portfolio
 description: Selected projects and publications in data governance, digital sovereignty and data standards.
 ---
 
-<div class="container">
+<div class="container" data-pagefind-ignore>
 
 <header style="padding: 2.5rem 0 1.5rem; border-bottom: 1px solid var(--rule); margin-bottom: 1rem;">
   <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.75rem;">Portfolio</div>
   <p style="color: var(--ink-light); margin: 0;">In my 14 years working for Development Initiatives we got quite a bit done. This collection of papers and blogs does not belong to me alone. I acknowledge the contributions of my ongoing collaborator, Bernard Sabiti, and ex-colleagues Alex Miller, Beata Lisowska, Claudia Wells, Kate Hughes, Liz Steele, Martha Bekele, Sam Wozniak, Steve Kenei, Tom Orrell and Wilbrod Ntawiha.</p>
 </header>
+
 
 {% assign categories = site.data.portfolio | map: 'category' | compact | uniq | sort %}
 
