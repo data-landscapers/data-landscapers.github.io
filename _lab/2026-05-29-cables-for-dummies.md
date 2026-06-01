@@ -2,6 +2,7 @@
 layout: lab
 title: Undersea cables for dummies
 subtitle: A non-technical guide
+author: Compiled by Perplexity Computer
 date: 2026-05-29
 category: Infrastructure
 summary: A plain-English explainer about undersea cables. What are they, how their capacity is bought and sold, and how the companies that run them make money.

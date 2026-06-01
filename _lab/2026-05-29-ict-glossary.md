@@ -2,6 +2,7 @@
 layout: lab
 title: A Glossary of ICT Infrastructure Terms
 subtitle: A non-technical guide
+author: Compiled by Perplexity Computer
 date: 2026-05-29
 category: Infrastructure
 summary: A plain-English reference for the technical, commercial and policy vocabulary that recurs across writing on digital infrastructure — submarine cables, data centres, cloud, AI compute, ownership structures, and digital sovereignty.
