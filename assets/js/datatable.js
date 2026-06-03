@@ -1,4 +1,4 @@
-/* datatable.js v14 */
+/* datatable.js v15 */
 (function () {
   'use strict';
 
@@ -109,17 +109,32 @@
   /* ── Min-width from longest word in a header (underscores = word breaks) */
   function headerMinWidth(headerName) {
     const words = headerName.split(/[_\-\s]+/).filter(Boolean);
-    const lastWord = words[words.length - 1] || '';
+    if (!words.length) return 48;
+    const PX = 9.5;   // px per char in JetBrains Mono at ~0.8em
+    const PAD = 24;   // left+right cell padding
+    const ARROW = 19; // sort-arrow glyph width
+
+    // Base: longest single word sets the column width.
+    // ZWS break-before-_ means other words each get their own line.
     const longest = words.reduce((a, b) => b.length > a.length ? b : a, '');
-    // 9.5px/char + 24px padding.
-    // The sort arrow is always appended to the last word. Two cases need extra width:
-    // 1. Last word IS the longest — arrow makes that line overflow.
-    // 2. Last word is NOT the longest — the column is sized for the longest word,
-    //    but the last word + arrow may still be wider than the longest word alone.
-    const lastWithArrow = lastWord.length * 9.5 + 19; // arrow ~19px
-    const longestWidth  = longest.length * 9.5;
-    const neededWidth   = Math.max(longestWidth, lastWithArrow);
-    return neededWidth + 24;
+    let needed = longest.length * PX;
+
+    // The sort arrow sits after the last word with no break opportunity.
+    // It must fit on the same line as the last word.
+    const lastWord = words[words.length - 1];
+    needed = Math.max(needed, lastWord.length * PX + ARROW);
+
+    // For 2-word headers (e.g. cable_id, approval_year) the ZWS gives a break
+    // opportunity but only if the content after the break (second word + arrow)
+    // is <= the column width. If the whole thing is narrower than ~150px just
+    // fit it all on one line — avoids a 2-line header for short pairs.
+    // For longer 2-word headers (system_supplier), wrapping is fine.
+    if (words.length === 2) {
+      const fullWithArrow = (words[0].length + 1 + words[1].length) * PX + ARROW;
+      if (fullWithArrow <= 120) needed = Math.max(needed, fullWithArrow);
+    }
+
+    return needed + PAD;
   }
 
   /* ── Build one table ─────────────────────────────────────────────────── */
