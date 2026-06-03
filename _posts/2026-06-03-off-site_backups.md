@@ -1,7 +1,7 @@
 ---
 layout: article
 title: The system's crashed. Where's the backup?
-subtitle: Data Localisation and the Off-Site Backup Problem in Sub-Saharan Africa
+subtitle: Data localisation and the off-site backup problem in Sub-Saharan Africa
 date: 2026-06-03
 category: Sovereignty
 summary: How can African governments and large enterprises ensure that the backups of their data are kept sovereign?
