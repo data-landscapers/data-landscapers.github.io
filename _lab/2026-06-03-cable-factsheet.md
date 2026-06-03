@@ -11,6 +11,7 @@ has_data_table: true
 permalink: /lab/2026/06/03/cable-factsheet/
 ---
 
+This resource has been prepared for non-technical readers involved in data governance and digital transformation in Africa. A primer - [*Undersea cables for dummies*](/lab/2026/05/29/cables-for-dummies/) - and a [*glossary of ICT infrastructure terms*](/lab/2026/05/29/ict-glossary/) are also available.
 
 Almost everything we do online in Africa travels through a handful of fibre-optic cables lying on the seabed. They are the physical backbone of the internet — far more important than satellites — and for most of the past two decades they were built and owned by groups of telecoms companies pooling their money together.
 
