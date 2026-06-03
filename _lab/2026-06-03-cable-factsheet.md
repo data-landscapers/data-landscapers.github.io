@@ -23,7 +23,7 @@ The fact sheet below sets out the main cables serving Africa, past, present and 
 
 <div class="dl-datatable"
   data-src="/assets/data/cable-factsheet.csv"
-  data-cols="cable_id, cable_name, status, approval_year, construction_start_year, rfs_year, end_of_life_year, controlling_owner, owner_hq_country, ownership_model, shareholders, african_owned_pct, length_km, origin, destination, landings, region_served, cable_type, design_capacity_tbps, fibre_pairs, estimated_lit_capacity_tbps, tenants_iru, open_access, build_cost_usd_m, system_supplier, data_source, source_url, confidence, as_of_date, last_updated, notes"
+  data-cols="cable_id, cable_name, status, approval_year, construction_start_year, rfs_year, end_of_life_year, controlling_owner, owner_hq_country, ownership_model, shareholders, african_owned_pct, length_km, origin, destination, landings, region_served, cable_type, design_capacity_tbps, fibre_pairs, estimated_lit_capacity_tbps, tenants_iru, open_access, build_cost_usd_m, system_supplier, data_source, source_url, confidence, as_of_date, notes, last_updated"
   data-filters=""
   data-title="Submarine cables serving Africa"
   data-metadata-src="/assets/data/cable-factsheet-metadata.csv">
