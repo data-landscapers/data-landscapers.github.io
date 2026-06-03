@@ -1,4 +1,4 @@
-/* datatable.js v15 */
+/* datatable.js v16 */
 (function () {
   'use strict';
 
@@ -124,11 +124,25 @@
     const lastWord = words[words.length - 1];
     needed = Math.max(needed, lastWord.length * PX + ARROW);
 
-    // For 2-word headers (e.g. cable_id, approval_year) the ZWS gives a break
-    // opportunity but only if the content after the break (second word + arrow)
-    // is <= the column width. If the whole thing is narrower than ~150px just
-    // fit it all on one line — avoids a 2-line header for short pairs.
-    // For longer 2-word headers (system_supplier), wrapping is fine.
+    // The browser may not break between the second-to-last and last word when
+    // the last word is very short (e.g. "m" in build_cost_usd_m) — the break
+    // before "_m" fires but then "_m ↕" is narrower than the column so the
+    // arrow wraps off it. Guard: when last word is shorter than its predecessor,
+    // ensure last-two-words + arrow fits on one line.
+    // Guard: if the last word + arrow already fits in the column (needed px),
+    // the browser may still not break before the last word — it will only break
+    // there if the preceding segment also fits. Check whether last-two-words
+    // as a unit + arrow exceeds the column; if so widen to accommodate.
+    // Only needed when the last word is very short (shorter than the arrow width
+    // in char-equivalents, i.e. <= 2 chars) so the pair is the binding constraint.
+    if (words.length >= 2 && lastWord.length <= 2) {
+      const secondLast = words[words.length - 2];
+      const last2Len = secondLast.length + 1 + lastWord.length;
+      needed = Math.max(needed, last2Len * PX + ARROW);
+    }
+
+    // For 2-word headers where the whole thing + arrow fits within 120px,
+    // don't wrap at all — size to fit on one line.
     if (words.length === 2) {
       const fullWithArrow = (words[0].length + 1 + words[1].length) * PX + ARROW;
       if (fullWithArrow <= 120) needed = Math.max(needed, fullWithArrow);
