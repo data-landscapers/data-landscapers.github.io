@@ -1,4 +1,4 @@
-/* datatable.js v13 */
+/* datatable.js v14 */
 (function () {
   'use strict';
 
@@ -276,11 +276,16 @@
              browser. Solution: a separate header table outside the scroll
              container, scrollLeft kept in sync with the body scroll.       */
 
-          const headerWrap = document.createElement('div');
-          headerWrap.style.cssText = `
-            overflow:hidden;
+          /* ── Sticky container: holds col-header row + top scrollbar together.
+             Both must move as one unit so no gap appears between them when
+             scrolling, and the background prevents data showing through.   */
+          const stickyHdr = document.createElement('div');
+          stickyHdr.style.cssText = `
             position:sticky;top:0;z-index:20;
-            border-bottom:2px solid #c84b2f;`;
+            background:#e8e4dc;`;
+
+          const headerWrap = document.createElement('div');
+          headerWrap.style.cssText = `overflow:hidden;border-bottom:2px solid #c84b2f;`;
 
           const headerTbl = document.createElement('table');
           headerTbl.style.cssText = `
@@ -313,11 +318,11 @@
           });
           headerTbl.appendChild(hrow);
           headerWrap.appendChild(headerTbl);
-          wrap.appendChild(headerWrap);
+          stickyHdr.appendChild(headerWrap);
 
-          /* ── Top scrollbar mirror ── */
+          /* ── Top scrollbar mirror — inside stickyHdr so it sticks with the header ── */
           const scrollTop = document.createElement('div');
-          scrollTop.style.cssText = 'overflow-x:auto;height:10px;cursor:pointer;';
+          scrollTop.style.cssText = 'overflow-x:auto;height:10px;cursor:pointer;background:#e8e4dc;';
           scrollTop.innerHTML = `<style>
             .dl-datatable div::-webkit-scrollbar { height: 10px; }
             .dl-datatable div::-webkit-scrollbar-track { background: #e8e4dc; }
@@ -327,7 +332,8 @@
           const scrollTopInner = document.createElement('div');
           scrollTopInner.style.height = '1px';
           scrollTop.appendChild(scrollTopInner);
-          wrap.appendChild(scrollTop);
+          stickyHdr.appendChild(scrollTop);
+          wrap.appendChild(stickyHdr);
 
           /* ── Body scroll container ── */
           const scrollBot = document.createElement('div');
@@ -364,7 +370,8 @@
 
           /* ── Sync scrolling and column widths ── */
           function syncWidths() {
-            // Match header table width and each th width to body columns
+            // Match header table width and each th width to body columns.
+            // Never set th width smaller than its computed min-width (protects arrow from wrapping).
             const firstRow = tbl.querySelector('tr');
             if (!firstRow) return;
             const bodyTds = firstRow.querySelectorAll('td');
@@ -372,7 +379,9 @@
             headerTbl.style.width = tbl.offsetWidth + 'px';
             scrollTopInner.style.width = tbl.scrollWidth + 'px';
             bodyTds.forEach((td, i) => {
-              if (headThs[i]) headThs[i].style.width = td.offsetWidth + 'px';
+              if (!headThs[i]) return;
+              const minW = parseInt(headThs[i].style.minWidth) || 0;
+              headThs[i].style.width = Math.max(td.offsetWidth, minW) + 'px';
             });
           }
 
@@ -386,13 +395,13 @@
             scrollBot.scrollLeft  = scrollTop.scrollLeft;
           });
 
-          // Run after layout — also push headerWrap below toolbar + nav
+          // Run after layout — push toolbar below nav, stickyHdr below toolbar
           setTimeout(() => {
             syncWidths();
             const NAV_HEIGHT = 68;
             const toolbarH = toolbar.offsetHeight;
             toolbar.style.top = NAV_HEIGHT + 'px';
-            headerWrap.style.top = (NAV_HEIGHT + toolbarH) + 'px';
+            stickyHdr.style.top = (NAV_HEIGHT + toolbarH) + 'px';
           }, 50);
         }
 
