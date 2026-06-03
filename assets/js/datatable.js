@@ -1,4 +1,4 @@
-/* datatable.js v10 */
+/* datatable.js v11 */
 (function () {
   'use strict';
 
@@ -111,7 +111,7 @@
     const words = headerName.split(/[_\-\s]+/).filter(Boolean);
     const longest = words.reduce((a, b) => b.length > a.length ? b : a, '');
     // JetBrains Mono at ~0.8em ≈ 7.7px per char; add padding
-    return Math.max(longest.length * 8 + 20, 40);
+    return Math.max(longest.length * 9 + 22, 44);
   }
 
   /* ── Build one table ─────────────────────────────────────────────────── */
@@ -293,7 +293,7 @@
               min-width:${computedMinW}px;
               ${extraStyle}`;
             // Replace underscores with underscore + zero-width space so header can wrap at _ boundaries
-            const displayLabel = h.replace(/_/g, '_​');
+            const displayLabel = h.replace(/_/g, '​_');
             const arrow = sortCol === vi ? (sortAsc ? ' \u25b2' : ' \u25bc') : ' \u2195';
             th.textContent = displayLabel + arrow;
             th.addEventListener('click', () => {
