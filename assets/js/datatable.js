@@ -1,4 +1,4 @@
-/* datatable.js v11 */
+/* datatable.js v12 */
 (function () {
   'use strict';
 
@@ -110,8 +110,8 @@
   function headerMinWidth(headerName) {
     const words = headerName.split(/[_\-\s]+/).filter(Boolean);
     const longest = words.reduce((a, b) => b.length > a.length ? b : a, '');
-    // JetBrains Mono at ~0.8em ≈ 7.7px per char; add padding
-    return Math.max(longest.length * 9 + 22, 44);
+    // 9.5px/char + 24px padding; no floor below what the longest word needs
+    return longest.length * 9.5 + 24;
   }
 
   /* ── Build one table ─────────────────────────────────────────────────── */
