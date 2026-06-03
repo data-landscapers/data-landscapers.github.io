@@ -1,4 +1,4 @@
-/* datatable.js v12 */
+/* datatable.js v13 */
 (function () {
   'use strict';
 
@@ -109,9 +109,17 @@
   /* ── Min-width from longest word in a header (underscores = word breaks) */
   function headerMinWidth(headerName) {
     const words = headerName.split(/[_\-\s]+/).filter(Boolean);
+    const lastWord = words[words.length - 1] || '';
     const longest = words.reduce((a, b) => b.length > a.length ? b : a, '');
-    // 9.5px/char + 24px padding; no floor below what the longest word needs
-    return longest.length * 9.5 + 24;
+    // 9.5px/char + 24px padding.
+    // The sort arrow is always appended to the last word. Two cases need extra width:
+    // 1. Last word IS the longest — arrow makes that line overflow.
+    // 2. Last word is NOT the longest — the column is sized for the longest word,
+    //    but the last word + arrow may still be wider than the longest word alone.
+    const lastWithArrow = lastWord.length * 9.5 + 19; // arrow ~19px
+    const longestWidth  = longest.length * 9.5;
+    const neededWidth   = Math.max(longestWidth, lastWithArrow);
+    return neededWidth + 24;
   }
 
   /* ── Build one table ─────────────────────────────────────────────────── */
