@@ -1,4 +1,4 @@
-/* datatable.js v9 */
+/* datatable.js v10 */
 (function () {
   'use strict';
 
@@ -277,23 +277,23 @@
           const headerTbl = document.createElement('table');
           headerTbl.style.cssText = `
             border-collapse:collapse;font-size:0.88em;
-            font-family:'Lato',Calibri,Arial,sans-serif;
-            table-layout:fixed;`;
+            font-family:'Lato',Calibri,Arial,sans-serif;`;
 
           const hrow = document.createElement('tr');
           visibleHeaders.forEach((h, vi) => {
             const th = document.createElement('th');
-            // Min-width: use explicit data-min-col-width if set, else compute from header words
+            // Min-width: explicit data-min-col-width wins; else compute from longest word in header
             const computedMinW = minColWidth || headerMinWidth(h);
-            const minWStyle = colWidthStyle(h) || `min-width:${computedMinW}px;`;
-            // Display label: replace underscores with spaces for wrapping
-            const displayLabel = h.replace(/_/g, '_​'); // zero-width space after _ allows wrap
+            const extraStyle = colWidthStyle(h); // wide override for url/description cols
             th.style.cssText = `
               padding:7px 10px;text-align:left;white-space:normal;word-break:break-word;cursor:pointer;
               font-family:'JetBrains Mono',monospace;font-size:0.8em;font-weight:700;
               background:#e8e4dc;color:#333;user-select:none;
-              vertical-align:bottom;
-              ${minWStyle}`;
+              vertical-align:bottom;box-sizing:border-box;
+              min-width:${computedMinW}px;
+              ${extraStyle}`;
+            // Replace underscores with underscore + zero-width space so header can wrap at _ boundaries
+            const displayLabel = h.replace(/_/g, '_​');
             const arrow = sortCol === vi ? (sortAsc ? ' \u25b2' : ' \u25bc') : ' \u2195';
             th.textContent = displayLabel + arrow;
             th.addEventListener('click', () => {
@@ -340,8 +340,10 @@
 
             colIndices.forEach((ci) => {
               const td = tr.insertCell();
-              const minW = minColWidth ? `min-width:${minColWidth}px;` : '';
-              td.style.cssText = `padding:6px 10px;border-bottom:1px solid #e0ddd6;vertical-align:top;line-height:1.3;${minW}${colWidthStyle(headers[ci])}`;
+              // Use same min-width logic as header so syncWidths never shrinks below it
+              const tdMinW = minColWidth || headerMinWidth(headers[ci]);
+              const tdExtraStyle = colWidthStyle(headers[ci]);
+              td.style.cssText = `padding:6px 10px;border-bottom:1px solid #e0ddd6;vertical-align:top;line-height:1.3;box-sizing:border-box;min-width:${tdMinW}px;${tdExtraStyle}`;
               const val = row[ci] || '';
               if (ci === sovColIdx) td.innerHTML = sovereigntyBadge(val);
               else td.textContent = val;
