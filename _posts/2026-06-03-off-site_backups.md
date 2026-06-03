@@ -13,7 +13,7 @@ Nobody calls a meeting about backups. They are the least glamorous line in any t
 
 **Here is the killer fact:**
 
-Across the roughly forty-eight countries of Sub-Saharan Africa, only one — South Africa — can host a government-wide system or large enterprise's data and keep a properly separated, resilient backup of that data entirely within its own borders on a major cloud platform. Every other country must, in practice, send its backup copy abroad. And even South Africa's apparent self-sufficiency turns out to be fragile: the moment a US-based provider is involved, a foreign government can reach the data no matter where it physically sits.
+Across the forty-eight countries of Sub-Saharan Africa, only one — South Africa — can host a government-wide system or large enterprise's data and keep a properly separated, resilient backup of that data entirely within its own borders on a major cloud platform. Every other country must, in practice, send its backup copy abroad. And even South Africa's apparent self-sufficiency turns out to be fragile: the moment a US-based provider is involved, a foreign government can reach the data no matter where it physically sits.
 
 This is the trap at the heart of the data-sovereignty debate. The same body of security best practice that the sovereignty movement implicitly relies on — keep your data safe, keep it backed up — requires that a second copy be placed far away. Hard data localisation requires that nothing leave the country. In most of Sub-Saharan Africa, those two demands cannot both be met. You can be resilient, or you can be local, but you cannot be both.
 
