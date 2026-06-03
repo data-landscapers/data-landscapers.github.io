@@ -1,4 +1,4 @@
-/* datatable.js v8 */
+/* datatable.js v9 */
 (function () {
   'use strict';
 
@@ -106,6 +106,14 @@
     return '';
   }
 
+  /* ── Min-width from longest word in a header (underscores = word breaks) */
+  function headerMinWidth(headerName) {
+    const words = headerName.split(/[_\-\s]+/).filter(Boolean);
+    const longest = words.reduce((a, b) => b.length > a.length ? b : a, '');
+    // JetBrains Mono at ~0.8em ≈ 7.7px per char; add padding
+    return Math.max(longest.length * 8 + 20, 40);
+  }
+
   /* ── Build one table ─────────────────────────────────────────────────── */
   function buildTable(container) {
     const src        = container.dataset.src;
@@ -182,22 +190,32 @@
           container.innerHTML = '';
           const wrap = document.createElement('div');
 
-          /* ── Toolbar (sticky) ── */
+          /* ── Toolbar (sticky) — two rows: title always on row 1, controls on row 2 */
           const toolbar = document.createElement('div');
           toolbar.style.cssText = `
-            display:flex;flex-wrap:wrap;align-items:center;gap:8px;
-            margin-bottom:0;padding:10px 12px;
+            margin-bottom:0;
             background:#f0ede6;border:1px solid #ddd;border-radius:4px 4px 0 0;
             position:sticky;top:0;z-index:30;`;
 
+          /* Row 1: title */
+          const titleRow = document.createElement('div');
+          titleRow.style.cssText = `
+            display:flex;align-items:center;
+            padding:8px 12px 4px 12px;min-height:28px;`;
           if (title) {
             const t = document.createElement('span');
             t.style.cssText = `font-family:'JetBrains Mono',monospace;font-size:0.8em;
-              font-weight:700;color:#555;text-transform:uppercase;letter-spacing:0.04em;
-              margin-right:4px;`;
+              font-weight:700;color:#555;text-transform:uppercase;letter-spacing:0.04em;`;
             t.textContent = title.trim();
-            toolbar.appendChild(t);
+            titleRow.appendChild(t);
           }
+          toolbar.appendChild(titleRow);
+
+          /* Row 2: filters, search, count, download buttons */
+          const controlsRow = document.createElement('div');
+          controlsRow.style.cssText = `
+            display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+            padding:4px 12px 10px 12px;`;
 
           filterColIndices.forEach(ci => {
             const values = uniq(ci);
@@ -207,7 +225,7 @@
             sel.innerHTML = `<option value="">All ${escHtml(headers[ci])}</option>` +
               values.map(v => `<option${filterState[ci] === v ? ' selected' : ''}>${escHtml(v)}</option>`).join('');
             sel.addEventListener('change', () => { filterState[ci] = sel.value; render(); });
-            toolbar.appendChild(sel);
+            controlsRow.appendChild(sel);
           });
 
           const search = document.createElement('input');
@@ -215,33 +233,34 @@
           search.value = searchText;
           search.style.cssText = selectStyle() + 'min-width:140px;';
           search.addEventListener('input', () => { searchText = search.value; render(); });
-          toolbar.appendChild(search);
+          controlsRow.appendChild(search);
 
           const spacer = document.createElement('div');
           spacer.style.cssText = 'flex:1;min-width:8px;';
-          toolbar.appendChild(spacer);
+          controlsRow.appendChild(spacer);
 
           const count = document.createElement('span');
           count.style.cssText = `font-family:'JetBrains Mono',monospace;font-size:0.78em;color:#777;white-space:nowrap;`;
           count.textContent = `${data.length.toLocaleString()} row${data.length !== 1 ? 's' : ''}`;
-          toolbar.appendChild(count);
+          controlsRow.appendChild(count);
 
           const dlBtn = makeDownloadBtn('Download CSV');
           dlBtn.addEventListener('click', () => triggerDownload(src, filename));
-          toolbar.appendChild(dlBtn);
+          controlsRow.appendChild(dlBtn);
 
           if (fullSrc) {
             const fullBtn = makeDownloadBtn('Download full dataset');
             fullBtn.addEventListener('click', () => triggerDownload(fullSrc, fullSrc.split('/').pop() || 'full-data.csv'));
-            toolbar.appendChild(fullBtn);
+            controlsRow.appendChild(fullBtn);
           }
 
           if (metaSrc) {
             const metaBtn = makeDownloadBtn('Download metadata');
             metaBtn.addEventListener('click', () => triggerDownload(metaSrc, metaSrc.split('/').pop() || 'metadata.csv'));
-            toolbar.appendChild(metaBtn);
+            controlsRow.appendChild(metaBtn);
           }
 
+          toolbar.appendChild(controlsRow);
           wrap.appendChild(toolbar);
 
           /* ── Sticky header row (separate from scrolling body) ────────────
@@ -264,15 +283,19 @@
           const hrow = document.createElement('tr');
           visibleHeaders.forEach((h, vi) => {
             const th = document.createElement('th');
-            const minW = minColWidth ? `min-width:${minColWidth}px;` : '';
+            // Min-width: use explicit data-min-col-width if set, else compute from header words
+            const computedMinW = minColWidth || headerMinWidth(h);
+            const minWStyle = colWidthStyle(h) || `min-width:${computedMinW}px;`;
+            // Display label: replace underscores with spaces for wrapping
+            const displayLabel = h.replace(/_/g, '_​'); // zero-width space after _ allows wrap
             th.style.cssText = `
-              padding:7px 10px;text-align:left;white-space:nowrap;cursor:pointer;
+              padding:7px 10px;text-align:left;white-space:normal;word-break:break-word;cursor:pointer;
               font-family:'JetBrains Mono',monospace;font-size:0.8em;font-weight:700;
               background:#e8e4dc;color:#333;user-select:none;
-              overflow:hidden;text-overflow:ellipsis;
-              ${minW}${colWidthStyle(h)}`;
+              vertical-align:bottom;
+              ${minWStyle}`;
             const arrow = sortCol === vi ? (sortAsc ? ' \u25b2' : ' \u25bc') : ' \u2195';
-            th.textContent = h + arrow;
+            th.textContent = displayLabel + arrow;
             th.addEventListener('click', () => {
               if (sortCol === vi) sortAsc = !sortAsc;
               else { sortCol = vi; sortAsc = true; }
