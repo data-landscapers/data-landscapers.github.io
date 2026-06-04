@@ -10,10 +10,10 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 <div class="about-intro__text">
   <p>This site is a collection of writings, both past and present, curated by Bill Anderson. The writing is divided into three sections:</p>
 
-<div class="cv-section__label" style="padding-top: 2.5rem;">Writing</div>
+<div class="cv-section__label" style="padding-top: 1.5rem;">Writing</div>
   <p>These are finished pieces of recent work. I had planned to migrate to SubStack but didn't feel comfortable there, so this is my new home. The other benefit of this site is that I am able to display and host datasets and their metadata more elegantly than a GDoc link.</p>
 
-<div class="cv-section__label" style="padding-top: 2.5rem;">Lab</div>
+<div class="cv-section__label" style="padding-top: 1.5rem;">Lab</div>
   <p>I have a number of research projects on the boil and in this section I share data that is work in progress. It isn't the final product and comes with plenty of disclaimers but I believe it can be helpful to other colleagues working in this field.</p>
 
 <div class="cv-section__label" style="padding-top: 2.5rem;">Portfolio</div>
