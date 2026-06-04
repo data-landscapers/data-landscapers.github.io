@@ -6,7 +6,7 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 
 <div class="container">
 
-
+<br>
 <div class="about-intro__text">
   <p>This site is a collection of writings, both past and present, curated by Bill Anderson. The writing is divided into three sections:</p>
 
