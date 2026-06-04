@@ -6,13 +6,6 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 
 <div class="container">
 
-<div style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--rule); margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-  <div>
-    <div class="cv-section__label" style="margin-bottom: 0.5rem;">About Data Landscapers</div>
-    <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">Weekly digest of new writing and research on Africa's data infrastructure, digital sovereignty and governance.</p>
-  </div>
-  {% include subscribe-button.html %}
-</div>
 
 <div class="about-intro__text">
   <p>This site is a collection of writings, both past and present, curated by Bill Anderson. The writing is divided into three sections:</p>
@@ -29,6 +22,15 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 <div class="cv-section__label" style="padding-top: 2.5rem;">OSINT and AI</div>
   <p>Back in the 1980s I worked as head of data processing for the ANC's military intelligence department. A complete set of South African telephone books was our internet. From them we mapped military and police infrastructures, strategic oil dumps, infiltration routes. Since then I have always been fascinated by the potential of open source intelligence. Today's internet is both a treasure trove and a minefield. I now work daily with AI-driven search (Perplexity) and Large Language Models (primarily Claude). This is both an exciting and challenging undertaking and a constant learning curve. Hence my decision to develop the Lab section of this site where I can share work without risking my entire reputation.</p>
 </div>
+
+<div style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--rule); margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+  <div>
+    <div class="cv-section__label" style="margin-bottom: 0.5rem;">Stay in the loop</div>
+    <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">Receive an email whnever new writing and research is published.</p>
+  </div>
+  {% include subscribe-button.html %}
+</div>
+
 
 <div class="cv-section__label" style="padding-top: 2rem;">About me</div>
 
