@@ -54,8 +54,8 @@ title: Home
     </div>
 
     <div class="sidebar-block">
-      <div class="sidebar-block__label" style="color: var(--accent);">Newsletter</div>
-      <p style="margin-bottom: 1rem;">Weekly digest of new writing and research. No spam.</p>
+      <div class="sidebar-block__label" style="color: var(--accent);">News alerts</div>
+      <p style="margin-bottom: 1rem;">An email whenever new content is published. No spam.</p>
       {% include subscribe-button.html %}
     </div>
 

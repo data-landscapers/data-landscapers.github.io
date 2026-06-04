@@ -7,9 +7,9 @@ description: Subscribe to Data Landscapers — a weekly digest of new writing an
 <div class="container">
 
   <header style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--rule); margin-bottom: 2.5rem;">
-    <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.75rem;">Newsletter</div>
+    <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.75rem;">News alerts</div>
     <h1 style="font-size: clamp(1.8rem, 4vw, 2.4rem); margin-bottom: 0.75rem;">Stay in the loop</h1>
-    <p style="font-size: 1.05rem; color: var(--ink-light); max-width: 580px; margin: 0;">A weekly digest of new writing and research from Data Landscapers — covering Africa's digital infrastructure, data governance, digital sovereignty and open source intelligence.</p>
+    <p style="font-size: 1.05rem; color: var(--ink-light); max-width: 580px; margin: 0;">Receive email alerts on new writing and research from Data Landscapers — covering Africa's digital infrastructure, data governance, digital sovereignty and open source intelligence.</p>
   </header>
 
   <div class="newsletter-wrap">
@@ -72,7 +72,7 @@ description: Subscribe to Data Landscapers — a weekly digest of new writing an
     <div class="newsletter-about">
       <div class="sidebar-block__label" style="color: var(--accent); font-family: var(--mono); font-size: 0.67rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;">What to expect</div>
       <ul style="list-style: none; padding: 0; margin: 0 0 2rem;">
-        <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">A weekly email rounding up new articles and Lab updates</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">An email whenever new articles or lab research are published</li>
         <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">Sent only when there is new content to share</li>
         <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">Focus on Africa's data infrastructure and digital sovereignty</li>
         <li style="padding: 0.5rem 0; font-size: 0.88rem; color: var(--ink-light);">Occasional longer commentary and analysis</li>
