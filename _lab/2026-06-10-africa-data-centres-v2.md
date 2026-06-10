@@ -66,6 +66,6 @@ The table below is a display subset of the key ownership and control fields. It 
   data-filters="country_name, facility_type, control_category"
   data-title="Africa data centre mapping"
   data-full-src="/assets/data/data-centres-v2.csv"
-  data-metadata-src="/assets/data/data-centres-metadata-v2.csv">
+  data-metadata-src="/assets/data/data-centres-v2-metadata.csv">
 </div>
 
