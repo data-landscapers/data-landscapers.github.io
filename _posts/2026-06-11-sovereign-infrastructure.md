@@ -16,7 +16,7 @@ This article tests the first challenge and it finds that the sovereign supply si
 
 ## Who owns the racks?
 
-Data Landscapers maintains a [register of Sub-Saharan Africa's data centres](/lab/2026/04/15/africa-data-centres/): 306 verified facilities across 46 countries, republished this month with a corrected ownership classification. Filtering for those that are operational, carrier-neutral (tenants can choose between competing network providers) and offer colocation or hyperscale capacity — excluding captive server rooms, university facilities and edge nodes — leaves 154. For each of these we asked who is ultimately in control, tracing ownership through Mauritius holding companies and London registrations to the people, institutions and states at the top.
+Data Landscapers maintains a [register of Sub-Saharan Africa's data centres](/lab/2026/06/10/africa-data-centres-v2/): 306 verified facilities across 46 countries, republished this month with a corrected ownership classification. Filtering for those that are operational, carrier-neutral (tenants can choose between competing network providers) and offer colocation or hyperscale capacity — excluding captive server rooms, university facilities and edge nodes — leaves 154. For each of these we asked who is ultimately in control, tracing ownership through Mauritius holding companies and London registrations to the people, institutions and states at the top.
 
 The answer does not support the narrative of hyperscaler dominance:
 
@@ -29,7 +29,7 @@ The answer does not support the narrative of hyperscaler dominance:
 
 ## How much of the stack is African-owned?
 
-The pessimist's picture has Africa renting every layer of the stack: the submarine cables, the stations where they come ashore, the buildings, and the cloud services that run inside them. How true is this? Our research identified twelve companies (see the table below) — each at least 40% African-owned and with facilities in more than one country — that contradict that perception. Profiles of these companies can be found in this [accompanying compilation](/assets/pdfs/2026-infrastructure-companies-profile.pdf).
+The pessimist's picture has Africa renting every layer of the stack: the submarine cables, the stations where they come ashore, the buildings, and the cloud services that run inside them. How true is this? Our research identified twelve companies (see the table below) — each at least 40% African-owned and with facilities in more than one country — that contradict that perception. Profiles of these companies can be found in this [accompanying compilation](/assets/pdfs/2026-infrastructure-company-profiles.pdf).
 
 | Company                                                                                                                      | Countries                                                           | Facilities                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -116,19 +116,32 @@ Nine days later in Lagos, [Kasi Cloud commissioned LOS1](https://www.globenewswi
 
 Four gaps temper the optimism.
 
--   Firstly, capital: the twelve companies combined deploy in a year roughly what a single hyperscaler spends in weeks. The NSIA's move shows where the next tranche should come from, but African pension and sovereign money must follow at scale. And there are encouraging signs. In June 2025 the 16 members of the **African Sovereign Investors Forum** (ASIF) [signed a cooperation agreement](https://www.sovereignwealthafrica.com/2025/06/23/african-sovereign-investors-forum-announce-historic-initiatives-to-transform-continental-investment-landscape/) to establish the ASIF Investment Platform to pool African sovereign wealth resources for large-scale development projects across the continent.
--   Secondly, software: the cloud-platform layer remains the thinnest, and ST Digital and Cassava cannot carry it alone. The big three hyperscalers rarely build their own data centres on the continent, but, as we showed in our work on [Google in Africa](/assets/pdfs/2026-google-in-africa.pdf), they are dominating the rest of the stack.
--   Thirdly, compute: Cassava's GPUs and Kasi's AI halls are a beginning, not a base. What sovereign AI might look like for Africa remains barely conceived.
--   Fourthly, and most importantly, demand: African governments still procure US cloud by default, even where certified sovereign capacity sits, partly empty, in the next country. Nigeria's National Cloud Policy — mandating domestic residency for regulated data, and guaranteeing Kasi a home market — shows what closing the gap looks like. The supply side has turned up. The demand side is the remaining work.
+**Capital**
+
+The twelve companies combined deploy in a year roughly what a single hyperscaler spends in weeks. The NSIA's move shows where the next tranche should come from, but African pension and sovereign money must follow at scale. And there are encouraging signs. In June 2025 the 16 members of the **African Sovereign Investors Forum** (ASIF) [signed a cooperation agreement](https://www.sovereignwealthafrica.com/2025/06/23/african-sovereign-investors-forum-announce-historic-initiatives-to-transform-continental-investment-landscape/) to establish the ASIF Investment Platform to pool African sovereign wealth resources for large-scale development projects across the continent.
+
+Software
+
+The cloud-platform layer remains the thinnest, and ST Digital and Cassava cannot carry it alone. The big three hyperscalers rarely build their own data centres on the continent, but, as we showed in our work on [Google in Africa](/assets/pdfs/2026-google-in-africa.pdf), they are dominating the rest of the stack.
+
+Compute
+
+Cassava's GPUs and Kasi's AI halls are a beginning, not a base. What sovereign AI might look like for Africa remains barely conceived.
+
+Demand
+
+Most importantly, African governments still procure US cloud by default, even where certified sovereign capacity sits, partly empty, in the next country. Nigeria's National Cloud Policy — mandating domestic residency for regulated data, and guaranteeing Kasi a home market — shows what closing the gap looks like. The supply side has turned up. The demand side is the remaining work.
 
 ## Where to next?
 
 There are three options already on the table for African governments to embrace.
 
--   Firstly, the regional free-flow agreements argued for in the previous article — recognising cross-border transfers within economic regions as compliant with localisation rules — would unlock demand for an industry that already exists.
--   Secondly, procurement preference: when governments become anchor tenants of sovereign operators within their bloc, as Djibouti does with Wingu and Nigeria with Galaxy Backbone, policy is converted into revenue and revenue into capacity.
--   Thirdly, redirect the capital: every dollar from the AfDB, the development finance institutions and the sovereign funds that strengthens an African-controlled operator buys sovereignty twice — once as infrastructure, once as jurisdiction.
+Firstly, the regional free-flow agreements argued for in the previous article — recognising cross-border transfers within economic regions as compliant with localisation rules — would unlock demand for an industry that already exists.
+
+Secondly, procurement preference: when governments become anchor tenants of sovereign operators within their bloc, as Djibouti does with Wingu and Nigeria with Galaxy Backbone, policy is converted into revenue and revenue into capacity.
+
+Thirdly, redirect the capital: every dollar from the AfDB, the development finance institutions and the sovereign funds that strengthens an African-controlled operator buys sovereignty twice — once as infrastructure, once as jurisdiction.
 
 The previous article concluded that the hardware for regional sovereignty was largely already in the ground. The register and the twelve profiles allow us to say something more precise: we know whose names are on the title deeds, and most of them are African. What remains is for African governments to become customers of their own continent.
 
-*The full company profiles, with sources,* [*accompany this article as a single PDF*](/assets/pdfs/2026-infrastructure-companies-profile.pdf)*. The underlying data centre register, including the revised ownership classification, is published in the* [Data Landscapers Lab](/lab/2026/04/15/africa-data-centres/)*.*
+*The full company profiles, with sources,* [*accompany this article as a single PDF*](/assets/pdfs/2026-infrastructure-company-profiles.pdf)*. The underlying data centre register, including the revised ownership classification, is published in the [Data Landscapers Lab](/lab/2026/06/10/africa-data-centres-v2/).*
