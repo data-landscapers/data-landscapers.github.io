@@ -3,6 +3,7 @@ layout: article
 title: Can Africa supply it's own digital infrastructure?
 subtitle: Regional data localisation only works if African-owned operators can run the trusted zone. They can.
 date: 2026-06-11
+author: Bill Anderson, Claude Fable 5
 category: Sovereignty
 summary: Profiles of twelve African-owned companies delivering digital infrastructure show that sovereign regional data localisation is possible.
 description: Profiles of twelve African-owned companies delivering digital infrastructure show that sovereign regional data localisation is possible.
