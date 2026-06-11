@@ -144,4 +144,4 @@ Thirdly, redirect the capital: every dollar from the AfDB, the development finan
 
 The previous article concluded that the hardware for regional sovereignty was largely already in the ground. The register and the twelve profiles allow us to say something more precise: we know whose names are on the title deeds, and most of them are African. What remains is for African governments to become customers of their own continent.
 
-*The full company profiles, with sources,* [*accompany this article as a single PDF*](/assets/pdfs/2026-infrastructure-company-profiles.pdf)*. The underlying data centre register, including the revised ownership classification, is published in the [Data Landscapers Lab](/lab/2026/06/10/africa-data-centres-v2/).*
+*The full company profiles, with sources, [accompany this article as a single PDF](/assets/pdfs/2026-infrastructure-company-profiles.pdf). The underlying data centre register, including the revised ownership classification, is published in the [Data Landscapers Lab](/lab/2026/06/10/africa-data-centres-v2/).*
