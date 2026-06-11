@@ -43,7 +43,7 @@ The pessimist's picture has Africa renting every layer of the stack: the submari
 | [Safaricom](https://www.safaricom.co.ke/)                                                                                    | Kenya, Ethiopia                                                     | Data centre: 1; landing station: 1 (Daraja, due 2026); undersea cable: 1 co-owned (TEAMS)                                                          |
 | [Seacom](https://seacom.com/)                                                                                                | South Africa, Kenya, Tanzania, Mozambique, Djibouti, Uganda, Rwanda | Undersea cable: 1 owned (17,000 km); landing stations: 5; terrestrial cable: national dark-fibre network (South Africa)                            |
 | [ST Digital](https://st.digital/en)                                                                                          | Cameroon, Congo, Togo, Côte d'Ivoire, Benin, DR Congo               | Data centres: 6, plus 1 under construction (Gabon)                                                                                                 |
-| [Wingu](https://www.wingu.africa/)                                                                                           | Djibouti, Ethiopia, Tanzania, Somaliland                            | Data centres: 6; landing stations: 2                                                                                                               |
+| [Wingu](https://www.wingu.africa/)                                                                                           | Djibouti, Ethiopia, Tanzania, Somalia                               | Data centres: 6; landing stations: 2                                                                                                               |
 | [WIOCC](https://www.wiocc.net/) / [OADC](https://openaccessdc.net/)                                                          | Nigeria, DR Congo, South Africa, etc.                               | Data centres: 13 core, 30+ edge; landing stations: 2; undersea cables: stakes in 7, incl. fibre pairs on 2Africa and Equiano                       |
 
 **Submarine cables**
@@ -120,15 +120,15 @@ Four gaps temper the optimism.
 
 The twelve companies combined deploy in a year roughly what a single hyperscaler spends in weeks. The NSIA's move shows where the next tranche should come from, but African pension and sovereign money must follow at scale. And there are encouraging signs. In June 2025 the 16 members of the **African Sovereign Investors Forum** (ASIF) [signed a cooperation agreement](https://www.sovereignwealthafrica.com/2025/06/23/african-sovereign-investors-forum-announce-historic-initiatives-to-transform-continental-investment-landscape/) to establish the ASIF Investment Platform to pool African sovereign wealth resources for large-scale development projects across the continent.
 
-Software
+**Software**
 
 The cloud-platform layer remains the thinnest, and ST Digital and Cassava cannot carry it alone. The big three hyperscalers rarely build their own data centres on the continent, but, as we showed in our work on [Google in Africa](/assets/pdfs/2026-google-in-africa.pdf), they are dominating the rest of the stack.
 
-Compute
+**Compute**
 
 Cassava's GPUs and Kasi's AI halls are a beginning, not a base. What sovereign AI might look like for Africa remains barely conceived.
 
-Demand
+**Demand**
 
 Most importantly, African governments still procure US cloud by default, even where certified sovereign capacity sits, partly empty, in the next country. Nigeria's National Cloud Policy — mandating domestic residency for regulated data, and guaranteeing Kasi a home market — shows what closing the gap looks like. The supply side has turned up. The demand side is the remaining work.
 
