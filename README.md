@@ -1,6 +1,6 @@
 # Data Landscapers — data-landscapers.com
 
-Personal and company website for Bill Anderson / Data Landscapers Ltd.
+Personal and company website for Bill Anderson / Data Landscapers Ltd
 Built with Jekyll by Claude, hosted on GitHub Pages.
 
 ## Local development
