@@ -1,8 +1,13 @@
 /* ============================================================
-   datatable.css — the .dl-datatable component (assets/js/datatable.js)
-   Kept out of main.css deliberately: main.css is a copy carrying its own
-   provenance marker (MAIN-CSS-FROM), and appending to it would break that.
-   Reuses main.css's variables and its table.data-table rules.
+   datatable.css — styling for the .dl-datatable component beside it.
+
+   **Canonical here, in data-landscapers/assets/shared/.** Corpus carries a copy at
+   site/assets/css/datatable.css with a DATATABLE-FROM marker; change this one.
+
+   Kept out of main.css deliberately: main.css is shared between the two repos by
+   the same copy-and-marker arrangement (MAIN-CSS-FROM), and appending to it would
+   mean re-syncing a 1,000-line stylesheet every time the table changes. Reuses
+   main.css's variables and its table.data-table rules.
    ============================================================ */
 
 .dl-datatable {

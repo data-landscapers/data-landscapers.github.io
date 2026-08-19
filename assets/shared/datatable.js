@@ -50,9 +50,9 @@
 
    So v2 measures the text and decides the widths itself, then fixes them:
 
-     - Column widths are computed from the data (`columnWidths`), sized so that the
-       90th-percentile cell fits in three lines, floored by the longest unbreakable
-       word and by the header's own longest word, and clamped at both ends. The
+     - Column widths are computed from the data (`columnWidth`), sized so that
+       every cell fits in three lines, floored by the header's own longest word
+       and by MIN_W, and capped at MAX_W. The
        table is then `table-layout: fixed` with an explicit <colgroup>, which the
        header and body tables share — identical widths by construction, so they
        cannot drift apart the way v1's measure-after-render sync could.
