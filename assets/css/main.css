@@ -240,8 +240,11 @@ figcaption { font-size: 0.82rem; color: var(--accent); margin-top: 0.5rem; line-
 /* ── ARTICLE PAGE ──
    The title block was 3rem of padding above, 2rem below and a 2.5rem margin
    after that — some 200px before a word of the article, on top of the header.
-   Trimmed to 1.25/1/1.25, which is where the fold budget is won. */
-.article-header { padding: 1.25rem 0 1rem; border-bottom: 1px solid var(--rule); margin-bottom: 1.25rem; }
+   Trimmed to 1.25/0.75/1, which is where the fold budget is won: it puts the
+   first line of an article at ~258px on a 1366x768 laptop, inside the 260px the
+   budget allows (documentation/house-style.md → Whitespace). Raising any of the
+   three breaks that arithmetic, so change them together and re-check. */
+.article-header { padding: 1.25rem 0 0.75rem; border-bottom: 1px solid var(--rule); margin-bottom: 1rem; }
 .article-header__kicker { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.5rem; }
 .article-header__title { font-size: clamp(1.6rem, 3vw, 2rem); line-height: 1.15; margin-bottom: 0.5rem; }
 /* Pinned, every property stated. Never weight 300: the Lato 300-italic web font
