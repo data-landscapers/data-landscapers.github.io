@@ -14,7 +14,7 @@ title: Home
 
     <ul class="article-list">
       {% for post in site.posts limit:5 %}
-      <li class="article-list__item" style="padding: 0.6rem 0;">
+      <li class="article-list__item">
         <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
           {% if post.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ post.category }}</span>{% endif %}
           {{ post.date | date: "%-d %B %Y" }}
@@ -33,7 +33,7 @@ title: Home
 
     {% assign lab_docs = site.lab | sort: 'date' | reverse %}
     {% for doc in lab_docs limit:5 %}
-    <div class="wip-item-card" style="padding: 0.6rem 0;">
+    <div class="wip-item-card">
       <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
         {% if doc.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ doc.category }}</span>{% endif %}
         {{ doc.date | date: "%-d %B %Y" }}

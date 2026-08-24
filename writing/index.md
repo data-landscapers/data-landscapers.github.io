@@ -22,7 +22,7 @@ description: Completed research and analysis on data governance, data standards,
 
 <ul class="article-list" id="writing-list" style="margin-top: 0;">
   {% for post in site.posts %}
-  <li class="article-list__item" style="padding: 0.6rem 0;" data-category="{{ post.category }}">
+  <li class="article-list__item" data-category="{{ post.category }}">
     <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
       {% if post.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ post.category }}</span>{% endif %}
       {{ post.date | date: "%-d %B %Y" }}
