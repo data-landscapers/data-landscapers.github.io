@@ -90,9 +90,9 @@
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
        
-        <a href="{{ '/writing/' | relative_url }}" {% if page.url contains '/writing' or page.layout == 'article' %}class="active"{% endif %}>Writing</a>
-        {%- comment -%} Corpus is a sibling site on its own subdomain, so an absolute URL and no `active` state. Every Corpus page carries this row and links back here; until 2026-08-24 nothing here linked forward. {%- endcomment -%}
+        {% comment %} Corpus is a sibling site on its own subdomain, so an absolute URL and no `active` state. Every Corpus page carries this row and links back here; until 2026-08-24 nothing here linked forward. It leads the row (Bill, 2026-08-24) so that both sites open on the same item, `chrome_lib.py` having always put it first. {% endcomment %}
         <a href="https://corpus.data-landscapers.io/">Corpus</a>
+        <a href="{{ '/writing/' | relative_url }}" {% if page.url contains '/writing' or page.layout == 'article' %}class="active"{% endif %}>Writing</a>
         <a href="{{ '/lab/' | relative_url }}" {% if page.url contains '/lab' or page.layout == 'lab' %}class="active"{% endif %}>Lab</a>
         <a href="{{ '/portfolio/' | relative_url }}" {% if page.url contains '/portfolio' %}class="active"{% endif %}>Portfolio</a> 
         <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>About</a>
