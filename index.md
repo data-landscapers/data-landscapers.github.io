@@ -7,9 +7,9 @@ title: Home
 
   <div class="home-main">
 
-    <div class="section-header" style="padding-top: 2.5rem;">
-      <h2 style="color: var(--accent);">Latest writing</h2>
-      <a href="/writing/">All articles →</a>
+    <div class="section-heading">
+      <h2>Latest writing</h2>
+      <a href="/writing/" class="section-heading__more">All articles →</a>
     </div>
 
     <ul class="article-list">
@@ -26,9 +26,9 @@ title: Home
       {% endfor %}
     </ul>
 
-    <div class="section-header" style="margin-top: 1rem;">
-      <h2 style="color: var(--accent);">Lab</h2>
-      <a href="/lab/">All lab items →</a>
+    <div class="section-heading">
+      <h2>Lab</h2>
+      <a href="/lab/" class="section-heading__more">All lab items →</a>
     </div>
 
     {% assign lab_docs = site.lab | sort: 'date' | reverse %}

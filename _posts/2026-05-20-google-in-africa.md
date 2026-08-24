@@ -11,7 +11,17 @@ has_data_table: false
 ---
 *This is the executive summary of an in-depth audit of Google's footprint in Africa. The full report is available on the Download PDF button.*
 
-[The pledge](#the-pledge) - [First mile](#first-mile) - [Data centres](#data-centres) - [Gemini lock-in](#gemini-lock-in) - [Cassava](#cassava) - [MoUs](#MoUs) - [AfCFTA](#afcfta) - [Transparency](#transparency) - [Partner or predator](#partner-or-predator)
+<nav class="article-toc" aria-label="On this page">
+<a href="#the-pledge">The pledge</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#first-mile">First mile</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#data-centres">Data centres</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#gemini-lock-in">Gemini lock-in</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#cassava">Cassava</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#MoUs">MoUs</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#afcfta">AfCFTA</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#transparency">Transparency</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#partner-or-predator">Partner or predator</a>
+</nav>
 
 ## The pledge
 

@@ -11,7 +11,14 @@ description: A test of the African digital sovereignty argument through the lens
 has_data_table: false
 ---
 
-[The builder](#the-builder) - [Five factories](#five-factories) - [Who holds each piece?](#who-holds-each-piece) - [The face on the commercial track](#the-face-on-the-commercial-track) - [What we cannot see](#what-we-cannot-see) - [Where to next?](#where-to-next)
+<nav class="article-toc" aria-label="On this page">
+<a href="#the-builder">The builder</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#five-factories">Five factories</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#who-holds-each-piece">Who holds each piece?</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#the-face-on-the-commercial-track">The face on the commercial track</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#what-we-cannot-see">What we cannot see</a><span class="article-toc__sep" aria-hidden="true">·</span>
+<a href="#where-to-next">Where to next?</a>
+</nav>
 
 At present Africa cannot make advanced semiconductors, train globally competitive artificial-intelligence models, or raise the capital to do either. Engagement with the global firms that can do these things is not a choice the continent gets to make; it is a necessity. So the question is not whether African operators should work with the hyperscalers — Google, Amazon and Microsoft — but on what terms, and whether we are clear about where a sensible compromise ends and something more like surrender begins.
 
