@@ -8,25 +8,25 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 
 <br>
 <div class="about-intro__text">
-  <p>This site is a collection of writings, both past and present, curated by Bill Anderson. The writing is divided into three sections:</p>
+  <p>This site is a collection of work, both past and present, curated by Bill Anderson. Its aim is to contribute to the digital transformation of Africa.</p>
 
-<div class="cv-section__label" style="padding-top: 1rem;">Writing</div>
-  <p>These are finished pieces of recent work. I had planned to migrate to SubStack but didn't feel comfortable there, so this is my new home. The other benefit of this site is that I am able to display and host datasets and their metadata more elegantly than a GDoc link.</p>
+<div class="cv-section__label" style="padding-top: 1rem;">Corpus</div>
+  <p>Back in the 1980s I worked as head of data processing for the ANC's military intelligence department. A complete set of South African telephone books was our internet. From them we mapped military and police infrastructures, strategic oil dumps, infiltration routes. Since then I have always been fascinated by the potential of open source intelligence. Today's internet is both a treasure trove and a minefield. I now work daily with AI-driven search (Exa) and Large Language Models (primarily Claude). This is both an exciting and challenging undertaking and a constant learning curve. Corpus is a proof-of-concept exercise to deliver an automatically driven research resource for everyone working on digital transformation in Africa. It is a repository of summarised and indexed news and documents updated daily. The repository design and code oversight belongs to me. Real-time searching is done by Exa. Claude Code has built the site and is responsible for the collection, summarising and classifying of content. </p>
+</div>
 
-<div class="cv-section__label" style="padding-top: 1rem;">Lab</div>
-  <p>I have a number of research projects on the boil and in this section I share data that is work in progress. It isn't the final product and comes with plenty of disclaimers but I believe it can be helpful to other colleagues working in this field.</p>
+<div class="cv-section__label" style="padding-top: 1rem;">Work in Progress</div>
+  <p>This section contains my current work, It includes finished, considered pieces as well as work that contains datasets and opinions that are subject to review but are shared as they may be of interest to researchers working in this field.</p>
+
 
 <div class="cv-section__label" style="padding-top: 1rem;">Portfolio</div>
   <p>In my 14 years working for Development Initiatives we got quite a bit done. This collection of papers and blogs does not belong to me alone. I acknowledge the contributions of my ongoing collaborator, Bernard Sabiti, and ex-colleagues Alex Miller, Beata Lisowska, Claudia Wells, Kate Hughes, Liz Steele, Martha Bekele, Sam Wozniak, Steve Kenei, Tom Orrell and Wilbrod Ntawiha.</p>
 
-<div class="cv-section__label" style="padding-top: 1rem;">OSINT and AI</div>
-  <p>Back in the 1980s I worked as head of data processing for the ANC's military intelligence department. A complete set of South African telephone books was our internet. From them we mapped military and police infrastructures, strategic oil dumps, infiltration routes. Since then I have always been fascinated by the potential of open source intelligence. Today's internet is both a treasure trove and a minefield. I now work daily with AI-driven search (Perplexity) and Large Language Models (primarily Claude). This is both an exciting and challenging undertaking and a constant learning curve. Hence my decision to develop the Lab section of this site where I can share work without risking my entire reputation.</p>
-</div>
+
 
 <div style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--rule); margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
   <div>
     <div class="cv-section__label" style="margin-bottom: 0.5rem;">Stay in the loop</div>
-    <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">Receive an email whnever new writing and research is published.</p>
+    <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">Receive an email whenever new writing and research is published.</p>
   </div>
   {% include subscribe-button.html %}
 </div>
