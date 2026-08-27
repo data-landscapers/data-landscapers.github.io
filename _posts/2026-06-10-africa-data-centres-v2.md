@@ -1,5 +1,5 @@
 ---
-layout: lab
+lab_notice: true
 title: "Sub-Saharan Africa's data centre landscape: who owns the infrastructure? (v2)"
 subtitle: "A mapping of ownership, control and foreign dependency across data centres in Sub-Saharan Africa — revised and re-verified"
 author: Bill Anderson, Claude Fable 5, Perplexity Computer

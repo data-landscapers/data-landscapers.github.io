@@ -1,5 +1,5 @@
 ---
-layout: lab
+lab_notice: true
 title: Ituri Province (DRC) Ebola Outbreak Infrastructure Factsheet
 subtitle: Ad-hoc data collection on available infrastructures
 date: 2026-05-17

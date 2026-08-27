@@ -1,5 +1,5 @@
 ---
-layout: lab
+lab_notice: true
 title: Undersea cables for dummies
 subtitle: A non-technical guide
 author: Compiled by Perplexity Computer

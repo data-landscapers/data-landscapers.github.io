@@ -1,5 +1,5 @@
 ---
-layout: lab
+lab_notice: true
 title: "Africa's data centre landscape: who owns the infrastructure?"
 subtitle: "A continent-wide mapping of ownership, sovereignty and foreign dependency across data centres in all 54 African countries"
 date: 2026-04-15

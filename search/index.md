@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Search
-description: Search all writing, lab notes and portfolio publications on Data Landscapers.
+description: Search all writing, datasets and portfolio publications on Data Landscapers.
 ---
 
 <div class="container">

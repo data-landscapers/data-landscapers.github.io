@@ -10,11 +10,7 @@ layout: null
     <atom:link href="{{ '/feed.xml' | absolute_url }}" rel="self" type="application/rss+xml"/>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 
-    {% assign posts = site.posts %}
-    {% assign lab_docs = site.lab %}
-    {% assign all_items = posts | concat: lab_docs | sort: 'date' | reverse %}
-
-    {% for item in all_items limit:20 %}
+    {% for item in site.posts limit:20 %}
     <item>
       <title>{{ item.title | xml_escape }}</title>
       <link>{{ item.url | absolute_url }}</link>

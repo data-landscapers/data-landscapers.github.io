@@ -1,5 +1,5 @@
 ---
-layout: lab
+lab_notice: true
 title: A Glossary of ICT Infrastructure Terms
 subtitle: A non-technical guide
 author: Compiled by Perplexity Computer

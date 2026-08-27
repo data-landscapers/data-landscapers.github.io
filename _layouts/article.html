@@ -3,6 +3,23 @@ layout: default
 ---
 <article>
   <div class="container">
+    {% if page.lab_notice %}
+    <div class="lab-notice" style="
+      background:#fdf3e3;
+      border-left:4px solid #c84b2f;
+      padding:0.9rem 1.2rem;
+      margin-bottom:2rem;
+      font-family:var(--mono);
+      font-size:0.8rem;
+      color:#7a4010;
+      line-height:1.5;
+    ">
+      <strong style="text-transform:uppercase;letter-spacing:0.06em;font-size:0.75rem;">Working analysis</strong><br>
+      This is live, evolving work. Data, findings and conclusions are subject to revision as research develops.
+      It is published here to share progress with collaborators, not as a finished or fully evidenced position.
+    </div>
+    {% endif %}
+
     <header class="article-header">
       {% if page.category %}
       <div class="article-header__kicker">{{ page.category }}</div>

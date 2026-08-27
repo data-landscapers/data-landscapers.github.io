@@ -1,5 +1,5 @@
 ---
-layout: lab
+lab_notice: true
 title: "Submarine cables serving Africa"
 subtitle: "A factsheet"
 date: 2026-06-03

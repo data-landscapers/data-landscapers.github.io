@@ -1,5 +1,5 @@
 ---
-layout: lab
+lab_notice: true
 title: African smart cities methodology
 subtitle: Learning to manage AI tools for open source intelligence
 date: 2026-01-08

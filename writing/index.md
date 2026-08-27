@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Writing
-description: Completed research and analysis on data governance, data standards, digital sovereignty and Africa's data infrastructures.
+description: Research, analysis, datasets and working papers on data governance, data standards, digital sovereignty and Africa's data infrastructures.
 ---
 
 <div class="container">

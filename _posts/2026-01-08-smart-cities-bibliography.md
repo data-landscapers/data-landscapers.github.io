@@ -1,5 +1,5 @@
 ---
-layout: lab
+lab_notice: true
 title: "African smart cities: annotated bibliography"
 subtitle: AI-driven literature review
 date: 2026-01-08

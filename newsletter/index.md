@@ -72,7 +72,7 @@ description: Subscribe to Data Landscapers — a weekly digest of new writing an
     <div class="newsletter-about">
       <div class="sidebar-block__label" style="color: var(--accent); font-family: var(--mono); font-size: 0.67rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;">What to expect</div>
       <ul style="list-style: none; padding: 0; margin: 0 0 2rem;">
-        <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">An email whenever new articles or lab research are published</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">An email whenever new articles, datasets or research are published</li>
         <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">Sent only when there is new content to share</li>
         <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">Focus on Africa's data infrastructure and digital sovereignty</li>
         <li style="padding: 0.5rem 0; font-size: 0.88rem; color: var(--ink-light);">Occasional longer commentary and analysis</li>

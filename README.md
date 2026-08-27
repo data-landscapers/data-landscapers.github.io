@@ -1,4 +1,4 @@
-# Data Landscapers — data-landscapers.com
+# Data Landscapers — data-landscapers.io
 
 Personal and company website for Bill Anderson / Data Landscapers Ltd
 Built with Jekyll by Claude, hosted on GitHub Pages.
@@ -36,22 +36,15 @@ has_data_table: false   # set true if article contains a data table
 
 ### Writing 'work in progress' articles
 
-**Via file:** Create a new `.md` file in `_lab/` with the filename format `YYYY-MM-DD-title.md` and the following front matter:
+The Lab section was merged into Writing (August 2026). A working paper or live dataset is an ordinary post in `_posts/` with one extra front-matter line:
 
 ```yaml
----
-layout: lab
-title: "Africa's data centre landscape: who owns the infrastructure?"
-subtitle: "A continent-wide mapping of ownership, sovereignty and foreign dependency across data centres in all 54 African countries"
-date: 2026-04-15
-category: Infrastructure
-description: Mapping ownership, sovereignty and foreign dependency across Africa's data centre landscape.
-has_data_table: true
-permalink: /lab/2026/04/15/africa-data-centres/
----
+lab_notice: true   # renders the orange "Working analysis" disclaimer
 ```
 
-### Adding a data table to post or lab
+Entries migrated from the old `_lab/` collection keep their original `/lab/YYYY/MM/DD/title/` URLs via an explicit `permalink:` line — those URLs are cited and must never change. New working papers use the normal post URL scheme (no explicit permalink needed).
+
+### Adding a data table to a post
 
 Set `has_data_table: true` in the front matter, then place the CSV in `assets/data/` and add a div:
 
@@ -109,11 +102,10 @@ Add to /_data/portfolio.yml
 ```
 _layouts/       Page templates
 _includes/      Reusable partials
-_posts/         Articles (YYYY-MM-DD-title.md)
-_wip/           Work in progress projects
+_posts/         Articles and working papers (YYYY-MM-DD-title.md)
 assets/
   css/main.css  All styles
-  js/datatable.js  Data table component
+  shared/       Data table component (canonical; Corpus carries a copy)
   data/         CSV files for data tables
   pdfs/         Downloadable documents
 admin/          Decap CMS interface

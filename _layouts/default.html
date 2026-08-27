@@ -17,7 +17,7 @@
   <meta property="og:description" content="{{ desc }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:image" content="{{ img }}">
-  <meta property="og:type" content="{% if page.layout == 'article' or page.layout == 'lab' %}article{% else %}website{% endif %}">
+  <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
 
   <!-- Twitter -->
@@ -27,7 +27,7 @@
   <meta name="twitter:image" content="{{ img }}">
 
   <!-- JSON-LD: BlogPosting for articles -->
-  {% if page.layout == "article" or page.layout == "lab" %}
+  {% if page.layout == "article" %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,7 +37,7 @@
     "author": {
       "@type": "Person",
       "name": "Bill Anderson",
-      "url": "https://data-landscapers.com/about/"
+      "url": "https://data-landscapers.io/about/"
     },
     "datePublished": "{{ page.date | date_to_xmlschema }}",
     "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
@@ -46,7 +46,7 @@
     "publisher": {
       "@type": "Organization",
       "name": "Data Landscapers",
-      "url": "https://data-landscapers.com/"
+      "url": "https://data-landscapers.io/"
     }
   }
   </script>
@@ -59,12 +59,12 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "{{ site.title }}",
-    "url": "https://data-landscapers.com/",
+    "url": "https://data-landscapers.io/",
     "author": {
       "@type": "Person",
       "name": "Bill Anderson",
       "jobTitle": "Data governance and digital infrastructure researcher",
-      "url": "https://data-landscapers.com/about/"
+      "url": "https://data-landscapers.io/about/"
     }
   }
   </script>
@@ -93,7 +93,6 @@
         {% comment %} Corpus is a sibling site on its own subdomain, so an absolute URL and no `active` state. Every Corpus page carries this row and links back here; until 2026-08-24 nothing here linked forward. It leads the row (Bill, 2026-08-24) so that both sites open on the same item, `chrome_lib.py` having always put it first. {% endcomment %}
         <a href="https://corpus.data-landscapers.io/">Corpus</a>
         <a href="{{ '/writing/' | relative_url }}" {% if page.url contains '/writing' or page.layout == 'article' %}class="active"{% endif %}>Writing</a>
-        <a href="{{ '/lab/' | relative_url }}" {% if page.url contains '/lab' or page.layout == 'lab' %}class="active"{% endif %}>Lab</a>
         <a href="{{ '/portfolio/' | relative_url }}" {% if page.url contains '/portfolio' %}class="active"{% endif %}>Portfolio</a> 
         <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>About</a>
         <a href="{{ '/contact/' | relative_url }}" {% if page.url contains '/contact' %}class="active"{% endif %}>Contact</a>

@@ -1,7 +1,7 @@
 title: Data Landscapers
 tagline: Mapping Africa's data landscape
 description: Data governance, digital sovereignty and open source intelligence
-url: "https://data-landscapers.com"
+url: "https://data-landscapers.io"
 baseurl: ""
 
 author:
@@ -35,9 +35,6 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:name/
-  lab:
-    output: true
-    permalink: /lab/:year/:month/:day/:title/
   pdf_index:
     output: true
     permalink: /pdf-index/:name/
@@ -53,16 +50,6 @@ defaults:
       type: "portfolio"
     values:
       layout: "portfolio-item"
-  - scope:
-      path: ""
-      type: "wip"
-    values:
-      layout: "wip-item"
-  - scope:
-      path: ""
-      type: "lab"
-    values:
-      layout: "lab"
   - scope:
       path: ""
       type: "pdf_index"

@@ -13,7 +13,7 @@ title: Home
     </div>
 
     <ul class="article-list">
-      {% for post in site.posts limit:5 %}
+      {% for post in site.posts limit:8 %}
       <li class="article-list__item">
         <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
           {% if post.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ post.category }}</span>{% endif %}
@@ -25,24 +25,6 @@ title: Home
       </li>
       {% endfor %}
     </ul>
-
-    <div class="section-heading">
-      <h2>Lab</h2>
-      <a href="/lab/" class="section-heading__more">All lab items →</a>
-    </div>
-
-    {% assign lab_docs = site.lab | sort: 'date' | reverse %}
-    {% for doc in lab_docs limit:5 %}
-    <div class="wip-item-card">
-      <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
-        {% if doc.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ doc.category }}</span>{% endif %}
-        {{ doc.date | date: "%-d %B %Y" }}
-      </div>
-      <h3 style="margin: 0 0 0.1rem;"><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></h3>
-      {% if doc.subtitle %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0 0 0.1rem;"><em>{{ doc.subtitle }}</em></p>{% endif %}
-      {% if doc.summary %}<p style="font-size: 0.9rem; color: var(--ink-faint); margin: 0;">{{ doc.summary }}</p>{% endif %}
-    </div>
-    {% endfor %}
 
   </div>
 
