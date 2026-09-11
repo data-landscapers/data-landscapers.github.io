@@ -7,7 +7,7 @@ title: Home
 
   <div class="home-main">
 
-    <div class="section-heading">
+    <div class="section-heading" style="border-top: none;">
       <h2>Latest work in progress</h2>
       <a href="/writing/" class="section-heading__more">All articles →</a>
     </div>
