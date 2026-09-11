@@ -47,7 +47,8 @@ layout: default
   </div>
 </article>
 
+{% comment %} Bump `v` whenever either shared file changes: a fixed stamp is a cache key, and the CDN and every reader's browser go on serving the old file under it (the 2026-09-11 badge and button change sat behind `v=3`). Corpus stamps its copies by content digest instead. {% endcomment %}
 {% if page.has_data_table %}
-<link rel="stylesheet" href="{{ '/assets/shared/datatable.css' | relative_url }}">
-<script src="{{ '/assets/shared/datatable.js' | relative_url }}?v=3"></script>
+<link rel="stylesheet" href="{{ '/assets/shared/datatable.css' | relative_url }}?v=4">
+<script src="{{ '/assets/shared/datatable.js' | relative_url }}?v=4"></script>
 {% endif %}
