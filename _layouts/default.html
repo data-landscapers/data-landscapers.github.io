@@ -116,5 +116,19 @@
   </footer>
 
 </div>
+{% comment %} External links open in a new tab, internal ones in place (Corpus `documentation/house-style.md` → Links, which governs both sites). Corpus applies the rule at build time in `chrome_lib.external_links()`; GitHub Pages runs no custom plugins, so here it runs in the browser. Same three hosts as `chrome_lib.INTERNAL_HOSTS`; an anchor that already states a `target` is left alone; `noopener` without `noreferrer`, so a publisher can see where a reader came from. {% endcomment %}
+<script>
+(function () {
+  var own = ['data-landscapers.io', 'www.data-landscapers.io', 'corpus.data-landscapers.io'];
+  document.querySelectorAll('a[href]').forEach(function (a) {
+    if (a.hasAttribute('target') || !/^(https?:)?\/\//i.test(a.getAttribute('href'))) return;
+    if (own.indexOf(a.hostname.toLowerCase()) !== -1) return;
+    a.target = '_blank';
+    var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
+    if (rel.indexOf('noopener') === -1) rel.push('noopener');
+    a.setAttribute('rel', rel.join(' '));
+  });
+})();
+</script>
 </body>
 </html>
