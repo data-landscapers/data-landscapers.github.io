@@ -48,7 +48,7 @@ title: Home
 
     <div class="sidebar-block">
       <div class="sidebar-block__label" style="color: var(--accent);">Contact</div>
-      <p><a href="/contact/">Available to chat or for consulting</a> — data governance, digital infrastructure, standards, OSINT research for Africa.</p>
+      <p><a href="/about/">Available to chat or for consulting</a> — data governance, digital infrastructure, standards, OSINT research for Africa.</p>
     </div>
 
   </aside>

@@ -6,32 +6,25 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 
 <div class="container">
 
-<br>
-<div class="about-intro__text">
+<div class="about-intro__text" style="padding-top: 1.25rem;">
   <p>This site is a collection of work, both past and present, curated by Bill Anderson. Its aim is to contribute to the digital transformation of Africa.</p>
 
-<div class="cv-section__label" style="padding-top: 1rem;">Corpus</div>
+<div class="cv-section__label" style="margin: 1.25rem 0 0.5rem;">Corpus</div>
   <p>Back in the 1980s I worked as head of data processing for the ANC's military intelligence department. A complete set of South African telephone books was our internet. From them we mapped military and police infrastructures, strategic oil dumps, infiltration routes. Since then I have always been fascinated by the potential of open source intelligence. Today's internet is both a treasure trove and a minefield. I now work daily with AI-driven search (Exa) and Large Language Models (primarily Claude). This is both an exciting and challenging undertaking and a constant learning curve. Corpus is a proof-of-concept exercise to deliver an automatically driven research resource for everyone working on digital transformation in Africa. It is a repository of summarised and indexed news and documents updated daily. The repository design and code oversight belongs to me. Real-time searching is done by Exa. Claude Code has built the site and is responsible for the collection, summarising and classifying of content. </p>
 </div>
 
-<div class="cv-section__label" style="padding-top: 1rem;">Work in Progress</div>
-  <p>This section contains my current work, It includes finished, considered pieces as well as work that contains datasets and opinions that are subject to review but are shared as they may be of interest to researchers working in this field.</p>
+<div class="cv-section__label" style="margin: 1.25rem 0 0.5rem;">Work in Progress</div>
+  <p>This section contains my current work. It includes finished, considered pieces as well as work that contains datasets and opinions that are subject to review but are shared as they may be of interest to researchers working in this field.</p>
 
-<div style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--rule); margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-<div class="cv-section__label" style="padding-top: 1rem;">Portfolio</div>
+<div class="cv-section__label" style="margin: 1.25rem 0 0.5rem;">Portfolio</div>
   <p>In my 14 years working for Development Initiatives we got quite a bit done. This collection of papers and blogs does not belong to me alone. I acknowledge the contributions of my ongoing collaborator, Bernard Sabiti, and ex-colleagues Alex Miller, Beata Lisowska, Claudia Wells, Kate Hughes, Liz Steele, Martha Bekele, Sam Wozniak, Steve Kenei, Tom Orrell and Wilbrod Ntawiha.</p>
+
+<div style="padding: 1rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);">
+  <div class="cv-section__label" style="margin-bottom: 0.5rem;">Get in touch</div>
+  <p style="margin: 0;">Email: <script>document.write('<a hr' + 'ef="mai' + 'lto:bill-anderson' + '@data-landscapers.com">bill-anderson' + '@data-landscapers.com</a>');</script></p>
 </div>
 
-<div style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--rule); margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-  <div>
-    <div class="cv-section__label" style="margin-bottom: 0.5rem;">Get in touch</div>
-    <p>Email: <script>document.write('<a hr' + 'ef="mai' + 'lto:bill-anderson' + '@data-landscapers.com">bill-anderson' + '@data-landscapers.com</a>');</script></p>
-
-  </div>
-</div>
-
-
-<div style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--rule); margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+<div style="padding: 1rem 0; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
   <div>
     <div class="cv-section__label" style="margin-bottom: 0.5rem;">Stay in the loop</div>
     <p style="font-size: 0.92rem; color: var(--ink-light); margin: 0;">Receive an email whenever new writing and research is published.</p>
@@ -39,10 +32,9 @@ description: Bill Anderson — data governance consultant, data landscaping spec
   {% include subscribe-button.html %}
 </div>
 
+<div class="cv-section__label" style="margin: 1.25rem 0 0.5rem;">About me</div>
 
-<div class="cv-section__label" style="padding-top: 1rem;">About me</div>
-
-<div class="about-intro">
+<div class="about-intro" style="padding: 0 0 1.5rem;">
   <div class="about-intro__text">
     <p>I am an experienced systems architect with expertise in the politics, administration and technology of digital transformation, data governance policy, and data standards. My particular focus is on Africa's digital sovereignty — the struggle to ensure that the continent's data infrastructure is owned, governed and controlled by Africans.</p>
 
