@@ -11,7 +11,7 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 </header>
 
 <div class="about-intro__text">
-  <p>This site is a collection of work, both past and present, curated by Bill Anderson. Its aim is to contribute to the digital transformation of Africa.</p>
+  <p>This site is a collection of work, both past and present, contributing to the digital transformation of Africa.</p>
 
 <div class="cv-section__label">Corpus</div>
   <p>Back in the 1980s I worked as head of data processing for the ANC's military intelligence department. A complete set of South African telephone books was our internet. From them we mapped military and police infrastructures, strategic oil dumps, infiltration routes. Since then I have always been fascinated by the potential of open source intelligence. Today's internet is both a treasure trove and a minefield. I now work daily with AI-driven search (Exa) and Large Language Models (primarily Claude). This is both an exciting and challenging undertaking and a constant learning curve. Corpus is a proof-of-concept exercise to deliver an automatically driven research resource for everyone working on digital transformation in Africa. It is a repository of summarised and indexed news and documents updated daily. The repository design and code oversight belongs to me. Real-time semantic searching is done by Exa. Claude Code has built the site and is delegated to run the collection, summarising and classifying of content.</p>
