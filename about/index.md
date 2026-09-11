@@ -24,6 +24,11 @@ description: Bill Anderson — data governance consultant, data landscaping spec
   <p>In my 14 years working for Development Initiatives we got quite a bit done. This collection of papers and blogs does not belong to me alone. I acknowledge the contributions of my ongoing collaborator, Bernard Sabiti, and ex-colleagues Alex Miller, Beata Lisowska, Claudia Wells, Kate Hughes, Liz Steele, Martha Bekele, Sam Wozniak, Steve Kenei, Tom Orrell and Wilbrod Ntawiha.</p>
 
 <div class="about-row about-row--first">
+  <div class="cv-section__label">Feedback on Corpus</div>
+  <p>Email: <script>document.write('<a hr' + 'ef="mai' + 'lto:info' + '@data-landscapers.io">info' + '@data-landscapers.io</a>');</script></p>
+</div>
+
+<div class="about-row about-row--first">
   <div class="cv-section__label">Get in touch</div>
   <p>Email: <script>document.write('<a hr' + 'ef="mai' + 'lto:bill-anderson' + '@data-landscapers.com">bill-anderson' + '@data-landscapers.com</a>');</script></p>
 </div>
