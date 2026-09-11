@@ -6,17 +6,16 @@ description: Selected projects and publications in data governance, digital sove
 
 <div class="container" data-pagefind-ignore>
 
-<header style="padding: 2.5rem 0 1.5rem; border-bottom: 1px solid var(--rule); margin-bottom: 1rem;">
-  <div style="font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.75rem;">Portfolio</div>
-  <p style="color: var(--ink-light); margin: 0;">In my 14 years working for Development Initiatives we got quite a bit done. This collection of papers and blogs does not belong to me alone. I acknowledge the contributions of my ongoing collaborator, Bernard Sabiti, and ex-colleagues Alex Miller, Beata Lisowska, Claudia Wells, Kate Hughes, Liz Steele, Martha Bekele, Sam Wozniak, Steve Kenei, Tom Orrell and Wilbrod Ntawiha.</p>
+<header class="article-header">
+  <h1 class="article-header__title">Portfolio</h1>
+  <p class="article-header__subtitle">In my 14 years working for Development Initiatives we got quite a bit done. This collection of papers and blogs does not belong to me alone. I acknowledge the contributions of my ongoing collaborator, Bernard Sabiti, and ex-colleagues Alex Miller, Beata Lisowska, Claudia Wells, Kate Hughes, Liz Steele, Martha Bekele, Sam Wozniak, Steve Kenei, Tom Orrell and Wilbrod Ntawiha.</p>
 </header>
-
 
 {% assign categories = site.data.portfolio | map: 'category' | compact | uniq | sort %}
 
 {% if categories.size > 1 %}
-<div style="margin-bottom: 1.25rem;">
-  <select id="portfolio-category-filter" style="font-family: var(--mono); font-size: 0.8em; padding: 4px 8px; border: 1px solid #ccc; border-radius: 3px; background: #fff; color: #333; cursor: pointer;">
+<div class="article-list-filter">
+  <select id="portfolio-category-filter" class="filter-select" aria-label="Filter by category">
     <option value="">All categories</option>
     {% for cat in categories %}
     <option value="{{ cat }}">{{ cat }}</option>
@@ -25,37 +24,32 @@ description: Selected projects and publications in data governance, digital sove
 </div>
 {% endif %}
 
-<div class="article-list" id="portfolio-list">
+<ul class="article-list" id="portfolio-list">
   {% for item in site.data.portfolio %}
-  <article style="padding: 0.6rem 0; border-bottom: 1px solid var(--rule);" data-category="{{ item.category }}">
-    <div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.3rem;">
-      {% if item.category %}<span class="wip-item-card__status wip-item-card__status--active" style="margin-right: 0.5rem;">{{ item.category }}</span>{% endif %}
+  <li class="article-list__item" data-category="{{ item.category }}">
+    <div class="article-list__meta">
+      {% if item.category %}<span class="badge badge--grey">{{ item.category }}</span>{% endif %}
       {{ item.date }}
     </div>
-    <div style="font-family: 'Trebuchet MS', 'Gill Sans', Calibri, sans-serif; font-size: 1.2rem; font-weight: 700; line-height: 1.3; margin-bottom: 0.2rem;">
-      {% if item.url %}<a href="{{ item.url }}" style="color: var(--ink); text-decoration: none; border-bottom: none;">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
+    <div class="article-list__title">
+      {% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
     </div>
     {% if item.description %}
-    <div style="font-size: 0.85rem; color: var(--ink-light); line-height: 1.45;">{{ item.description | markdownify }}</div>
+    <div class="article-list__excerpt">{{ item.description | markdownify }}</div>
     {% endif %}
-  </article>
+  </li>
   {% endfor %}
-</div>
+</ul>
 
 </div>
-
-<style>
-  #portfolio-list a:hover { color: var(--accent) !important; text-decoration: none; border-bottom-color: transparent !important; }
-  #portfolio-list div > p { margin: 0; }
-</style>
 
 <script>
   const portfolioFilter = document.getElementById('portfolio-category-filter');
   if (portfolioFilter) {
     portfolioFilter.addEventListener('change', function () {
       const selected = this.value;
-      document.querySelectorAll('#portfolio-list article').forEach(function (el) {
-        el.style.display = (!selected || el.dataset.category === selected) ? '' : 'none';
+      document.querySelectorAll('#portfolio-list li').forEach(function (el) {
+        el.hidden = !!selected && el.dataset.category !== selected;
       });
     });
   }

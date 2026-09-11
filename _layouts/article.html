@@ -3,23 +3,6 @@ layout: default
 ---
 <article>
   <div class="container">
-    {% if page.lab_notice %}
-    <div class="lab-notice" style="
-      background:#fdf3e3;
-      border-left:4px solid #c84b2f;
-      padding:0.9rem 1.2rem;
-      margin-bottom:2rem;
-      font-family:var(--mono);
-      font-size:0.8rem;
-      color:#7a4010;
-      line-height:1.5;
-    ">
-      <strong style="text-transform:uppercase;letter-spacing:0.06em;font-size:0.75rem;">Working analysis</strong><br>
-      This is live, evolving work. Data, findings and conclusions are subject to revision as research develops.
-      It is published here to share progress with collaborators, not as a finished or fully evidenced position.
-    </div>
-    {% endif %}
-
     <header class="article-header">
       {% if page.category %}
       <div class="article-header__kicker">{{ page.category }}</div>
@@ -28,28 +11,37 @@ layout: default
       {% if page.subtitle %}
       <p class="article-header__subtitle">{{ page.subtitle }}</p>
       {% endif %}
-      <div class="article-header__byline">
-        {% assign author_name = page.author | default: site.author.name %}
-        {% if author_name %}{{ author_name }} &nbsp;·&nbsp; {% endif %}
-        {{ page.date | date: "%-d %B %Y" }}
-        {% if page.tags %}
-          &nbsp;·&nbsp;
-          {% for tag in page.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+      <div class="article-header__meta">
+        <div class="article-header__byline">
+          {% assign author_name = page.author | default: site.author.name %}
+          {% if author_name %}{{ author_name }} &nbsp;·&nbsp; {% endif %}
+          {{ page.date | date: "%-d %B %Y" }}
+          {% if page.tags %}
+            &nbsp;·&nbsp;
+            {% for tag in page.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+          {% endif %}
+        </div>
+        {% if page.pdf %}
+        <div class="article-header__actions"><a href="{{ page.pdf }}" class="btn">↓ Download PDF</a></div>
         {% endif %}
       </div>
-      {% if page.pdf %}
-      <div style="margin-top: 1rem;">
-        <a href="{{ page.pdf }}" class="btn" style="font-size: 0.8rem;">↓ Download PDF</a>
-      </div>
-      {% endif %}
     </header>
+
+    {% comment %} Below the page head, not above it: the title opens the page and the notice qualifies what follows (2026-09-11). Styled in main.css → .lab-notice. {% endcomment %}
+    {% if page.lab_notice %}
+    <div class="lab-notice">
+      <strong>Working analysis</strong><br>
+      This is live, evolving work. Data, findings and conclusions are subject to revision as research develops.
+      It is published here to share progress with collaborators, not as a finished or fully evidenced position.
+    </div>
+    {% endif %}
 
     <div class="article-body">
       {{ content }}
     </div>
 
-    <footer style="padding: 2.5rem 0; border-top: 1px solid var(--rule); margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-      <a href="{{ '/writing/' | relative_url }}" style="font-size: 0.82rem; color: var(--ink-faint); font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.07em;">← All writing</a>
+    <footer class="article-footer">
+      <a href="{{ '/writing/' | relative_url }}" class="article-footer__back">← All writing</a>
       {% include subscribe-button.html %}
     </footer>
   </div>
