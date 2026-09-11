@@ -8,7 +8,7 @@ title: Home
   <div class="home-main">
 
     <div class="section-heading">
-      <h2>Latest writing</h2>
+      <h2>Latest work in progress</h2>
       <a href="/writing/" class="section-heading__more">All articles →</a>
     </div>
 
