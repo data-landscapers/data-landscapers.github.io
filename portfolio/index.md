@@ -8,8 +8,9 @@ description: Selected projects and publications in data governance, digital sove
 
 <header class="article-header">
   <h1 class="article-header__title">Portfolio</h1>
-  <p class="article-header__subtitle">In my 14 years working for Development Initiatives we got quite a bit done. This collection of papers and blogs does not belong to me alone. I acknowledge the contributions of my ongoing collaborator, Bernard Sabiti, and ex-colleagues Alex Miller, Beata Lisowska, Claudia Wells, Kate Hughes, Liz Steele, Martha Bekele, Sam Wozniak, Steve Kenei, Tom Orrell and Wilbrod Ntawiha.</p>
 </header>
+
+<p>In my 14 years working for Development Initiatives we got quite a bit done. This collection of papers and blogs does not belong to me alone. I acknowledge the contributions of my ongoing collaborator, Bernard Sabiti, and ex-colleagues Alex Miller, Beata Lisowska, Claudia Wells, Kate Hughes, Liz Steele, Martha Bekele, Sam Wozniak, Steve Kenei, Tom Orrell and Wilbrod Ntawiha.</p>
 
 {% assign categories = site.data.portfolio | map: 'category' | compact | uniq | sort %}
 
@@ -28,7 +29,7 @@ description: Selected projects and publications in data governance, digital sove
   {% for item in site.data.portfolio %}
   <li class="article-list__item" data-category="{{ item.category }}">
     <div class="article-list__meta">
-      {% if item.category %}<span class="badge badge--grey">{{ item.category }}</span>{% endif %}
+      {% if item.category %}<span class="badge badge--green">{{ item.category }}</span>{% endif %}
       {{ item.date }}
     </div>
     <div class="article-list__title">

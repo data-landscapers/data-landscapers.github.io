@@ -16,7 +16,7 @@ title: Home
       {% for post in site.posts limit:8 %}
       <li class="article-list__item">
         <div class="article-list__meta">
-          {% if post.category %}<span class="badge badge--grey">{{ post.category }}</span>{% endif %}
+          {% if post.category %}<span class="badge badge--green">{{ post.category }}</span>{% endif %}
           {{ post.date | date: "%-d %B %Y" }}
         </div>
         <div class="article-list__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>

@@ -28,7 +28,7 @@ description: Research, analysis, datasets and working papers on data governance,
   {% for post in site.posts %}
   <li class="article-list__item" data-category="{{ post.category }}">
     <div class="article-list__meta">
-      {% if post.category %}<span class="badge badge--grey">{{ post.category }}</span>{% endif %}
+      {% if post.category %}<span class="badge badge--green">{{ post.category }}</span>{% endif %}
       {{ post.date | date: "%-d %B %Y" }}
     </div>
     <div class="article-list__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
