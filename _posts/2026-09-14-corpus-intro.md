@@ -13,6 +13,8 @@ Digital transformations across Africa are becoming increasingly difficult to kee
 
 > **corpus**, *noun.* a large, structured collection of written or spoken texts used for research and analysis
 
+### Content
+
 [Corpus](https://corpus.data-landscapers.io/) collects publicly available news and documents on digital transformation, digital public infrastructures and data governance covering the whole of Africa. As of today:
 - It contains over 21,000 documents.
 - Over 1,500 have been newly published this month.
@@ -30,6 +32,8 @@ It provides a suite of reports:
 - [Financial](https://corpus.data-landscapers.io/finance/) reports monitor all non-state investments. (A separate report on national budgets and expenditure is still under development.)
 
 Corpus stores the full text of all documents in a private repository. For copyright reasons this cannot be shared. All the documents in the repository have been retrieved from public online sites. None from behind paywalls or the deep web. The site's outputs are derived from metadata and text summaries.
+
+### Under the bonnet
 
 Corpus is designed, developed and maintained by myself. Internet searches are delegated to Exa. Coding and the running of all processes are delegated to Claude Code (currently using Opus). Source hallucination is not possible as the entire output of the site is derived from the stored documents. Claude is, however, responsible for classification and summarising and the accuracy of these is subject to the normal AI disclaimers. A feedback link is available on every page for users to submit comments or queries on the quality of the reporting.
 
