@@ -1,0 +1,36 @@
+---
+layout: null
+---
+{% comment %}
+  feed.json — the same twenty posts as feed.xml, as JSON.
+
+  The Corpus alerts Worker (`workers/alerts/worker.js` in C:\CORPUS) builds one weekly
+  email per reader and carries the main site's new writing as one section of it. A
+  Worker has no XML parser and pulling one in to read a feed this site also writes as
+  a Liquid template is work for nothing, so the feed is written twice. `feed.xml` stays
+  exactly as it was, for feed readers.
+
+  The fields are the four the digest uses and no more: `title`, `url`, `date` and
+  `description`. `date` is `YYYY-MM-DD`, because the Worker's send window is a pair of
+  UTC days and a comparison between two of those strings is the whole of the test.
+  The description falls through the same four sources feed.xml uses, in the same order,
+  so the two files never disagree about what a post says.
+
+  `jsonify` does the escaping. A title with a quote or a backslash in it is the reason
+  this is not string concatenation.
+{% endcomment %}
+{
+  "title": {{ site.title | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "built": {{ site.time | date: "%Y-%m-%d" | jsonify }},
+  "items": [
+{% for item in site.posts limit:20 %}
+    {
+      "title": {{ item.title | jsonify }},
+      "url": {{ item.url | absolute_url | jsonify }},
+      "date": {{ item.date | date: "%Y-%m-%d" | jsonify }},
+      "description": {% if item.description %}{{ item.description | jsonify }}{% elsif item.subtitle %}{{ item.subtitle | jsonify }}{% elsif item.summary %}{{ item.summary | jsonify }}{% else %}{{ item.content | strip_html | truncate: 280 | jsonify }}{% endif %}
+    }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+  ]
+}

@@ -22,6 +22,13 @@ description: Subscribe to Data Landscapers — a weekly digest of new writing an
         class="nl-form"
       >
 
+        <!-- Every subscriber from this form holds `alert site`, which is the tag the
+             Corpus alerts Worker's weekly digest tests for when it decides who gets the
+             main-site section. Without it a new subscriber here would be on the list and
+             in no alert, and would receive nothing at all. (The existing subscribers were
+             tagged by hand — see `documentation/catalogue-alerts.md` step A10 in Corpus.) -->
+        <input type="hidden" name="tag" value="alert site">
+
         <div class="nl-form__field">
           <label for="nl-email" class="nl-form__label">Email address <span style="color: var(--accent);">*</span></label>
           <input
@@ -65,6 +72,8 @@ description: Subscribe to Data Landscapers — a weekly digest of new writing an
 
         <p class="nl-form__note">No spam. Unsubscribe at any time. Sent via <a href="https://buttondown.com/refer/data-landscapers" target="_blank" rel="noopener">Buttondown</a>.</p>
 
+        <p class="nl-form__note">Want alerts for one country or topic from the Corpus catalogue? Set them up at <a href="https://corpus.data-landscapers.io/alerts/">corpus.data-landscapers.io/alerts/</a>. They arrive in the same weekly email.</p>
+
       </form>
 
     </div>
@@ -72,7 +81,7 @@ description: Subscribe to Data Landscapers — a weekly digest of new writing an
     <div class="newsletter-about">
       <div class="sidebar-block__label" style="color: var(--accent); font-family: var(--mono); font-size: 0.67rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;">What to expect</div>
       <ul style="list-style: none; padding: 0; margin: 0 0 2rem;">
-        <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">An email whenever new articles, datasets or research are published</li>
+        <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">One email a week, on Monday, listing new articles, datasets and research</li>
         <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">Sent only when there is new content to share</li>
         <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; color: var(--ink-light);">Focus on Africa's data infrastructure and digital sovereignty</li>
         <li style="padding: 0.5rem 0; font-size: 0.88rem; color: var(--ink-light);">Occasional longer commentary and analysis</li>
