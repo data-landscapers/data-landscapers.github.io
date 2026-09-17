@@ -40,7 +40,6 @@ Search is Pagefind over the built site, so it reindexes itself; just confirm the
 
 ## 6. Copy that mentions the Lab
 
-- `newsletter/index.md`: "new articles or lab research are published".
 - `about/index.md`: two mentions — the CV "Lab" section label and the OSINT/AI paragraph ("my decision to develop the Lab section of this site"). This is Bill's personal copy: flag for him to reword rather than editing silently.
 - `_lab/2026-06-10-africa-data-centres-v2.md` body: "In the spirit of the Lab, we are correcting it in public" — leave it; it is a dated, published statement and the sentiment survives the section.
 - `README.md`: the "adding a lab entry" instructions and frontmatter example.
