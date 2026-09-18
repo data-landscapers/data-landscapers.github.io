@@ -37,13 +37,13 @@ title: Home
 
     <div class="sidebar-block">
       <div class="sidebar-block__label">News alerts</div>
-      <p>An email whenever new content is published. No spam.</p>
+      <p>A weekly email customised to your needs.</p>
       {% include subscribe-button.html %}
     </div>
 
     <div class="sidebar-block">
       <div class="sidebar-block__label">Current focus</div>
-      <p>Digital public infrastructures in Africa; Financial sustainability; AI and open source intelligence; Digital colonialism. <a href="/about/">More →</a></p>
+      <p>Digital transformation. Digital public infrastrucures. Data Governance. OSINT.<a href="/about/">More →</a></p>
     </div>
 
     <div class="sidebar-block">
