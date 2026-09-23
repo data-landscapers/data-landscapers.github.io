@@ -10,6 +10,8 @@ has_data_table: true
 permalink: /lab/2026/04/15/africa-data-centres/
 ---
 
+[**This dataset is now live on the Corpus repository**](https://corpus.data-landscapers.io/datasets/data-centres/)
+
 Africa's data infrastructure is growing rapidly — but who owns it? This dataset collates publicly available information on data centres across all 54 African countries.
 
 
