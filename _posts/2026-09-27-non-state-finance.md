@@ -41,7 +41,7 @@ The dataset on non-state finance going live today records over 1,400 financial c
 The following table explains why a dataset of this nature hasn’t been attempted before.
 
 | **Instrument**       | **Value (USDm)** |
-|----------------------|------------------|
+|----------------------|-----------------:|
 | Self-Funded          | 17,995           |
 | Commercial Loan      | 14,923           |
 | Concessional Loan    | 12,940           |
@@ -57,6 +57,7 @@ The following table explains why a dataset of this nature hasn’t been attempte
 | Joint Venture        | 284              |
 | Mezzanine            | 172              |
 | Technical Assistance | 161              |
+{: style="width: auto"}
 
 Grants and concessional loans, the instruments that most development finance analysts tend to focus on through the data provided by the OECD and IATI, represent less than a third of the total value. Topping the list are the investments made by hyperscalers (Amazon and Microsoft) and Telecoms operators (MTN, Orange and Vodacom) investing in their own infrastructure.
 
@@ -79,7 +80,7 @@ On 31 July the US Embassy in Lesotho hosted the announcement of a [\$6 billion h
 A further challenge lies in classifying the purpose of these investments. Neither the OECD DAC’s Purpose Codes (also used by IATI) nor the UN’s Classifications of Functions of Government are agile enough to keep up with development. In June 2025 the World Bank revised its [“Theme Taxonomy”](https://openknowledge.worldbank.org/entities/publication/ba3f8615-78d6-407f-b92a-c26296413646) with a dedicated chapter on Digital Transformation. In our first iteration we attempted to build Corpus around this but it proved to be unwieldy: too many issues that we regard as core to digital transformation were embedded with a range of other chapters. We therefore developed [our own taxonomy of Topics](https://corpus.data-landscapers.io/methodology/lookups/#topics). All taxonomies in this field are open to disagreement – for example we include investments in energy that have an integral digital component, not all investments in energy (which would drown the whole picture).
 
 | **Corpus Topic**                        | **Value (USDm)** |
-|-----------------------------------------|------------------|
+|-----------------------------------------|-----------------:|
 | Connectivity                            | 27,973           |
 | Data Storage                            | 11,302           |
 | Digital Payments and Fintech            | 6,276            |
@@ -100,13 +101,14 @@ A further challenge lies in classifying the purpose of these investments. Neithe
 | National statistics                     | 263              |
 | Regional collaboration                  | 204              |
 | Others                                  | 344              |
+{: style="width: auto"}
 
 ### Recipients
 
 The geographical spread of financing is fairly even, with one exception that tells it own story. The decisions of hyperscalers to concentrate their data centre investments in South Africa remains an issue [we have already discussed](https://data-landscapers.io/2026/06/03/off-site_backups/).
 
 | **Recipient** | **Value (USDm)** |
-|---------------|------------------|
+|---------------|-----------------:|
 | Multi-country | 24,889           |
 | South Africa  | 10,042           |
 | Nigeria       | 4,965            |
@@ -127,6 +129,7 @@ The geographical spread of financing is fairly even, with one exception that tel
 | Madagascar    | 1,048            |
 | Rwanda        | 898              |
 | Uganda        | 888              |
+{: style="width: auto"}
 
 ### Data collection
 
