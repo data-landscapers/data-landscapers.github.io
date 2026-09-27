@@ -18,7 +18,7 @@ has_data_table: false
 
 ---
 
-# Tracking the financing of digital transformation: Part One
+## Tracking the financing of digital transformation: Part One
 
 [Corpus dataset: Non-state finance 2015-2026](https://corpus.data-landscapers.io/finance/)
 
