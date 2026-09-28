@@ -85,9 +85,6 @@
           <span class="site-logo__sub">Mapping Africa's data landscape</span>
         </span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.classList.toggle('open'); document.getElementById('site-nav').classList.toggle('open')">
-        <span></span><span></span><span></span>
-      </button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
        
         {% comment %} Corpus is a sibling site on its own subdomain, so an absolute URL and no `active` state. Every Corpus page carries this row and links back here; until 2026-08-24 nothing here linked forward. It leads the row (Bill, 2026-08-24) so that both sites open on the same item, `chrome_lib.py` having always put it first. {% endcomment %}
@@ -96,6 +93,7 @@
         <a href="{{ '/portfolio/' | relative_url }}" {% if page.url contains '/portfolio' %}class="active"{% endif %}>Portfolio</a> 
         <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>About</a>
       </nav>
+      {% include site-menu.html %}
     </div>
   </header>
 
