@@ -238,6 +238,17 @@
   font-size: 0.85rem;
 }
 
+/* ── Show more: the table draws a hundred rows at a time (datatable.js → drawMore) ── */
+.dl-datatable .dt-more {
+  padding: 0.8rem 1rem;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+}
+.dl-datatable .dt-more[hidden] { display: none; }
+/* A <button> brings the browser's grey; `.btn` was written for anchors and sets none. */
+.dl-datatable .dt-more .btn { cursor: pointer; }
+.dl-datatable .dt-more .btn:not(:hover) { background: white; }
+
 /* ── Messages ── */
 .dl-datatable .dt-msg {
   padding: 1.4rem 1rem;
