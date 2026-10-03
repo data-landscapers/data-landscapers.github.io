@@ -64,7 +64,7 @@ The table below is a display subset of the key ownership and control fields. It 
 
 <div class="dl-datatable"
   data-src="/assets/data/data-centres-v2-display.csv"
-  data-cols="facility_id, country_name, facility_name, city, operational_status, year_operational, facility_type, control_category, control_rationale, hyperscaler_presence, chinese_role, operator_name, ownership_type, major_shareholders, controlling_entities, control_mechanisms, dfi_involvement, investment_usd, key_tenants, ultimate_parent_hq_country, ultimate_parent_company, control_confidence"
+  data-cols="country_name, facility_name, city, operational_status, facility_type, control_category, hyperscaler_presence, chinese_role, operator_name, ultimate_parent_hq_country"
   data-filters="country_name, facility_type, control_category"
   data-title="Africa data centre mapping"
   data-full-src="/assets/data/data-centres-v2.csv"

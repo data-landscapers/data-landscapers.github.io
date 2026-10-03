@@ -30,15 +30,11 @@ const JS = fs.readFileSync(path.join(REPO, 'assets/shared/datatable.js'), 'utf8'
 const PAGE = 100;            // rows a table draws at first, and adds per "Show more"
 const MAX_ELEMENTS = 3000;   // elements on a table page at first draw (Bill, ruling R110)
 
-/* Pages over the ceiling at a hundred rows, because they show twenty to fifty
- * columns: a row costs three elements and two more a filled cell. The repair is a
- * `data-cols` on the page, not a smaller draw. A page listed here that comes in
- * under the ceiling fails, so the list cannot outlive its reason. */
-const WIDE = new Set([
-  '_posts/2025-09-15-who-pays-for-dt.md',
-  '_posts/2026-04-15-africa-data-centres.md',
-  '_posts/2026-06-10-africa-data-centres-v2.md',
-]);
+/* Pages allowed over the ceiling at a hundred rows. None: a row costs three
+ * elements and two more a filled cell, so a page that shows twenty columns is
+ * repaired with a shorter `data-cols` — the row panel carries the rest — and not
+ * by listing it here. A page listed that comes in under the ceiling fails. */
+const WIDE = new Set([]);
 
 let failures = 0;
 const check = (label, cond, detail = '') => {
