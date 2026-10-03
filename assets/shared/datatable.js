@@ -726,7 +726,7 @@
 
         function rowHtml(r) {
           var row = current[r];
-          var tds = '<td class="dt-caret"><span aria-hidden="true">›</span></td>';
+          var tds = '<td class="dt-caret"></td>';          // the mark is CSS: an element a row saved
           for (var c = 0; c < cols.length; c++) {
             var ci = cols[c];
             tds += '<td' + (numeric[ci] ? ' class="num"' : '') + '>' + cellHtml(ci, row[ci]) + '</td>';
