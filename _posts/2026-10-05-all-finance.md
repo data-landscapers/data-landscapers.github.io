@@ -53,13 +53,13 @@ We have provided a first attempt at overcoming these challenges. Analysts may we
 
 The big story is a good news one: the emergence of African capital as a major player. 
 
-!(assets/uploads/rise-of-african-finance.png)
+![](/assets/uploads/rise-of-african-finance.png)
 
 The second story - who pays for what - is also revealing:
 - The increasing irrelevance of aid
 - The role of national budgets taking primary responsibility for e-gov, digital id, national statistics, sectoral MIS and registries.
 
-!(assets/uploads/who-pays-for-what.png)
+![](/assets/uploads/who-pays-for-what.png)
 
 
 Like all datasets in Corpus this is updated daily from a wide variety of sources.
