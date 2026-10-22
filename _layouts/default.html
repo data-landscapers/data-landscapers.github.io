@@ -102,7 +102,7 @@
   <nav class="corpus-nav" aria-label="Corpus navigation">
     <div class="corpus-nav__inner">
 {%- for a in site.data.site_menu %}
-{%- if a.url contains 'corpus.data-landscapers.io/' and a.label != 'Corpus' %}
+{%- if a.url contains 'corpus.data-landscapers.io/' and a.label != 'Corpus' and a.bar != false %}
       <a href="{{ a.url }}">{{ a.label | escape }}</a>
 {%- endif %}
 {%- endfor %}
