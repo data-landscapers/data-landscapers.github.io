@@ -98,6 +98,17 @@
     </div>
   </header>
 
+  {% comment %} Corpus's own row, the same as under every Corpus page (Bill, 2026-10-22), so the move between the two sites is seamless. Its items are the Corpus entries of `_data/site_menu.yml` bar the Corpus home, which is already in the row above — the same list as `NAV` in Corpus's `scripts/chrome_lib.py`. No `active` state: no page here is a Corpus page. {% endcomment %}
+  <nav class="corpus-nav" aria-label="Corpus navigation">
+    <div class="corpus-nav__inner">
+{%- for a in site.data.site_menu %}
+{%- if a.url contains 'corpus.data-landscapers.io/' and a.label != 'Corpus' %}
+      <a href="{{ a.url }}">{{ a.label | escape }}</a>
+{%- endif %}
+{%- endfor %}
+    </div>
+  </nav>
+
   <main id="main">
     {{ content }}
   </main>
