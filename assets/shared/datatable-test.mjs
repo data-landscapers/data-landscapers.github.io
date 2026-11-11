@@ -208,6 +208,7 @@ async function paging(doc, win, total) {
   const sel = doc.querySelector('.dt-filter');
   if (sel) {
     btn.dispatchEvent(new win.MouseEvent('click', { bubbles: true }));
+    sel.dispatchEvent(new win.FocusEvent('focus'));   // a long dropdown fills on first use
     sel.value = sel.options[1].value; sel.dispatchEvent(new win.Event('change'));
     check('a filter returns to the first draw, and the count names the total in the file',
       drawn() <= PAGE && count().endsWith(`, filtered from ${n(total)}`), `${drawn()} drawn, ${count()}`);
