@@ -1,4 +1,5 @@
 ---
+author: Bill Anderson
 category: Governance
 date_label: September 2024
 description: The Global Digital Compact was adopted as part of the UN Summit of the

@@ -1,4 +1,5 @@
 ---
+author: Anonymous
 category: Standards
 date_label: July 2008
 description: One of two papers that I had no part in but are otherwise unavailable.

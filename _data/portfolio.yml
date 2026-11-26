@@ -9,6 +9,7 @@
 
 - date: September 2024
   title: "Digital Compacts: Global Ideals, Regional Realities"
+  author: "Bill Anderson"
   url: /assets/pdfs/2024-digital-compacts-global-ideals-regional-realities.pdf
   category: Governance
   description: |
@@ -16,30 +17,35 @@
 
 - date: October 2023
   title: "Data Governance: Do all global problems require global solutions?"
+  author: "Bill Anderson"
   url: https://devinit.github.io/blog/data-governance-does-it-require-a-global-solution-/
   category: Governance
   description: A blog originally published on the DI website highlights some of the complexities in aiming for a global consensus on digital or data governance.
 
 - date: May 2023
   title: "SDG learnings from the World Data Forum in Hangzhou: Falling between stools and masters"
+  author: "Bill Anderson & Claudia Wells"
   url: https://devinit.github.io/blog/sdg-learnings-world-data-forum-hangzhou/ 
   category: Governance
-  description: The UN World Data Forum took place in Hangzhou, China in April 2023. As a UN conference, aimed at spurring innovation, partnerships and high-level political and financial support, the forum can tend towards diplomacy over discussion, with government and multilateral officials and statisticians lining up to politely agree with each other and champion success. We set out to invigorate proceedings with a debate on ‘Is the SDG Monitoring Framework Broken?’, which drew on our recent discussion paper of the same name. Co-authored with Claudia Wells
+  description: "The UN World Data Forum took place in Hangzhou, China in April 2023. As a UN conference, aimed at spurring innovation, partnerships and high-level political and financial support, the forum can tend towards diplomacy over discussion, with government and multilateral officials and statisticians lining up to politely agree with each other and champion success. We set out to invigorate proceedings with a debate on ‘Is the SDG Monitoring Framework Broken?’, which drew on our recent discussion paper of the same name."
 
 - date: April 2023
   title: "Is the SDG monitoring framework broken?"
+  author: "Bill Anderson"
   url: /assets/pdfs/2023-is-the-sdg-monitoring-framework-broken.pdf
   category: Governance
   description: In March 2023, the UN Economic and Social Commission for Asia and the Pacific published its annual SDG progress report. It warned that the region requires, at the current rate of progress, a further 42 years to meet the SDGs. It also revealed that there remains insufficient data to monitor 51 of the 169 targets. This discussion paper focused on the SDG global monitoring system from a data perspective.
 
 - date: November 2022
   title: "UN joint programming on strengthening Malaysia's national system on monitoring & evaluation for the SDGs: Final Report"
+  author: "Bill Anderson"
   url: /assets/pdfs/2022-malaysia-final.pdf
   category: Landscaping
   description: Final report for UNICEF Malaysia country office. The overall objective of this assignment was to work with the Department of Statistics (DOSM) to explore and facilitate implementation of pragmatic solutions for government ministries, departments and agencies to provide data to populate 34 SDG indicators not reported by the Government of Malaysia. More details are available in the accompanying [Technical Report](/assets/pdfs/2022-malaysia-technical.pdf).
 
 - date: October 2022
   title: "The role of global custodians in supporting Malaysia’s SDG monitoring framework: Case Study"
+  author: "Bill Anderson"
   url: /assets/pdfs/2022-malaysia-custodian-study.pdf
   category: Governance
   description: |
@@ -47,42 +53,49 @@
  
 - date: March 2022
   title: "Data disharmony: How can donors better act on their commitments?"
+  author: "Bill Anderson & Bernard Sabiti"
   url: /assets/pdfs/2022-data-disharmony.pdf
   category: Governance
-  description: This paper examines the role of donors investment in national data ecosystems, focusing in particular on the challenges of harmonisation. The issues we describe here are not new – they are well-known and have been recognised by donors themselves over many years. Rather than simply re-stating the problem, the purpose of this paper to promote an open discussion about why – given longstanding commitments to address these issues – progress has been limited, and what both donors and national governments can do to overcome the challenges of harmonisation in order to maximise the impact of their investments in national data systems.  Co-authored with Bernard Sabiti.
+  description: "This paper examines the role of donors investment in national data ecosystems, focusing in particular on the challenges of harmonisation. The issues we describe here are not new – they are well-known and have been recognised by donors themselves over many years. Rather than simply re-stating the problem, the purpose of this paper to promote an open discussion about why – given longstanding commitments to address these issues – progress has been limited, and what both donors and national governments can do to overcome the challenges of harmonisation in order to maximise the impact of their investments in national data systems."
 
 - date: September 2021
   title: "The data side of leaving no one behind"
+  author: "Bill Anderson, Bernard Sabiti & Sam Wozniak"
   url: /assets/pdfs/2021-data-side-of-lnob.pdf
   category: Governance
-  description: Lessons learned from DI’s work on data landscaping. Co-authored with Bernard Sabiti and Sam Wozniak.
+  description: "Lessons learned from DI’s work on data landscaping."
 
 - date: June 2021
   title: "Meeting the SDGs in South Sudan: The data landscape"
+  author: "Bernard Sabiti"
   url: /assets/pdfs/2021-south-sudan-final.pdf
   category: Landscaping
-  description: The South Sudan United Nations Country Team (UNCT) commissioned Development Initiatives to conduct a data landscape analysis of the country’s data ecosystem, with a view to developing an SDG monitoring and reporting framework and develop a national action plan to guide their data investments over a period of 3–5 years. Bernard Sabiti was the lead consultant and author on this contract.
+  description: "The South Sudan United Nations Country Team (UNCT) commissioned Development Initiatives to conduct a data landscape analysis of the country’s data ecosystem, with a view to developing an SDG monitoring and reporting framework and develop a national action plan to guide their data investments over a period of 3–5 years."
 
 - date: June 2021
   title: "Using near real-time data on aid flows: Lessons learnt"
+  author: "Bill Anderson"
   url: https://devinit.github.io/blog/using-near-real-time-data-aid-flows-lessons-learnt/
   category: Finance
   description: Using near real-time data to examine donor response to the Covid-19 pandemic, highlighting an urgent need for timely, disaggregated data.
 
 - date: March 2021
   title: "Nepal's data landscape"
+  author: "Bill Anderson, Sam Wozniak & Santosh Gartaula"
   url: /assets/pdfs/2021-nepal-landscape.pdf
   category: Landscaping
-  description: This report is part of a data landscaping exercise conducted under the Data for Development (D4D) in Nepal Programme, Phase II. It includes a diagnostic of the current state of national data infrastructures and recommendations for the further development of Nepal’s national statistical system under federalism. Co-authored with Sam Wozniak and Santosh Gartaula.
+  description: "This report is part of a data landscaping exercise conducted under the Data for Development (D4D) in Nepal Programme, Phase II. It includes a diagnostic of the current state of national data infrastructures and recommendations for the further development of Nepal’s national statistical system under federalism."
 
 - date: March 2021
   title: "Building a national statistical system with administrative data"
+  author: "Bill Anderson"
   url: /assets/pdfs/2021-d4d-admin-data.pdf
   category: Landscaping
   description: "A literature review of emerging lessons from around the world and their relevance for Nepal. Produced as a discussion paper during the development of the broader data landscape work."
 
 - date: February 2021
   title: "Cuts to the UK 2020 aid budget: What IATI data tells us"
+  author: "Bill Anderson"
   url: https://devinit.github.io/resources/cuts-uk-2020-aid-budget-iati-data/
   category: Finance
   description: This briefing compares data published by the UK's FCDO and DFID in 2019 and 2020, showing where aid budget cuts fell among recipients, countries and sectors
@@ -90,148 +103,169 @@
 
 - date: January 2021
   title: "Diagnostic of Nepal's data landscape"
+  author: "Bill Anderson, Sam Wozniak & Santosh Gartaula"
   url: /assets/pdfs/2021-nepal-diagnostic.pdf
   category: Landscaping
-  description: "The diagnostic leading to the final report `Nepal's Data Landscape`. This was not published as our views on the continuing importance of certain district-level structures were deemed to be contrary to the new constitution. Co-authored with Sam Wozniak and Santosh Gartaula."
+  description: "The diagnostic leading to the final report `Nepal's Data Landscape`. This was not published as our views on the continuing importance of certain district-level structures were deemed to be contrary to the new constitution."
 
 
 - date: June 2020
   title: "Data issues and challenges for the UNICEF Bangladesh Country Office: Action Plan"
+  author: "Bill Anderson, Bernard Sabiti & Sam Wozniak"
   url: /assets/pdfs/2020-bangladesh-action-plan.pdf
   category: Landscaping
-  description: |
-    DI was contracted to provide UNICEF Bangladesh Country Office (BCO) with an Action Plan making concrete and specific recommendations in relation to its investments in data over the next 3-5 years and beyond. It was requested that the work focus on three priority issues: Meeting the SDGs; climate change adaptation and disaster risk reduction; and the humanitarian-development nexus in the context of the Rohingya refugee crisis. The report was accompanied by a [Diagnostic Report](/assets/pdfs/2020-bangladesh-diagnostic.pdf). Co-authored with Bernard Sabiti and Sam Wozniak.
+  description: "DI was contracted to provide UNICEF Bangladesh Country Office (BCO) with an Action Plan making concrete and specific recommendations in relation to its investments in data over the next 3-5 years and beyond. It was requested that the work focus on three priority issues: Meeting the SDGs; climate change adaptation and disaster risk reduction; and the humanitarian-development nexus in the context of the Rohingya refugee crisis. The report was accompanied by a [Diagnostic Report](/assets/pdfs/2020-bangladesh-diagnostic.pdf)."
 
 - date: May 2020
   title: "The challenges of data on the financing response to Covid-19"
+  author: "Bill Anderson"
   url: /assets/pdfs/2020-covid-financing-data-challenges.pdf
   category: Finance
   description: The global financial response has been unprecedented. Huge volumes of resources are being pledged, committed and mobilised from diverse organisations through diverse funding instruments. However, getting an accurate and comprehensive understanding of the extent and detail of the response is difficult. Data on these activities is collected by a range of systems with various purposes and different ways of describing financial flows that may act over different timeframes.  Comparing or combining data from different sources is hard without a joined-up approach to connect the pieces in a coherent whole.
 
 - date: March 2020
   title: "Digital civil registration and legal identity systems: A joined-up approach to leave no one behind"
+  author: "Claudia Wells & Bill Anderson"
   url: https://devinit.github.io/resources/digital-civil-registration-and-legal-identity-systems/
   category: Governance
-  description: An overview of trends in civil registration and vital statistics CRVS. To deliver the SDGs, how can we ensure everyone is counted? Co-authored with Claudia Wells.
+  description: "An overview of trends in civil registration and vital statistics CRVS. To deliver the SDGs, how can we ensure everyone is counted?"
  
 - date: October 2019
   title: "Measuring the state of civil registration and legal identity in Africa"
+  author: "Bill Anderson, Angharad Price, Bernard Sabiti & Martha Bekele"
   url: https://devinit.github.io/resources/measuring-civil-registration-legal-identity/
   category: Governance
-  description: A proposal for an efficient new system to monitor digital CRVS and legal identity systems. Co-authored with Angharad Price, Bernard Sabiti and Martha Bekele
+  description: "A proposal for an efficient new system to monitor digital CRVS and legal identity systems."
 
 - date: September 2019
   title: "Data issues and challenges for the UNICEF Nigeria Country Office: Action Plan"
+  author: "Bill Anderson & Bernard Sabiti"
   url: /assets/pdfs/2019-nigeria-action-plan.pdf
   category: Landscaping
-  description: |
-    DI was contracted to provide UNICEF Nigeria with recommendations in relation to its investments in data over the next 3-5 years and beyond, with a particular focus on three of the eight Key Results for Children (KRCs): Immunisation; Learning Outcomes; and Prevention of Violence Against Children. Additionally, it addresses two foundational and cross-cutting issues: CRVS and national identity; and Data collaboration. The plan was accompanied by a [Diagnostic Report](/assets/pdfs/2019-nigeria-diagnostic.pdf). Co-authored with Bernard Sabiti.
+  description: "DI was contracted to provide UNICEF Nigeria with recommendations in relation to its investments in data over the next 3-5 years and beyond, with a particular focus on three of the eight Key Results for Children (KRCs): Immunisation; Learning Outcomes; and Prevention of Violence Against Children. Additionally, it addresses two foundational and cross-cutting issues: CRVS and national identity; and Data collaboration. The plan was accompanied by a [Diagnostic Report](/assets/pdfs/2019-nigeria-diagnostic.pdf)."
 
 - date: July 2019
   title: "The Data landscape in the United Arab Emirates: Strategic Action Plan" 
+  author: "Bill Anderson"
   url: /assets/pdfs/2019-uae-action-plan.pdf
   category: Landscaping
   description: DI was contracted to work with UNICEF’s Gulf Area Office in the UAE to strengthen the collection, analysis and use of child-related data in UAE, in order to improve results for women and children. These recommendations were accompanied by a [Diagnostic Report](/assets/pdfs/2019-uae-diagnostic.pdf)
 
 - date: April 2019
   title: "Data for children - Uganda: Joint Diagnostic and Action Plan"
+  author: "Bernard Sabiti, Wilbrod Ntawiha & Bill Anderson"
   url: /assets/pdfs/2019-uganda-action-plan.pdf
   category: Landscaping
-  description: |
-    DI was contracted to work with UNICEF Uganda to: analyse and diagnose how better qualitative and quantitative data could have the greatest impact on results for children in its priority areas (child survival and development, basic education and adolescent development, and child protection). Co-authored with Bernard Sabiti and Wilbrod Ntawiha.
+  description: "DI was contracted to work with UNICEF Uganda to: analyse and diagnose how better qualitative and quantitative data could have the greatest impact on results for children in its priority areas (child survival and development, basic education and adolescent development, and child protection)."
 
 - date: November 2018
   title: "Assessment of UNICEF’s results reporting requirements and systems: initial findings" 
+  author: "Bill Anderson"
   url: /assets/pdfs/2018-unicef-hq-frg.pdf
   category: Landscaping
   description: DI was contracted by UNICEF Field results Group to review the organisations own information systems.
 
 - date: November 2018
   title: "Data for children, UNICEF Zimbabwe: Strategy Action Plan" 
+  author: "Bill Anderson, Bernard Sabiti & Wilbrod Ntawiha"
   url: /assets/pdfs/2018-zimbabwe-action-plan.pdf
   category: Landscaping
-  description: DI was been contracted to work with the UNICEF country office in Zimbabwe to review the state of the data landscape and, informed by UNICEF’s real-world priorities, develop a strategic action plan for its data work and investments over a 3-to-5-year time horizon. Co-authored with Bernard Sabiti and Wilbrod Ntawiha.
+  description: "DI was been contracted to work with the UNICEF country office in Zimbabwe to review the state of the data landscape and, informed by UNICEF’s real-world priorities, develop a strategic action plan for its data work and investments over a 3-to-5-year time horizon."
 
 - date: November 2017
   title: "The frontiers of data interoperability for sustainable development"
+  author: "Tom Orrell, Liz Steele & Bill Anderson"
   url: /assets/pdfs/2017-frontiers-of-data-interoperability.pdf
   category: Standards
-  description: The report is based on research and learning generated by the Joined-Up Data Standards project team at Development Initiatives and Publish What You Fund over the past two years, supplemented by desk research and inputs from key stakeholders from across constituencies who were interviewed as part of the drafting process. Co-authored with Tom Orrell and Liz Steele.
+  description: "The report is based on research and learning generated by the Joined-Up Data Standards project team at Development Initiatives and Publish What You Fund over the past two years, supplemented by desk research and inputs from key stakeholders from across constituencies who were interviewed as part of the drafting process."
 
 - date: November 2017
   title: "Sustainable data, sustainable systems: Opening remarks to the Uganda High Level National Data Forum"
+  author: "Bill Anderson"
   url: /assets/pdfs/2017-uganda-hlndf.pdf
   category: Governance
   description: DI's Bernard Sabiti worked with the Uganda Bureau of Statistics to organise the first national data forum. I gave opening remarks oin behalf of DI.
 
 - date: November 2017
   title: "The development data assessment: reviewing and mapping the best national data assets."
+  author: "Bill Anderson, Wilbrod Ntawiha & Steve Kenei"
   url: /assets/pdfs/2017-development-data-assessment.pdf
   category: Landscaping
-  description: A methodology that supports governments to identify where quality data for decision making and policy formulation is available, where data is of poorer quality, and where there are gaps. The methodology is accompanied by a tool that allows users to investigate and interrogate the data. Co-authored with Wilbrod Ntawiha and Steve Kenei.
+  description: "A methodology that supports governments to identify where quality data for decision making and policy formulation is available, where data is of poorer quality, and where there are gaps. The methodology is accompanied by a tool that allows users to investigate and interrogate the data."
 
 - date: February 2017
   title: "Aid, development, data, ownership: What has the data revolution got to do with IATI?"
+  author: "Bill Anderson"
   category: Finance
   url: /assets/pdfs/2017-iati-and-the-data-revolution.pdf
   description: A challenge to the IATI community to take demand more seriously than supply.
 
 - date: January 2017
   title: "Long term investments in a short term world: Arguments for sustainable data."
+  author: "Bill Anderson"
   url: /assets/pdfs/2017-long-term-investments.pdf
   category: Governance
   description: Based on discussions that took place at the World Data Forum in January 2017 in Cape Town, this paper argues that the current focus on household surveys will not give developing countries the data they need to meet the Sustainable Development Goals. Longer-term thinking is essential in our approach to sustainable development data.
 
 - date: January 2017
   title: "Common cause, common language: Harmonising key concepts in the data revolution"
+  author: "Bernard Sabiti"
   url: /assets/pdfs/2017-common-cause-common-language.pdf
   category: Governance
-  description: Arguments for bridging the divide between official statistics and non-official data in an inclusive national statistics system. Prepared in advance of the first World Data Forum in Cape Town. Bernard Sabiti was lead author. 
+  description: "Arguments for bridging the divide between official statistics and non-official data in an inclusive national statistics system. Prepared in advance of the first World Data Forum in Cape Town."
 
 - date: May 2016
   title: "Uganda’s data ecosystem: A quantitative review of data production in Uganda"
+  author: "Wilbrod Ntawiha & Bill Anderson"
   url: /assets/pdfs/2016-uganda-data-ecosystem.pdf
   category: Landscaping
-  description: This report is the first half of a two-part study making quantitative and qualitative assessments of the state of data production and use in Uganda. National, continental and global development agendas are all calling for data to play a catalytic role in both the meeting and monitoring of ambitious goals. This study assesses the readiness of the Ugandan national statistical system – an ecosystem that includes both official and nongovernmental producers and users of data – to meet these challenges. Co-authored with Wilbrod Ntawiha.
+  description: "This report is the first half of a two-part study making quantitative and qualitative assessments of the state of data production and use in Uganda. National, continental and global development agendas are all calling for data to play a catalytic role in both the meeting and monitoring of ambitious goals. This study assesses the readiness of the Ugandan national statistical system – an ecosystem that includes both official and nongovernmental producers and users of data – to meet these challenges."
 
 - date: August 2016
   title: "Defining Humanitarian Emergencies: a joined-up approach"
+  author: "Bill Anderson"
   url: https://devinit.github.io/blog/defining-humanitarian-emergencies-joined-approach/
   category: Standards
   description: For humanitarian decision-making to be effectively harmonised, data from a variety of sources needs to be joined up. The way in which emergencies are defined and reported is an essential part of this.
 
 - date: June 2016
   title: "Household surveys: do competing standards serve country needs?"
+  author: "Beata Lisowska"
   url: /assets/pdfs/2016-juds-household-surveys.pdf
   category: Standards
-  description: Written by Beata Lisowska under my direction, a ground-breaking study in critiquing the duplication of resources and efforts involved in competing surveys,
+  description: "A ground-breaking study in critiquing the duplication of resources and efforts involved in competing surveys,"
 
 - date: January 2016
   title: "The Open Data Charter: A breakthrough for joined-up data standards"
+  author: "Bill Anderson"
   url: https://devinit.github.io/blog/open-data-charter-breakthrough-joined-data-standards/
   category: Standards
   description: The international Open Data Charter launched in New York last month is the first globally inclusive and comprehensive manifesto of its type.
 
 - date: October 2015
   title: "What to do with one and a half billion dollars..."
+  author: "Bill Anderson"
   url: https://devinit.github.io/blog/what-to-do-with-one-and-a-half-billion-dollars/
   category: Finance
   description: The World Bank plans to raise and spend $1,5 billion - $300m every three years until 2030 on household surveys. This single commitment dwarves all other investments that have been made towards building a base for sustainable data collection and usage. It sends a signal that recurrent expenditure producing short-term results to meet the needs of global goals is preferable to capital investments producing resilient country information systems that will have a life way beyond 2030.
  
 - date: September 2015
   title: "Quantifying the challenges facing the Data Revolution in Africa: A first attempt"
+  author: "Bill Anderson"
   url: https://devinit.github.io/blog/quantifying-the-challenges-facing-the-data-revolution-in-africa-a-first-attempt/
   category: Landscaping
   description: There is a need for a more granular and timely resource that reflects both best practice and challenges across all the data sources required to meet the needs of statisticians and the goals of the Data Revolution. A first attempt based on a preliminary desk study has created a table for all African countries mapping nine indicators against a simple traffic light system.
 
 - date: March 2015
   title: "African Data Consensus: Key Stepping Stone to Achieving the Data Revolution"
+  author: "Peter da Costa & Bill Anderson (drafters)"
   url: /assets/pdfs/2015-africa-data-consensus-blog.pdf
   category: Governance
   description: Blog reflecting on DI's role in the High Level Conference (HLC) on the Data Revolution in Africa held Addis Ababa in which the Africa Data Consensus (drafted by the late Peter da Costa and myself) was adopted.
 
 - date: February 2015
   title: "Some thoughts on the data revolution in Uganda"
+  author: "Bill Anderson"
   url: https://devinit.github.io/resources/some-thoughts-on-the-data-revolution-in-uganda/
   category: Landscaping
   description: |
@@ -239,21 +273,24 @@
 
 - date: March 2015
   title: "Adventures in the data revolution: Collecting Ugandan data"
+  author: "Bill Anderson & Bernard Sabiti"
   url: /assets/pdfs/2015-adventures-datarev-1.pdf
   category: Landscaping
-  description: "First of three blogs written for a Gates Foundation project - Grand Challenges Explorations: Using Data for Impact in Uganda Communities. Co-authored with Bernard Sabiti."
+  description: "First of three blogs written for a Gates Foundation project - Grand Challenges Explorations: Using Data for Impact in Uganda Communities."
 
 - date: March 2015
   title: "Adventures in the data revolution: When the data tells no story"
+  author: "Bill Anderson & Bernard Sabiti"
   url: /assets/pdfs/2015-adventures-datarev-2.pdf
   category: Landscaping
-  description: "Second of three blogs written for a Gates Foundation project - Grand Challenges Explorations: Using Data for Impact in Uganda Communities. Co-authored with Bernard Sabiti."
+  description: "Second of three blogs written for a Gates Foundation project - Grand Challenges Explorations: Using Data for Impact in Uganda Communities."
 
 - date: March 2015
   title: "Adventures in the data revolution: What revolution?"
+  author: "Bill Anderson & Bernard Sabiti"
   url: /assets/pdfs/2015-adventures-datarev-3.pdf
   category: Landscaping
-  description: "Third of three blogs written for a Gates Foundation project - Grand Challenges Explorations: Using Data for Impact in Uganda Communities. Co-authored with Bernard Sabiti."
+  description: "Third of three blogs written for a Gates Foundation project - Grand Challenges Explorations: Using Data for Impact in Uganda Communities."
  
 - date: November 2014
   title: "Bridging the global – local divide: The challenge facing the data revolution for sustainable development."
@@ -263,30 +300,35 @@
 
 - date: September 2014
   title: "Joined Up Data: Turning more data into better information"
+  author: "Bill Anderson & Bernard Sabiti"
   url: "/assets/pdfs/2014-joined-up-data-proposal.pdf"
   category: Standards
   description: "Project proposal submitted to Omidyar which resulted in the Joined-up Data Standards Project."
 
 - date: September 2014
   title: "Joined-Up Data Uganda: improving district-level data for development"
+  author: "Bernard Sabiti"
   url: "/assets/pdfs/2014-joined-up-data-uganda.pdf"
   category: Landscaping
-  description: "My first collaboration with long-time partner Bernard Sabiti who was lead author on this report. This is the initial review of the data landscape in Kitgum and Katakwi districts that led to our three blogs on Adventures in the Data Revolution (see above)"
+  description: "This is the initial review of the data landscape in Kitgum and Katakwi districts that led to our three blogs on Adventures in the Data Revolution (see above)"
 
 - date: July 2014
   title: "How to build a joined up data portal"
+  author: "Bill Anderson"
   url: "/assets/pdfs/2014-joined-up-data-portal.pdf"
   category: Standards
   description: "I was due to speak at the Open Knowledge Festival in Berlin in July 2014. Unable to travel a prepared a presentation distributed in a twitter thread."
 
 - date: September 2010
   title: "Aidinfo: Towards greater transparency in the delivery of aid"
+  author: "Aidinfo"
   url: "/assets/pdfs/2010-towards-greater-transparency.pdf"
   category: Standards
   description: "One of two papers that I had no part in but are otherwise unavailable. They are important pieces of IATI history. I have removed the author's name from this draft, incomplete study as I do not have their permission to publish."
 
 - date: July 2008
   title: "Making aid more transparent: preliminary review"
+  author: "Anonymous"
   url: "/assets/pdfs/2008-making-aid-more-transparent.pdf"
   category: Standards
   description: "One of two papers that I had no part in but are otherwise unavailable. They are important pieces of IATI history."

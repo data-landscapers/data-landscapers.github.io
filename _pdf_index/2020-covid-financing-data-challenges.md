@@ -1,4 +1,5 @@
 ---
+author: Bill Anderson
 category: Finance
 date_label: May 2020
 description: The global financial response has been unprecedented. Huge volumes of

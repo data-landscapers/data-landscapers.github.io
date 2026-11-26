@@ -1,4 +1,5 @@
 ---
+author: Bill Anderson & Bernard Sabiti
 category: Standards
 date_label: September 2014
 description: Project proposal submitted to Omidyar which resulted in the Joined-up

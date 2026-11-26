@@ -10,7 +10,7 @@ description: Selected projects and publications in data governance, digital sove
   <h1 class="article-header__title">Portfolio</h1>
 </header>
 
-<p>In my 14 years working for Development Initiatives we got quite a bit done. This collection of papers and blogs does not belong to me alone. I acknowledge the contributions of my ongoing collaborator, Bernard Sabiti, and ex-colleagues Alex Miller, Beata Lisowska, Claudia Wells, Kate Hughes, Liz Steele, Martha Bekele, Sam Wozniak, Steve Kenei, Tom Orrell and Wilbrod Ntawiha.</p>
+<p>In our 14 years working for Development Initiatives we got quite a bit done. This collection of papers and blogs does not belong to us alone. We acknowledge the contributions of our ex-colleagues Alex Miller, Beata Lisowska, Claudia Wells, Kate Hughes, Liz Steele, Martha Bekele, Sam Wozniak, Steve Kenei, Tom Orrell and Wilbrod Ntawiha.</p>
 
 {% assign categories = site.data.portfolio | map: 'category' | compact | uniq | sort %}
 
@@ -35,6 +35,7 @@ description: Selected projects and publications in data governance, digital sove
     <div class="article-list__title">
       {% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
     </div>
+    {% if item.author %}<div style="font-family: var(--mono); font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 0.2rem;">{{ item.author }}</div>{% endif %}
     {% if item.description %}
     <div class="article-list__excerpt">{{ item.description | markdownify }}</div>
     {% endif %}

@@ -1,4 +1,5 @@
 ---
+author: Bill Anderson
 category: Standards
 date_label: July 2014
 description: I was due to speak at the Open Knowledge Festival in Berlin in July 2014.

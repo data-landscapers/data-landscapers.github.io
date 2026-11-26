@@ -1,4 +1,5 @@
 ---
+author: Bill Anderson
 category: Finance
 date_label: February 2017
 description: A challenge to the IATI community to take demand more seriously than

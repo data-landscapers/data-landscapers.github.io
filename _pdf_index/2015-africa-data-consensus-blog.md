@@ -1,4 +1,5 @@
 ---
+author: Peter da Costa & Bill Anderson (drafters)
 category: Governance
 date_label: March 2015
 description: Blog reflecting on DI's role in the High Level Conference (HLC) on the

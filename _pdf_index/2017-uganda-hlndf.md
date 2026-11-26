@@ -1,4 +1,5 @@
 ---
+author: Bill Anderson
 category: Governance
 date_label: November 2017
 description: DI's Bernard Sabiti worked with the Uganda Bureau of Statistics to organise
