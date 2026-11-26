@@ -1,4 +1,5 @@
 ---
+author: Bill Anderson
 category: Governance
 date_label: November 2014
 description: This unpublished (censored?) blog was written in response to the publication
