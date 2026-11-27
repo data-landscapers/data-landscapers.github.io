@@ -7,6 +7,13 @@
 #         use /assets/pdfs/filename.pdf for PDFs, https:// for external links
 # - description: always in double quotes
 
+- date: November 2024
+  title: "Exploring the Impact of the Digitalization Legal & Policy Framework on Inclusive Development in Uganda"
+  author: "Bernard Sabiti, Edwin Akugizibwe & Johnstone Baguma"
+  url: https://torodev.co.ug/wp-content/uploads/2025/04/ToroDev-GIZ-Digitalization-Legal-Framework-and-Inclusive-Development-in-Uganda-Report-2024.pdf
+  category: Governance
+  description: "The study sought to understand citizen perceptions of the legal and policy framework, the perceived impact on citizens’ use and consumption of digital services, how the laws facilitated development of a digital economy, and how inclusive that growth is, and what the challenges and gaps are."
+
 - date: September 2024
   title: "Digital Compacts: Global Ideals, Regional Realities"
   author: "Bill Anderson"
@@ -15,12 +22,33 @@
   description: |
     The [Global Digital Compact](https://www.un.org/techenvoy/global-digital-compact) was adopted as part of the UN Summit of the Future in September 2024. This discussion paper critiques the compact and compares it with the [African Digital Compact](https://au.int/en/documents/20240809/african-digital-compact-adc)
 
+- date: June 2024
+  title: "Data can drive shared prosperity for governments, businesses, and citizens. Unlocking it requires trusted data exchange."
+  author: "Bernard Sabiti, Jonathan Dolan & Sarthak Satapathy"
+  url: https://dial.global/wp-content/uploads/2024/06/Data-exchange-insights-paper-final.pdf
+  category: Governance
+  description: "The country experiences and resulting insights in Bangladesh, Rwanda, Uganda and Ghana illuminate critical shared experiences for policymakers and government technology leaders as they navigate the complexities of implementing effective national data exchange systems."
+
 - date: October 2023
   title: "Data Governance: Do all global problems require global solutions?"
   author: "Bill Anderson"
   url: https://devinit.github.io/blog/data-governance-does-it-require-a-global-solution-/
   category: Governance
   description: A blog originally published on the DI website highlights some of the complexities in aiming for a global consensus on digital or data governance.
+
+- date: September 2023
+  title: "Africa has leapfrogged its way to becoming a leader in digital payments. Could it do the same with DPI?"
+  author: "Bernard Sabiti"
+  url: https://dial.global/africa-digital-public-infrastructure-progress/
+  category: Governance
+  description: "Good DPI generally consists of three core systems working in sync, namely, those regarding digital identity, digital payments, data exchange, as well as consent mechanisms, where data owners have a say on how, where, and when their data is moved around. When these building blocks co-exist, are interoperable, and have inbuilt tech and governance attributes including data privacy, accountability and oversight mechanisms, the benefits can be enormous."
+
+- date: July 2023
+  title: "How Digital Technology is Impacting Health Data Governance in Africa: The Case of Uganda"
+  author: "Bernard Sabiti"
+  url: https://cipesa.org/2023/07/how-technology-is-impacting-health-data-governance-in-africa-the-case-of-uganda/
+  category: Governance
+  description: "In the wake of the Coronavirus Disease 2019 (Covid-19), countries in Africa, like their counterparts across the world, have dramatically increased the use of digital technologies in the health sector, including in diagnosis, disease surveillance, education, research, data management, and care delivery."
 
 - date: May 2023
   title: "SDG learnings from the World Data Forum in Hangzhou: Falling between stools and masters"
@@ -50,6 +78,13 @@
   category: Governance
   description: |
     My work in Malaysia for the UNICEF country office exposed a number of obstacles that appear to exist globally in the relationship between national statistics offices (NSOs) and the international agencies (custodians) responsible for curating the SDGs. This study shines a light on these challenges within the context of the commitments made by all parties involved in the governance of the SDGs. This work formed the basis of my paper: ["Is the SDG Monitoring Framework Broken?"](/assets/pdfs/2023-is-the-sdg-monitoring-framework-broken.pdf)
+
+- date: October 2022
+  title: "Five Takeaways From the 2022 African Union Data Policy Framework"
+  author: "Bernard Sabiti"
+  url: https://cipesa.org/wp-content/files/briefs/Five_Takeaways_From_the_2022_African_Union_Data_Policy_Framework_Brief.pdf
+  category: Governance
+  description: "The Africa Union Data Policy Framework published in July 2022 is one of the most significant instruments on data governance on the continent. This review examines the Policy Framework from five angles: The background of the Policy Framework’s development; What the Policy Framework entails; Benefits and opportunities it can deliver to data governance, data rights and privacy; The Policy Framework’s likely implementation challenges; and Suggestions for the way forward."
  
 - date: March 2022
   title: "Data disharmony: How can donors better act on their commitments?"
@@ -65,6 +100,13 @@
   category: Governance
   description: "Lessons learned from DI’s work on data landscaping."
 
+- date: July 2021
+  title: "Targeting Covid-19 relief in Uganda: The role of data, statistics and evidence"
+  author: "Bernard Sabiti"
+  url: https://devinit.github.io/media/documents/Targeting_Covid-19_relief_in_Uganda_The_role_of_data_statistics_and_evidence_cx9ZfxQ.pdf
+  category: Governance
+  description: "Against the background of Uganda's second Covid wave Development Initiatives’ Kampala office held an online workshop to bring together all relevant stakeholders to discuss the role of data in tackling the pandemic."
+
 - date: June 2021
   title: "Meeting the SDGs in South Sudan: The data landscape"
   author: "Bernard Sabiti"
@@ -78,6 +120,13 @@
   url: https://devinit.github.io/blog/using-near-real-time-data-aid-flows-lessons-learnt/
   category: Finance
   description: Using near real-time data to examine donor response to the Covid-19 pandemic, highlighting an urgent need for timely, disaggregated data.
+
+- date: April 2021
+  title: "The Data Politics of Pandemics: The Cost of Covid-19 Denialism"
+  author: "Bernard Sabiti"
+  url: https://cipesa.org/2021/04/the-data-politics-of-pandemics-the-cost-of-covid-19-denialism/
+  category: Governance
+  description: "A case study of Burundi and Tanzania: one learned its lesson and changed tack, the other stayed the course with devastatingly different outcomes for both of them."
 
 - date: March 2021
   title: "Nepal's data landscape"
@@ -100,7 +149,6 @@
   category: Finance
   description: This briefing compares data published by the UK's FCDO and DFID in 2019 and 2020, showing where aid budget cuts fell among recipients, countries and sectors
 
-
 - date: January 2021
   title: "Diagnostic of Nepal's data landscape"
   author: "Bill Anderson, Sam Wozniak & Santosh Gartaula"
@@ -108,6 +156,12 @@
   category: Landscaping
   description: "The diagnostic leading to the final report `Nepal's Data Landscape`. This was not published as our views on the continuing importance of certain district-level structures were deemed to be contrary to the new constitution."
 
+- date: September 2020
+  title: "Uganda's disability data landscape and the economic inclusion of persons with disabilities"
+  author: "Bernard Sabiti, Sam Wozniak & Moses Owori"
+  url: https://alnap.hacdn.io/media/documents/Uganda-disability-data-landscape_IF.pdf
+  category: Landscaping
+  description: "This report provides a comprehensive assessment of Uganda’s disability data landscape and its role in supporting the economic inclusion of persons with disabilities. It reviews the governance arrangements for disability data, maps existing government and non-government data sources, and examines how disability data is produced, accessed and used in policy and programme decision-making."
 
 - date: June 2020
   title: "Data issues and challenges for the UNICEF Bangladesh Country Office: Action Plan"
@@ -172,6 +226,20 @@
   category: Landscaping
   description: "DI was been contracted to work with the UNICEF country office in Zimbabwe to review the state of the data landscape and, informed by UNICEF’s real-world priorities, develop a strategic action plan for its data work and investments over a 3-to-5-year time horizon."
 
+- date: November 2018
+  title: "Five key points from Africa Statistics Week in Uganda"
+  author: "Bernard Sabiti"
+  url: https://devinit.github.io/blog/five-key-points-africa-statistics-week-uganda/
+  category: Governance
+  description: "Key messages from Africa Statistics Week in Uganda and what they mean in the context of the country's unique data ecosystem."
+
+- date: February 2018
+  title: "Improving data use to boost budget advocacy in Uganda"
+  author: "Bernard Sabiti"
+  url: https://devinit.github.io/blog/improving-data-use-boost-budget-advocacy-uganda/
+  category: Governance
+  description: "Development Initiatives teamed up with the Civil Society Budget Advocacy Group to train the Ugandan budget advocacy community on open and quality data."
+
 - date: November 2017
   title: "The frontiers of data interoperability for sustainable development"
   author: "Tom Orrell, Liz Steele & Bill Anderson"
@@ -192,6 +260,13 @@
   url: /assets/pdfs/2017-development-data-assessment.pdf
   category: Landscaping
   description: "A methodology that supports governments to identify where quality data for decision making and policy formulation is available, where data is of poorer quality, and where there are gaps. The methodology is accompanied by a tool that allows users to investigate and interrogate the data."
+
+- date: July 2017
+  title: "Ensuring Commitments made during the Data For Development in Africa Conference are met"
+  author: "Bernard Sabiti"
+  url: https://devinit.github.io/wp-content/uploads/2017/07/data-for-development-in-Africa.pdf
+  category: Governance
+  description: "The High-level meeting on data for development in Africa, held in Nairobi on 29 and 30 June 2017, was by any measure a success. This paper seeks to summarise the key commitments made at the meeting, and also to unpack the key steps that need to be made by governments, donors and other actors to ensure that the vision for development data in Africa becomes a reality."
 
 - date: February 2017
   title: "Aid, development, data, ownership: What has the data revolution got to do with IATI?"
@@ -319,6 +394,13 @@
   url: "/assets/pdfs/2014-joined-up-data-portal.pdf"
   category: Standards
   description: "I was due to speak at the Open Knowledge Festival in Berlin in July 2014. Unable to travel a prepared a presentation distributed in a twitter thread."
+
+- date: May 2014
+  title: "Understanding how open data could impact resource allocation for poverty eradication in Kenya and Uganda"
+  author: "Charles Lwanga-Ntale, Beatrice Mugambe, Bernard Sabiti & Peace Nganwa"
+  url: https://idl-bnc-idrc.dspacedirect.org/items/bdb83082-b97a-4e6c-8d34-5fc5c033154a
+  category: Governance
+  description: "Using case studies from Uganda and Kenya, Development Research and Training (DRT) and Development Initiatives (DI) researched the evolution of the open data movement in the two countries assessing its role in the equitable allocation of financial resources for eradication of extreme and chronic poverty."
 
 - date: September 2010
   title: "Aidinfo: Towards greater transparency in the delivery of aid"
