@@ -183,7 +183,14 @@
   url: https://devinit.github.io/resources/digital-civil-registration-and-legal-identity-systems/
   category: Governance
   description: "An overview of trends in civil registration and vital statistics CRVS. To deliver the SDGs, how can we ensure everyone is counted?"
- 
+
+- date: October 2019
+  title: "Accelerating CRVS and legal identity in Africa: From problems and principles to practice"
+  author: "Bernard Sabiti & Bill Anderson"
+  url: https://devinit.github.io/blog/accelerating-crvs-and-legal-identity-in-africa-from-problems-and-principles-to-practice/
+  category: Governance
+  description: "Between 14–18 October 2019, 750 delegates met in Lusaka, Zambia, for the Fifth Conference of African Ministers Responsible for Civil Registration organised by the Africa Programme on Accelerated Improvement of Civil Registration and Vital Statistics. The conference ended with renewed commitments to improve the registration of refugees and to prioritise the integration of CRVS, identity and health information systems."
+
 - date: October 2019
   title: "Measuring the state of civil registration and legal identity in Africa"
   author: "Bill Anderson, Angharad Price, Bernard Sabiti & Martha Bekele"
@@ -233,6 +240,13 @@
   category: Governance
   description: "Key messages from Africa Statistics Week in Uganda and what they mean in the context of the country's unique data ecosystem."
 
+- date: May 2018
+  title: "What do we know about the value of data?"
+  author: "Bill Anderson"
+  url: https://devinit.github.io/blog/what-do-we-know-about-the-value-of-data/
+  category: Governance
+  description: "The GPSDD concludes the best way to make the case for improved investments in data is to show the value of data in improving lives."
+
 - date: February 2018
   title: "Improving data use to boost budget advocacy in Uganda"
   author: "Bernard Sabiti"
@@ -267,6 +281,13 @@
   url: https://devinit.github.io/wp-content/uploads/2017/07/data-for-development-in-Africa.pdf
   category: Governance
   description: "The High-level meeting on data for development in Africa, held in Nairobi on 29 and 30 June 2017, was by any measure a success. This paper seeks to summarise the key commitments made at the meeting, and also to unpack the key steps that need to be made by governments, donors and other actors to ensure that the vision for development data in Africa becomes a reality."
+
+- date: March 2017
+  title: "Reflections on the World Data Forum"
+  author: "Bernard Sabiti"
+  url: https://devinit.github.io/blog/reflections-on-the-world-data-forum/
+  category: Governance
+  description: "This post comments on the inaugural UN World Data Forum, which took place in Cape Town in early 2017, highlighting its significance for the data revolution."
 
 - date: February 2017
   title: "Aid, development, data, ownership: What has the data revolution got to do with IATI?"
