@@ -51,7 +51,7 @@ description: Bill Anderson — data governance consultant, data landscaping spec
 
     <p>I am a veteran of the South African liberation struggle — conscripted into the apartheid army, I deserted, testified to the United Nations on its atrocities, and joined the African National Congress. That experience shapes everything I do. Digital colonialism is real. The antidote is African-led infrastructure, standards and policy.</p>
 
-    <a href="/about/cv/" class="btn">View full CV</a>
+    <a href="/about/cv-anderson/" class="btn">View full CV</a>
   </div>
   <div>
     <img src="/assets/uploads/bill-anderson.jpg" alt="Bill Anderson" class="about-photo">
